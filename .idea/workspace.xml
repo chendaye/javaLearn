@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="" />
+    <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/Tree/Binarytree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/Tree/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/Example/ProcessThreadExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/JarCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/PackageCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/ProcessThreadCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/CustomException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/CustomException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/ExceptionCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/ExceptionCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/math.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/math.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClassGrammar/ExceptionCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassGrammar/ExceptionCode.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,16 +24,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZbRzotjF3GkTDiWt6X50lpv1VR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -41,9 +60,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ExceptionCode">
-    <configuration name="Anonymous" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClassGrammar.Anonymous" />
+  <component name="RunManager" selected="Application.useThread">
+    <configuration name="ProducerConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClassGrammar.ProducerConsumer" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
@@ -55,8 +74,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExceptionCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClassGrammar.ExceptionCode" />
+    <configuration name="ProducerConsumer_Lock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClassGrammar.ProducerConsumer_Lock" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
@@ -68,8 +87,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InnerClassCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClassGrammar.InnerClassCode" />
+    <configuration name="StopThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClassGrammar.StopThread" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
@@ -81,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObjectCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClassGrammar.ObjectCode" />
+    <configuration name="TX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClassGrammar.TX" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
@@ -94,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PolymorphismExample2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClassGrammar.Example.PolymorphismExample2" />
+    <configuration name="useThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClassGrammar.useThread" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ClassGrammar.Example.*" />
+          <option name="PATTERN" value="ClassGrammar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ExceptionCode" />
-        <item itemvalue="Application.Anonymous" />
-        <item itemvalue="Application.InnerClassCode" />
-        <item itemvalue="Application.ObjectCode" />
-        <item itemvalue="Application.PolymorphismExample2" />
+        <item itemvalue="Application.useThread" />
+        <item itemvalue="Application.StopThread" />
+        <item itemvalue="Application.ProducerConsumer_Lock" />
+        <item itemvalue="Application.ProducerConsumer" />
+        <item itemvalue="Application.TX" />
       </list>
     </recent_temporary>
   </component>
@@ -129,11 +148,22 @@
       <updated>1585106072066</updated>
       <workItem from="1585106075568" duration="5399000" />
       <workItem from="1585307344913" duration="29694000" />
-      <workItem from="1585445030450" duration="21572000" />
+      <workItem from="1585445030450" duration="62151000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
