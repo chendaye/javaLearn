@@ -1,7 +1,21 @@
 package Algorithm.List;
-import Algorithm.List.Utils.ListNode;
+
 
 import java.util.ArrayList;
+
+
+/**
+ * 链表结构
+ */
+class ListNode {
+    public int val;
+    public ListNode next = null;
+
+    public ListNode(int val) {
+        this.val = val;
+    }
+}
+
 public class List_1 {
     public static void main(String[] args) {
         ListNode p = new ListNode(0);

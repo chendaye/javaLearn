@@ -2,18 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/Tree/Binarytree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/Tree/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/Example/ProcessThreadExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/JarCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/PackageCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/ProcessThreadCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/StackQuene/StackToQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collection/Collection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collection/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Example/ArrayListExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Example/LinkedListExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PackageTypes/PackageTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StringLearn/String.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StringLearn/StringBuffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StringLearn/StringBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/CustomException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/CustomException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/ExceptionCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/ExceptionCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/math.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/math.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClassGrammar/ExceptionCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassGrammar/ExceptionCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/List/List_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/List/List_1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/List/Utils/ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Tree/Binarytree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Tree/Binarytree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Tree/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Tree/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/List/List_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/List/List_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/List/Utils/ListNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/Tree/Binarytree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Tree/Binarytree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/Tree/TreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClassGrammar/Example/PolymorphismExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Example/PolymorphismExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClassGrammar/Example/PolymorphismExample2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Example/PolymorphismExample2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClassGrammar/Example/ProcessThreadExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Example/ProcessThreadExample.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,13 +69,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.useThread">
-    <configuration name="ProducerConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClassGrammar.ProducerConsumer" />
+  <component name="RunManager" selected="Application.ArrayListCode2">
+    <configuration name="ArrayListCode2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Example.ArrayListCode2" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ClassGrammar.*" />
+          <option name="PATTERN" value="Example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProducerConsumer_Lock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClassGrammar.ProducerConsumer_Lock" />
+    <configuration name="ArrayListExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Example.ArrayListExample" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ClassGrammar.*" />
+          <option name="PATTERN" value="Example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StopThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClassGrammar.StopThread" />
+    <configuration name="LinkedListCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collection.LinkedListCode" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ClassGrammar.*" />
+          <option name="PATTERN" value="Collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClassGrammar.TX" />
+    <configuration name="ListCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collection.ListCode" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ClassGrammar.*" />
+          <option name="PATTERN" value="Collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="useThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClassGrammar.useThread" />
+    <configuration name="VectorCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collection.VectorCode" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ClassGrammar.*" />
+          <option name="PATTERN" value="Collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.useThread" />
-        <item itemvalue="Application.StopThread" />
-        <item itemvalue="Application.ProducerConsumer_Lock" />
-        <item itemvalue="Application.ProducerConsumer" />
-        <item itemvalue="Application.TX" />
+        <item itemvalue="Application.ArrayListCode2" />
+        <item itemvalue="Application.ArrayListExample" />
+        <item itemvalue="Application.LinkedListCode" />
+        <item itemvalue="Application.VectorCode" />
+        <item itemvalue="Application.ListCode" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +157,8 @@
       <updated>1585106072066</updated>
       <workItem from="1585106075568" duration="5399000" />
       <workItem from="1585307344913" duration="29694000" />
-      <workItem from="1585445030450" duration="62151000" />
+      <workItem from="1585445030450" duration="64980000" />
+      <workItem from="1585617388184" duration="25819000" />
     </task>
     <servers />
   </component>
@@ -160,7 +170,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
