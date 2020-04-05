@@ -2,26 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DynamicProgramming/ClimbStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DynamicProgramming/Fibonacci.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DynamicProgramming/Money.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/meitunan/question1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/For.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/Map.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/Set.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/StaticImport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Generic/GenericCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/IOStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OtherObject/DateCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OtherObject/RunTimeCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OtherObject/SystemCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/Dump.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/write.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/BufferWriterReaderCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/ByteStreamCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/DataStreamCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/FileCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/FileReaderCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/FileWriteCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/IOExceptionCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/MyBufferReaderCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/ObjectStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/PipedStreamCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/PrintCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/PropertiesCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/RandomAccessFileCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/ReadKeyBoardCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/SequenceInputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/SystemIOCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/StackQuene/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/StackQuene/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/StackQuene/StackToQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/StackQuene/StackToQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/Demo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Example/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Example/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/StackQuene/StackToQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/StackQuene/StackToQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/OtherObject/DateCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/OtherObject/DateCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IOStream/IOStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IOStream/IOStream.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,13 +71,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DateCode">
-    <configuration name="ArraysUtilsCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Collection.ArraysUtilsCode" />
+  <component name="RunManager" selected="Application.DataStreamCode">
+    <configuration name="ByteNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IOStream.ByteNum" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Collection.*" />
+          <option name="PATTERN" value="IOStream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionToArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Collection.CollectionToArray" />
+    <configuration name="DataStreamCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IOStream.DataStreamCode" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Collection.*" />
+          <option name="PATTERN" value="IOStream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OtherObject.DateCode" />
+    <configuration name="ObjectStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IOStream.ObjectStream" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="OtherObject.*" />
+          <option name="PATTERN" value="IOStream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="For" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Collection.For" />
+    <configuration name="PipedStreamCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IOStream.PipedStreamCode" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Collection.*" />
+          <option name="PATTERN" value="IOStream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunTimeCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OtherObject.RunTimeCode" />
+    <configuration name="RandomAccessFileCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IOStream.RandomAccessFileCode" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="OtherObject.*" />
+          <option name="PATTERN" value="IOStream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DateCode" />
-        <item itemvalue="Application.RunTimeCode" />
-        <item itemvalue="Application.For" />
-        <item itemvalue="Application.CollectionToArray" />
-        <item itemvalue="Application.ArraysUtilsCode" />
+        <item itemvalue="Application.DataStreamCode" />
+        <item itemvalue="Application.ByteNum" />
+        <item itemvalue="Application.RandomAccessFileCode" />
+        <item itemvalue="Application.PipedStreamCode" />
+        <item itemvalue="Application.ObjectStream" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +161,7 @@
       <workItem from="1585307344913" duration="29694000" />
       <workItem from="1585445030450" duration="64980000" />
       <workItem from="1585617388184" duration="26937000" />
-      <workItem from="1585789923340" duration="49288000" />
+      <workItem from="1585789923340" duration="93517000" />
     </task>
     <servers />
   </component>
@@ -178,5 +180,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/learnJava$RandomAccessFileCode.ic" NAME="RandomAccessFileCode Coverage Results" MODIFIED="1586092233656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>IOStream.*</FILTER>
+    </SUITE>
   </component>
 </project>

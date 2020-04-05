@@ -1,0 +1,3 @@
+�缓冲区的数据刷进目的地
+            fileWriter.flush();
+            // todo：关闭也
