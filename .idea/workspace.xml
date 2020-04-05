@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/write.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/BufferWriterReaderCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/ByteStreamCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/DataStreamCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/FileCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/FileReaderCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/FileWriteCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/IOExceptionCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/MyBufferReaderCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/ObjectStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/PipedStreamCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/PrintCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/PropertiesCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/RandomAccessFileCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/ReadKeyBoardCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/SequenceInputStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/SystemIOCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/ByteArrayStreamCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOStream/EncodeStreamCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/OtherObject/DateCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/OtherObject/DateCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IOStream/IOStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IOStream/IOStream.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +142,7 @@
       <workItem from="1585307344913" duration="29694000" />
       <workItem from="1585445030450" duration="64980000" />
       <workItem from="1585617388184" duration="26937000" />
-      <workItem from="1585789923340" duration="93517000" />
+      <workItem from="1585789923340" duration="96047000" />
     </task>
     <servers />
   </component>
