@@ -1,3 +1,0 @@
-会刷新缓存，将数据写到目的地
-        }catch (IOException e){
-            Dump.dump(e

@@ -2,9 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/IOStream/ByteArrayStreamCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOStream/EncodeStreamCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/user.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NetWork/ChatCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NetWork/IPCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NetWork/TCPBrowser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NetWork/TCPCopyText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NetWork/TCPTrainCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NetWork/TCPURL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NetWork/TCPUploadByThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NetWork/TCPUploadPic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NetWork/TCPUserLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NetWork/tcpCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NetWork/udpReceive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NetWork/udpSend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RegularExpression/RegexCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/0split.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/1split.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2split.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/3split.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/4split.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/5split.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/6split.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/7split.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/8split.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/9split.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/IOStream/DataStreamCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/IOStream/DataStreamCode.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +57,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -52,13 +76,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DataStreamCode">
-    <configuration name="ByteNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IOStream.ByteNum" />
+  <component name="RunManager" selected="Application.client">
+    <configuration name="Client2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NetWork.Client2" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="IOStream.*" />
+          <option name="PATTERN" value="NetWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -66,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataStreamCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IOStream.DataStreamCode" />
+    <configuration name="TextClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NetWork.TextClient" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="IOStream.*" />
+          <option name="PATTERN" value="NetWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObjectStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IOStream.ObjectStream" />
+    <configuration name="TextServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NetWork.TextServer" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="IOStream.*" />
+          <option name="PATTERN" value="NetWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PipedStreamCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IOStream.PipedStreamCode" />
+    <configuration name="client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NetWork.client" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="IOStream.*" />
+          <option name="PATTERN" value="NetWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RandomAccessFileCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IOStream.RandomAccessFileCode" />
+    <configuration name="server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NetWork.server" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="IOStream.*" />
+          <option name="PATTERN" value="NetWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DataStreamCode" />
-        <item itemvalue="Application.ByteNum" />
-        <item itemvalue="Application.RandomAccessFileCode" />
-        <item itemvalue="Application.PipedStreamCode" />
-        <item itemvalue="Application.ObjectStream" />
+        <item itemvalue="Application.client" />
+        <item itemvalue="Application.server" />
+        <item itemvalue="Application.TextClient" />
+        <item itemvalue="Application.TextServer" />
+        <item itemvalue="Application.Client2" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +166,8 @@
       <workItem from="1585307344913" duration="29694000" />
       <workItem from="1585445030450" duration="64980000" />
       <workItem from="1585617388184" duration="26937000" />
-      <workItem from="1585789923340" duration="96047000" />
+      <workItem from="1585789923340" duration="96718000" />
+      <workItem from="1586135918111" duration="33247000" />
     </task>
     <servers />
   </component>

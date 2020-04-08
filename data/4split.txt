@@ -1,3 +1,0 @@
-符串写到内存中（流）
-            fileWriter.write("chendaye666");
-            // todo:�

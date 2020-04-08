@@ -1,3 +1,0 @@
-��就覆盖文件
-            fileWriter = new FileWriter("data/write.txt");
-            // 将字
