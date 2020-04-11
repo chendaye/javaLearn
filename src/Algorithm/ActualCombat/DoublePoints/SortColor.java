@@ -1,10 +1,7 @@
-package Algorithm.ActualCombat.Array;
+package Algorithm.ActualCombat.DoublePoints;
 
-import LanguageElement.Array;
 import Utils.Dump;
-import Utils.RandomArray;
-
-import java.util.Arrays;
+import Utils.Generate;
 
 /**
  * LeetCode-75
@@ -20,7 +17,7 @@ import java.util.Arrays;
 public class SortColor {
     public static void main(String[] args) {
         int[] array = new int[20];
-        array = RandomArray.get(30,3,false,false);
+        array = Generate.get(30,3,false,false);
         Dump.array(array,true);
 //        Solution(array);
         Solution2(array);

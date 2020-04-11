@@ -1,7 +1,7 @@
 package Algorithm.Classic.Array;
 
 import Utils.Dump;
-import Utils.RandomArray;
+import Utils.Generate;
 
 /**
  * 二分查找法
@@ -9,7 +9,7 @@ import Utils.RandomArray;
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = new int[20];
-        arr = RandomArray.get(1000000, 1000001, true, true);
+        arr = Generate.get(1000000, 1000001, true, true);
         long start = System.nanoTime(); //毫秒
         int mid = method(arr, 1000000, 122);
         long end = System.nanoTime();

@@ -47,6 +47,7 @@ public  class Dump {
     }
 
 
+
     public static <T> void array1(T[] items, boolean isString){
         if (!isString)
             for (T item : items) {
@@ -67,4 +68,6 @@ public  class Dump {
         else
             System.out.println(items.toString());
     }
+
+
 }

@@ -2,71 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/三路快排.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/三路快排代码.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/两数字和-二分搜索.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/对撞指针.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/10、java基本数据类型.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/11、java基本数据类型.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/12、java变量类型.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/13、java修饰符.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/14、java运算符A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/15、java运算符B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/16、Java循环结构.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/17、java分支结构.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/18、java Number &amp; Math类.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/19、常用java String类.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/1、Java简介.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/20、java StringBuffer 和StringBuilder类.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/21、java数组.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/22、java 日期时间.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/23、java流（Stream）、文件（File）和IO.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/24、java异常处理.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/26、Java集合框架.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/27、java泛型.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/28、Java序列化.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/29、java网络编程.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/2、java主要特性.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/30、Java多线程.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/31、Java8新特性.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/3、java发展历史.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/4、java 开发环境配置.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/5、java基础语法.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/6、java基本概念.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/7、java面向对象.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/8、java面向对象三大特性.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/9、java 面向对象C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/xmind/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/MoveZero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/SortColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/Train/KLargest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/Train/RemoveDuplicated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/TwoSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/Classic/Array/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/RandomArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/滑动窗口.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/连续子数组.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/ContainsDuplicate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/ContainsDuplice2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/LongestSub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/MinSubSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/Read.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/SearchTable/FourSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/SearchTable/Intersect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/SearchTable/Intersection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/SearchTable/NumberOfBoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/SearchTable/Read.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/SearchTable/TowSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DynamicProgramming/ClimbStep.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DynamicProgramming/Fibonacci.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DynamicProgramming/Money.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/List/ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/List/List_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/StackQuene/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/StackQuene/StackToQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Tree/Binarytree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Tree/TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/meitunan/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/Demo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/NetWork/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/NetWork/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/NetWork/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/NetWork/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Array/MoveZero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Array/SortColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Array/Train/KLargest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Array/Train/RemoveDuplicated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Array/TwoSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/meitunan/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Classic/Array/BinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Classic/Array/BinarySearch.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/learnJava/Utils/Dump.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Utils/Dump.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/DynamicProgramming/ClimbStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/ClimbStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/DynamicProgramming/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/Fibonacci.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/DynamicProgramming/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/Money.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/List/List_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/List_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/StackQuene/StackToQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/StackQuene/StackToQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/Tree/Binarytree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Tree/Binarytree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/meitunan/question1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/meitunan/question1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Utils/RandomArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/MoveZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Sort/MoveZero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/SortColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/SortColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/Train/KLargest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/Train/RemoveDuplicated.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/TwoSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/meitunan/question1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/Classic/Array/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Classic/Array/BinarySearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Utils/Dump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Dump.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/RandomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Generate.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,6 +75,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\learnJava\src\Algorithm\ActualCombat\DoublePoints" />
       <recent name="E:\learnJava\resource\Algorithm" />
       <recent name="E:\learnJava\resource\LanguageElement" />
     </key>
@@ -124,13 +92,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TwoSum">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.Classic.Array.BinarySearch" />
+  <component name="RunManager" selected="Application.ContainsDuplice2">
+    <configuration name="ContainsDuplicate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.DoublePoints.ContainsDuplicate" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.Classic.Array.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.DoublePoints.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MoveZero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.Array.MoveZero" />
+    <configuration name="ContainsDuplice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.DoublePoints.ContainsDuplice2" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.Array.Train.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.DoublePoints.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RandomArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Utils.RandomArray" />
+    <configuration name="FourSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.SearchTable.FourSum" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Utils.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.SearchTable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,12 +132,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortColor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.Array.SortColor" />
+    <configuration name="NumberOfBoom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.SearchTable.NumberOfBoom" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.Array.Train.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.SearchTable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,12 +145,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.Array.TwoSum" />
+    <configuration name="TowSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.SearchTable.TowSum" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.Array.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.SearchTable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -192,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TwoSum" />
-        <item itemvalue="Application.SortColor" />
-        <item itemvalue="Application.MoveZero" />
-        <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.RandomArray" />
+        <item itemvalue="Application.ContainsDuplice2" />
+        <item itemvalue="Application.ContainsDuplicate" />
+        <item itemvalue="Application.NumberOfBoom" />
+        <item itemvalue="Application.FourSum" />
+        <item itemvalue="Application.TowSum" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +185,8 @@
       <workItem from="1585789923340" duration="96718000" />
       <workItem from="1586135918111" duration="47316000" />
       <workItem from="1586395084808" duration="1316000" />
-      <workItem from="1586483048302" duration="14693000" />
+      <workItem from="1586483048302" duration="26224000" />
+      <workItem from="1586568160342" duration="28435000" />
     </task>
     <servers />
   </component>
@@ -244,9 +213,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/TwoSum.java</url>
-          <line>56</line>
+          <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/TwoSum.java</url>
+          <line>55</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/MinSubSum.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/SearchTable/Intersection.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

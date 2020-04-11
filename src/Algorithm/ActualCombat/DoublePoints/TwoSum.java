@@ -1,7 +1,6 @@
-package Algorithm.ActualCombat.Array;
+package Algorithm.ActualCombat.DoublePoints;
 
 import Utils.Dump;
-import Utils.RandomArray;
 
 /**
  * 给定一个已按照升序排列 的有序数组，找到两个数使得它们相加之和等于目标数。
@@ -19,13 +18,13 @@ import Utils.RandomArray;
  *    - 暴力解 O(n^2) 2层遍历
  *    - 二分搜搜 O(nlogn), 遍历一个数，在后面的元素中利用二分搜索查找 target-current。
  *          因为二分搜索是 O(logn) 有n个元素 最终的时间复杂度O(nlogn
- *    - 用两个指针从两边夹 O(n)
+ *    - 用两个指针从两边夹 O(n),学名对撞指针
  *
  */
 public class TwoSum {
     public static void main(String[] args) {
 //        int[] array = new int[20];
-//        array = RandomArray.get(20,40,true,true);
+//        array = Random.get(20,40,true,true);
 //        Dump.array(array,true);
 //        int i = BinarySearch(array, 5, 30, 15);
 //        Dump.dump(i);

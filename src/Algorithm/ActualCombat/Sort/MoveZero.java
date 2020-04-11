@@ -1,7 +1,7 @@
-package Algorithm.ActualCombat.Array;
+package Algorithm.ActualCombat.Sort;
 
 import Utils.Dump;
-import Utils.RandomArray;
+import Utils.Generate;
 
 /**
  * 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，
@@ -10,7 +10,7 @@ import Utils.RandomArray;
 public class MoveZero {
     public static void main(String[] args) {
         int[] array = new int[20];
-        array = RandomArray.get(20,5,false,false);
+        array = Generate.get(20,5,false,false);
         Dump.array(array,true);
         Solution(array);
         Dump.array(array,true);
