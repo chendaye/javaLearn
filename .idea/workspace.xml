@@ -2,38 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/滑动窗口.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/连续子数组.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/ContainsDuplicate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/ContainsDuplice2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/LongestSub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/MinSubSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/Read.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/SearchTable/FourSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/SearchTable/Intersect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/SearchTable/Intersection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/SearchTable/NumberOfBoom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/SearchTable/Read.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/SearchTable/TowSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/AddTwoNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/DeleteNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/RemoveLinkedListElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/RemoveNthNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/ReverseLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/SwapNodesInPairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Recursive/BinaryTreePreorderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/StackQuene/ValidParentheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Array/MoveZero.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Array/SortColor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Array/Train/KLargest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Array/Train/RemoveDuplicated.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Array/TwoSum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/meitunan/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Classic/Array/BinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Classic/Array/BinarySearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Utils/Dump.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Utils/Dump.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Utils/RandomArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/MoveZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Sort/MoveZero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/SortColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/SortColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/Train/KLargest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/Train/RemoveDuplicated.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Array/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DoublePoints/TwoSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/meitunan/question1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/Classic/Array/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Classic/Array/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/Dump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Dump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/RandomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Generate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/DoublePoints/ContainsDuplice2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/DoublePoints/ContainsDuplice2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/List/ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/List/List_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/List/List_1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/List_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/List_1.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,13 +75,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ContainsDuplice2">
-    <configuration name="ContainsDuplicate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.DoublePoints.ContainsDuplicate" />
+  <component name="RunManager" selected="Application.ValidParentheses">
+    <configuration name="RemoveLinkedListElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.List.RemoveLinkedListElements" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.DoublePoints.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.List.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainsDuplice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.DoublePoints.ContainsDuplice2" />
+    <configuration name="RemoveNthNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.List.RemoveNthNode" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.DoublePoints.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.List.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FourSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.SearchTable.FourSum" />
+    <configuration name="ReverseLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.List.ReverseLinkedList" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.SearchTable.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.List.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberOfBoom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.SearchTable.NumberOfBoom" />
+    <configuration name="SwapNodesInPairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.List.SwapNodesInPairs" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.SearchTable.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.List.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TowSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.SearchTable.TowSum" />
+    <configuration name="ValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.StackQuene.ValidParentheses" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.SearchTable.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.StackQuene.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ContainsDuplice2" />
-        <item itemvalue="Application.ContainsDuplicate" />
-        <item itemvalue="Application.NumberOfBoom" />
-        <item itemvalue="Application.FourSum" />
-        <item itemvalue="Application.TowSum" />
+        <item itemvalue="Application.ValidParentheses" />
+        <item itemvalue="Application.RemoveNthNode" />
+        <item itemvalue="Application.SwapNodesInPairs" />
+        <item itemvalue="Application.RemoveLinkedListElements" />
+        <item itemvalue="Application.ReverseLinkedList" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +169,9 @@
       <workItem from="1586135918111" duration="47316000" />
       <workItem from="1586395084808" duration="1316000" />
       <workItem from="1586483048302" duration="26224000" />
-      <workItem from="1586568160342" duration="28435000" />
+      <workItem from="1586568160342" duration="28620000" />
+      <workItem from="1586656252359" duration="9573000" />
+      <workItem from="1586743862979" duration="17329000" />
     </task>
     <servers />
   </component>
