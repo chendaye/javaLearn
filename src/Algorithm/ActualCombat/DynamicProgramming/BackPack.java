@@ -59,7 +59,7 @@ public class BackPack {
         if (n==0) return 0;
         //todo: 状态数组
         int[][] dp = new int[n][c+1];
-        //todo: 在背包容量=0~c 时， 把为物品 0 放入背包
+        //todo: 在背包容量=0~c 时， 把为物品 0 放入背包. 获得的最大值
         //todo: 状态数组是一维 初始化一个元素； 状态数组是二维，初始化一行
         for (int i=0; i<c+1; i++){
             if (w[0] <= c) dp[0][i] = v[0];  //初始化第一行
