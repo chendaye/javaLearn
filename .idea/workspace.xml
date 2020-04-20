@@ -2,21 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/AddTwoNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/DeleteNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/RemoveLinkedListElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/RemoveNthNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/ReverseLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/SwapNodesInPairs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Recursive/BinaryTreePreorderTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/StackQuene/ValidParentheses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/RecursiveBacktrack/LetterCombinations$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/RecursiveBacktrack/LetterCombinations.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/RecursiveBacktrack/Permutations.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/StackQueneHeap/PriorityQueueTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/StackQueneHeap/Solution.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/StackQueneHeap/StackToQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/StackQueneHeap/TopKFrequentElements$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/StackQueneHeap/TopKFrequentElements.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/StackQueneHeap/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/StackQueneHeap/UserComparator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/StackQueneHeap/ValidParentheses.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/TreeGraph/BinaryTreePaths$Command.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/TreeGraph/BinaryTreePaths.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/TreeGraph/BinaryTreePreorderTraversal$Command.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/TreeGraph/BinaryTreePreorderTraversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/TreeGraph/Binarytree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/TreeGraph/InvertBinaryTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/TreeGraph/LowestCommonAncestor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/TreeGraph/MaximumDepthOfBinaryTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/TreeGraph/PathSum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/TreeGraph/PathSumIii.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/TreeGraph/PerfectSquares.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/TreeNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/BinaryTreeLevelOrderTraversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/learnJava/Collection/SignleMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/Snipaste_2020-04-13_22-35-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/dijkstra-动态规划.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/二维平面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/二维平面回溯.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/全排列.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/分割整数.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/动态规划.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/动态规划2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/最长公共子序列.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/爬楼梯.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/状态转移.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/组合.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/背包问题-状态转移.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/背包问题-空间优化.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/背包问题.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/背包问题2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/背包问题3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/背包问题优化2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/背包问题变种1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/背包问题变种2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/背包问题变种3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/递归.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/BackPack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/HouseRobber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/IntegerBreak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/LongIncrSub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/LongestCommonSub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/Combinations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/LetterCombinations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/NQueens.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/NumIslands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/Permutations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/WordSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/StackQueneHeap/PriorityQueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/StackQueneHeap/TopKFrequentElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/TreeGraph/BinaryTreeLevelOrderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/TreeGraph/BinaryTreePaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/TreeGraph/InvertBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/TreeGraph/LowestCommonAncestor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/TreeGraph/MaximumDepthOfBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/TreeGraph/PathSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/TreeGraph/PathSumIii.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/TreeGraph/PerfectSquares.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/DoublePoints/ContainsDuplice2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/DoublePoints/ContainsDuplice2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/List/ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/List/List_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/List/List_1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/List_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/List/List_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/DynamicProgramming/ClimbStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/DynamicProgramming/ClimbStep.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/StackQuene/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/StackQuene/StackToQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/StackQuene/ValidParentheses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Tree/Binarytree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Tree/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/ClimbStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/ClimbStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Recursive/BinaryTreePreorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/TreeGraph/BinaryTreePreorderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/StackQuene/StackToQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/StackQueneHeap/StackToQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/StackQuene/ValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/StackQueneHeap/ValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Tree/Binarytree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/TreeGraph/Binarytree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Map.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,13 +141,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ValidParentheses">
-    <configuration name="RemoveLinkedListElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.List.RemoveLinkedListElements" />
+  <component name="RunManager" selected="Application.LongestCommonSub">
+    <configuration name="IntegerBreak" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.DynamicProgramming.IntegerBreak" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.List.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.DynamicProgramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +155,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveNthNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.List.RemoveNthNode" />
+    <configuration name="LongIncrSub" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.DynamicProgramming.LongIncrSub" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.List.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.DynamicProgramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +168,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.List.ReverseLinkedList" />
+    <configuration name="LongestCommonSub" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.DynamicProgramming.LongestCommonSub" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.List.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.DynamicProgramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +181,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwapNodesInPairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.List.SwapNodesInPairs" />
+    <configuration name="NumIslands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.RecursiveBacktrack.NumIslands" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.List.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.RecursiveBacktrack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,12 +194,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.StackQuene.ValidParentheses" />
+    <configuration name="WordSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.RecursiveBacktrack.WordSearch" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.StackQuene.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.RecursiveBacktrack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ValidParentheses" />
-        <item itemvalue="Application.RemoveNthNode" />
-        <item itemvalue="Application.SwapNodesInPairs" />
-        <item itemvalue="Application.RemoveLinkedListElements" />
-        <item itemvalue="Application.ReverseLinkedList" />
+        <item itemvalue="Application.LongestCommonSub" />
+        <item itemvalue="Application.LongIncrSub" />
+        <item itemvalue="Application.IntegerBreak" />
+        <item itemvalue="Application.NumIslands" />
+        <item itemvalue="Application.WordSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +237,11 @@
       <workItem from="1586483048302" duration="26224000" />
       <workItem from="1586568160342" duration="28620000" />
       <workItem from="1586656252359" duration="9573000" />
-      <workItem from="1586743862979" duration="17329000" />
+      <workItem from="1586743862979" duration="24642000" />
+      <workItem from="1586829660633" duration="21397000" />
+      <workItem from="1586919386227" duration="15050000" />
+      <workItem from="1587086791863" duration="19824000" />
+      <workItem from="1587190174843" duration="64825000" />
     </task>
     <servers />
   </component>
@@ -211,6 +281,41 @@
           <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/SearchTable/Intersection.java</url>
           <line>41</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/TreeGraph/BinaryTreePaths.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/Combinations.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/WordSearch.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/IntegerBreak.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/HouseRobber.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/LongIncrSub.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/LongestCommonSub.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -8,6 +8,8 @@ package Algorithm.ActualCombat.DynamicProgramming;
  * 注意：给定 n 是一个正整数
  *
  * todo: 动态规划是子问题相加
+ *
+ * todo: 类似 120 64
  */
 public class ClimbStep {
     public static void main(String[] args) {

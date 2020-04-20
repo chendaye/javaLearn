@@ -442,3 +442,18 @@ class CollectionToArray{
     }
 }
 
+/******************************************单键值对类型********************************************************/
+
+/**
+ * todo:单键值对类型 new AbstractMap.SimpleEntry<String, String>
+ */
+class SignleMap{
+    public static void main(String[] args) {
+        Map.Entry<String,String> entry = new AbstractMap.SimpleEntry<String, String>("name", "野猿新一");
+        System.out.println("new AbstractMap.SimpleEntry:" + entry);
+        System.out.println("getKey:" + entry.getKey());
+        System.out.println("getValue:" + entry.getValue());
+        entry.setValue("野猿新二");
+        System.out.println("setValue:" + entry);
+    }
+}
