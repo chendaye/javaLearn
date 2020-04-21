@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/数据规模.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/背包问题-变种.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/贪心算法.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/NonOverlappingIntervals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/PartitionEqualSubsetSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Greed/AssignCookies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Greed/NonOverlappingIntervals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/三路快排2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/快排.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/排序效率.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/ShellSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/DynamicProgramming/LongestCommonSub.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/DynamicProgramming/LongestCommonSub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/Algorithm/Snipaste_2020-04-13_22-35-30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/BackPack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/BackPack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Greed/NonOverlappingIntervals.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Greed/NonOverlappingIntervals.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Utils/Dump.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Utils/Dump.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Utils/Generate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Utils/Generate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/Dump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Dump.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/Generate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Generate.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +48,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/java/src.zip!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -53,13 +57,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Algorithm.ActualCombat.DynamicProgramming" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\learnJava\src\Algorithm\ActualCombat\DoublePoints" />
       <recent name="E:\learnJava\resource\Algorithm" />
       <recent name="E:\learnJava\resource\LanguageElement" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Algorithm.ActualCombat.DynamicProgramming" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\learnJava\src\Algorithm\DataStructure\Sort" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -74,13 +81,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NonOverlappingIntervals">
-    <configuration name="AssignCookies" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.Greed.AssignCookies" />
+  <component name="RunManager" selected="Application.QuickSort">
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Sort.BubbleSort" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.Greed.*" />
+          <option name="PATTERN" value="Algorithm.DataStructure.Sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongIncrSub" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.DynamicProgramming.LongIncrSub" />
+    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Sort.InsertionSort" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.DynamicProgramming.*" />
+          <option name="PATTERN" value="Algorithm.DataStructure.Sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestCommonSub" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.DynamicProgramming.LongestCommonSub" />
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Sort.MergeSort" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.DynamicProgramming.*" />
+          <option name="PATTERN" value="Algorithm.DataStructure.Sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NonOverlappingIntervals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.DynamicProgramming.NonOverlappingIntervals" />
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Sort.QuickSort" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.DynamicProgramming.*" />
+          <option name="PATTERN" value="Algorithm.DataStructure.Sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PartitionEqualSubsetSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.DynamicProgramming.PartitionEqualSubsetSum" />
+    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Sort.SelectionSort" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.DynamicProgramming.*" />
+          <option name="PATTERN" value="Algorithm.DataStructure.Sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NonOverlappingIntervals" />
-        <item itemvalue="Application.AssignCookies" />
-        <item itemvalue="Application.PartitionEqualSubsetSum" />
-        <item itemvalue="Application.LongestCommonSub" />
-        <item itemvalue="Application.LongIncrSub" />
+        <item itemvalue="Application.QuickSort" />
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="Application.InsertionSort" />
+        <item itemvalue="Application.SelectionSort" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +181,8 @@
       <workItem from="1586829660633" duration="21397000" />
       <workItem from="1586919386227" duration="15050000" />
       <workItem from="1587086791863" duration="19824000" />
-      <workItem from="1587190174843" duration="83120000" />
+      <workItem from="1587190174843" duration="91968000" />
+      <workItem from="1587432650135" duration="26458000" />
     </task>
     <servers />
   </component>
@@ -229,11 +237,6 @@
           <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/WordSearch.java</url>
           <line>93</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/IntegerBreak.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/HouseRobber.java</url>

@@ -37,6 +37,10 @@ public  class Dump {
             System.out.println(Arrays.toString(items));
     }
 
+    public static void array(int[] items){
+        System.out.println(Arrays.toString(items));
+    }
+
     public static void array(char[] items, boolean isString){
         if (!isString)
             for (int i = 0; i < items.length; i++) {
@@ -44,6 +48,24 @@ public  class Dump {
             }
         else
             System.out.println(Arrays.toString(items));
+    }
+
+    public static void array(char[] items){
+        System.out.println(Arrays.toString(items));
+    }
+
+    public static void array(Object[] items){
+        StringBuilder str = new StringBuilder();
+        str.append('[');
+        for (int i = 0; i < items.length; i++) {
+            str.append(items[i]);
+            str.append(", ");
+        }
+        str.deleteCharAt(str.length()-1);
+        str.append(']');
+
+        String s = str.toString();
+        System.out.println(s);
     }
 
 
