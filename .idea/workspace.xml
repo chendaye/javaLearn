@@ -2,21 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/三路快排2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/快排.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/排序效率.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/InsertionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/ShellSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/0索引的堆-规律.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/BFS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/BFS2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/d叉堆.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/二分搜索树任意节点.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/二分搜索树删除节点.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/二分搜索树遍历.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/二叉搜索树.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/优先队列.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/原地堆排序.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/堆reverse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/堆reverse2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/堆优先队列.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/堆是完全二叉树.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/堆节点规律.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/字典树 trie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/并查集一般实现.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/并查集另一种实现.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/并查集路径压缩.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/排序算法总结.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/数组存储堆.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/树和堆结合.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/树层序遍历.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/消除排序不稳定问题.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/索引堆.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/红黑树.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/Algorithm/重复二分搜索树.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/InputOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/BinaryTree/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/BinaryTree/Binarysearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/BFS/ShortestPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/DFS/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/DFS/Path.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/Definition/DenseGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/Definition/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/Definition/SparseGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/Utils/ReadGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/testG.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/testG1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/testG2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Heap/MaxHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Heap/PrintableMaxHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Heap/indexHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/UnionFind/UnionFind1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/UnionFind/UnionFind2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/UnionFind/UnionFind3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/UnionFind/UnionFind4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/UnionFind/UnionFind5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/UnionFind/UnionFindTestHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/Interview/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/NowcoderLeetcode/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/NowcoderLeetcode/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Greed/NonOverlappingIntervals.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Greed/NonOverlappingIntervals.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Utils/Dump.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Utils/Dump.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Utils/Generate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Utils/Generate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/Dump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Dump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/Generate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Generate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/QuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/QuickSort.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +89,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -66,6 +107,8 @@
       <recent name="Algorithm.ActualCombat.DynamicProgramming" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\learnJava\src\Algorithm\DataStructure\Graph" />
+      <recent name="E:\learnJava\src\Algorithm\DataStructure\UnionFind" />
       <recent name="E:\learnJava\src\Algorithm\DataStructure\Sort" />
     </key>
   </component>
@@ -81,13 +124,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.QuickSort">
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Sort.BubbleSort" />
+  <component name="RunManager" selected="Application.ShortestPath">
+    <configuration name="Binarysearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.BinaryTree.Binarysearch" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.DataStructure.Sort.*" />
+          <option name="PATTERN" value="Algorithm.DataStructure.BinaryTree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Sort.InsertionSort" />
+    <configuration name="Component" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Graph.DFS.Component" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.DataStructure.Sort.*" />
+          <option name="PATTERN" value="Algorithm.DataStructure.Graph.DFS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +151,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Sort.MergeSort" />
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.Interview.Main2" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.DataStructure.Sort.*" />
+          <option name="PATTERN" value="Algorithm.Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +164,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Sort.QuickSort" />
+    <configuration name="Path" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Graph.DFS.Path" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.DataStructure.Sort.*" />
+          <option name="PATTERN" value="Algorithm.DataStructure.Graph.DFS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +177,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Sort.SelectionSort" />
+    <configuration name="ReadGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Graph.Utils.ReadGraph" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.DataStructure.Sort.*" />
+          <option name="PATTERN" value="Algorithm.DataStructure.Graph.Definition.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShortestPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Graph.BFS.ShortestPath" />
+      <module name="learnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Algorithm.DataStructure.Graph.BFS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.QuickSort" />
-        <item itemvalue="Application.MergeSort" />
-        <item itemvalue="Application.BubbleSort" />
-        <item itemvalue="Application.InsertionSort" />
-        <item itemvalue="Application.SelectionSort" />
+        <item itemvalue="Application.ShortestPath" />
+        <item itemvalue="Application.Path" />
+        <item itemvalue="Application.Component" />
+        <item itemvalue="Application.ReadGraph" />
+        <item itemvalue="Application.Binarysearch" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +238,7 @@
       <workItem from="1586919386227" duration="15050000" />
       <workItem from="1587086791863" duration="19824000" />
       <workItem from="1587190174843" duration="91968000" />
-      <workItem from="1587432650135" duration="26458000" />
+      <workItem from="1587432650135" duration="101320000" />
     </task>
     <servers />
   </component>
@@ -257,6 +313,21 @@
           <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/NonOverlappingIntervals.java</url>
           <line>73</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/DataStructure/Heap/MaxHeap.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/DataStructure/BinaryTree/Binarysearch.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/DataStructure/BinaryTree/Binarysearch.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
