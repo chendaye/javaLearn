@@ -1,8 +1,7 @@
-package Algorithm.DataStructure.Graph.Utils;
+package Algorithm.DataStructure.Graph.WeightedGraph.Utils;
 
-import Algorithm.DataStructure.Graph.Definition.DenseGraph;
-import Algorithm.DataStructure.Graph.Definition.Graph;
-import Algorithm.DataStructure.Graph.Definition.SparseGraph;
+import Algorithm.DataStructure.Graph.WeightedGraph.Definition.Edge;
+import Algorithm.DataStructure.Graph.WeightedGraph.Definition.WeightedGraph;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -13,30 +12,33 @@ import java.util.Locale;
 import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 
-public class ReadGraph{
+// 通过文件读取有全图的信息
+public class ReadWeightedGraph {
 
     private Scanner scanner;
 
-    public ReadGraph(Graph graph, String filename){
+    // 由于文件格式的限制，我们的文件读取类只能读取权值为Double类型的图
+    public ReadWeightedGraph(WeightedGraph<Double> graph, String filename){
 
         readFile(filename);
 
         try {
-            int V = scanner.nextInt(); //总共几个顶点
+            int V = scanner.nextInt();
             if (V < 0)
                 throw new IllegalArgumentException("number of vertices in a Graph must be nonnegative");
             assert V == graph.V();
 
-            int E = scanner.nextInt();// 总共几条边
+            int E = scanner.nextInt();
             if (E < 0)
                 throw new IllegalArgumentException("number of edges in a Graph must be nonnegative");
 
             for (int i = 0; i < E; i++) {
                 int v = scanner.nextInt();
                 int w = scanner.nextInt();
+                Double weight = scanner.nextDouble();
                 assert v >= 0 && v < V;
                 assert w >= 0 && w < V;
-                graph.addEdge(v, w);
+                graph.addEdge(new Edge<Double>(v, w, weight));
             }
         }
         catch (InputMismatchException e) {
@@ -65,37 +67,4 @@ public class ReadGraph{
         }
     }
 
-    // 测试通过文件读取图的信息
-    public static void main(String[] args) {
-
-        // 使用两种图的存储方式读取testG1.txt文件
-        String filename = "E:\\learnJava\\src\\Algorithm\\DataStructure\\Graph\\testG.txt";
-        SparseGraph g1 = new SparseGraph(13, false);
-        ReadGraph readGraph1 = new ReadGraph(g1, filename);
-        System.out.println("test G1 in Sparse Graph:");
-        g1.show();
-
-        System.out.println();
-
-        DenseGraph g2 = new DenseGraph(13, false);
-        ReadGraph readGraph2 = new ReadGraph(g2 , filename );
-        System.out.println("test G1 in Dense Graph:");
-        g2.show();
-
-        System.out.println();
-
-        // 使用两种图的存储方式读取testG2.txt文件
-        filename = "E:\\learnJava\\src\\Algorithm\\DataStructure\\Graph\\testG2.txt";
-        SparseGraph g3 = new SparseGraph(6, false);
-        ReadGraph readGraph3 = new ReadGraph(g3, filename);
-        System.out.println("test G2 in Sparse Graph:");
-        g3.show();
-
-        System.out.println();
-
-        DenseGraph g4 = new DenseGraph(6, false);
-        ReadGraph readGraph4 = new ReadGraph(g4, filename);
-        System.out.println("test G2 in Dense Graph:");
-        g4.show();
-    }
 }

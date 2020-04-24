@@ -1,7 +1,5 @@
 package Algorithm.DataStructure.Graph.Definition;
 
-import Algorithm.DataStructure.Graph.Definition.Graph;
-
 import java.util.Vector;
 
 /**
