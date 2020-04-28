@@ -169,7 +169,8 @@ class Person {
     }
 }
 
-class Car {
+class
+Car {
     public char color;
     public int num;
 

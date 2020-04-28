@@ -1,12 +1,9 @@
-package Algorithm.Interview;
+package Interview.Huawei;
 
-import LanguageElement.Array;
 import Utils.Dump;
-import jdk.nashorn.internal.ir.CallNode;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.util.*;
 
 /**

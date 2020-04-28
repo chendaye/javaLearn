@@ -1,7 +1,4 @@
-package Algorithm.Interview;
-
-import LanguageElement.Array;
-import Utils.Dump;
+package Interview.Huawei;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

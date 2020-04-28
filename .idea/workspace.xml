@@ -2,49 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/Bellman-Ford(负权最短路径).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/Kruskal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/LazyPrim.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/dijkstra.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/切分定理.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/无权图单源最短路径.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/最小生成树.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/Algorithm/索引堆的Prim.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/Definition/DenseWeightedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/Definition/Edge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/Definition/SparseWeightedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/Definition/WeightedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/ShortestPath/BellmanFord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/ShortestPath/Dijkstra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/ShortestPath/testG1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/ShortestPath/testG2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/ShortestPath/testG_negative_circle.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/SpanTree/KruskalMST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/SpanTree/LazyPrimMST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/SpanTree/PrimMST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/Utils/IndexMinHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/Utils/MinHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/Utils/ReadWeightedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/Utils/UnionFind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/testG1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/testG2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/testG3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/testG4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/JVM/JVM数据区.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/JVM/hashmap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/JVM/heap分代机制.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/JVM/堆分代模型2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/JVM/数据共享逻辑图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/JVM/虚拟机栈.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Class/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Class/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Collection/SafeHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/CusClassLoader/CusClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/CusClassLoader/TestLoad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/JVM/GC/Finalization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/JVM/Model/JanStack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/JVM/Model/JanStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Reflect/LoadDiff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Reflect/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Reflect/Reflect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/CoarseSync.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/MyRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/ReturnValue/CurrentThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/ReturnValue/CycleWait.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/ReturnValue/FutureTaskDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/ReturnValue/MyCallable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/ReturnValue/ThreadPoolDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/SyncBlockAndMethod.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/SyncBlockAndMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/ThreadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/WaitSleepDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/YieldDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Throwable/ErrorAndException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q1/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/TX/Q1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/TX/Q1/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/TX/Q4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/TX/Q4/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Graph/BFS/ShortestPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Graph/BFS/ShortestPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Graph/Definition/SparseGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Graph/Definition/SparseGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Graph/Utils/ReadGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Graph/Utils/ReadGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/BFS/ShortestPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/BFS/ShortestPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/Definition/DenseGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/Definition/DenseGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/Definition/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/Definition/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/Definition/SparseGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/Definition/SparseGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/Utils/ReadGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/Utils/ReadGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Graph/WeightedGraph/ShortestPath/Dijkstra.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Graph/WeightedGraph/ShortestPath/Dijkstra.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Interview/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Interview/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Interview/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/Interview/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/Huawei/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/Interview/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/Huawei/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/Interview/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/Huawei/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClassGrammar/ClassCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassGrammar/ClassCode.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="learnJava" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,6 +94,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Algorithm.Interview" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\learnJava\src\Algorithm\DataStructure\Graph\WeightedGraph\ShortestPath" />
       <recent name="E:\learnJava\src\Algorithm\DataStructure\Graph\WeightedGraph\Utils" />
@@ -91,9 +108,11 @@
       <recent name="Algorithm.ActualCombat.DynamicProgramming" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\learnJava\src\Interview\Basic\JVMModel\Model" />
+      <recent name="E:\learnJava\src\Algorithm\Interview\Basic\Class" />
+      <recent name="E:\learnJava\src\Algorithm\Interview\Basic" />
+      <recent name="E:\learnJava\src\Algorithm\Interview\Huawei" />
       <recent name="E:\learnJava\src\Algorithm\ActualCombat\DoublePoints" />
-      <recent name="E:\learnJava\resource\Algorithm" />
-      <recent name="E:\learnJava\resource\LanguageElement" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -108,13 +127,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Dijkstra">
-    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Graph.WeightedGraph.ShortestPath.Dijkstra" />
+  <component name="RunManager" selected="Application.SafeHashMap">
+    <configuration name="SafeHashMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interview.Basic.Collection.SafeHashMap" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.DataStructure.Graph.WeightedGraph.ShortestPath.*" />
+          <option name="PATTERN" value="Interview.Basic.Collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +141,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LazyPrimMST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Graph.WeightedGraph.SpanTree.LazyPrimMST" />
+    <configuration name="SyncBlockAndMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interview.Basic.Thread.SyncBlockAndMethod" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.DataStructure.Graph.WeightedGraph.SpanTree.*" />
+          <option name="PATTERN" value="Interview.Basic.Thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,12 +154,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Path" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Graph.DFS.Path" />
+    <configuration name="ThreadPoolDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interview.Basic.Thread.ReturnValue.ThreadPoolDemo" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.DataStructure.Graph.DFS.*" />
+          <option name="PATTERN" value="Interview.Basic.Thread.ReturnValue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,12 +167,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimMST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Graph.WeightedGraph.SpanTree.PrimMST" />
+    <configuration name="WaitSleepDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interview.Basic.Thread.WaitSleepDemo" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.DataStructure.Graph.WeightedGraph.SpanTree.*" />
+          <option name="PATTERN" value="Interview.Basic.Thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,12 +180,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShortestPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Graph.BFS.ShortestPath" />
+    <configuration name="YieldDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interview.Basic.Thread.YieldDemo" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.DataStructure.Graph.BFS.*" />
+          <option name="PATTERN" value="Interview.Basic.Thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Dijkstra" />
-        <item itemvalue="Application.PrimMST" />
-        <item itemvalue="Application.LazyPrimMST" />
-        <item itemvalue="Application.ShortestPath" />
-        <item itemvalue="Application.Path" />
+        <item itemvalue="Application.SafeHashMap" />
+        <item itemvalue="Application.SyncBlockAndMethod" />
+        <item itemvalue="Application.YieldDemo" />
+        <item itemvalue="Application.WaitSleepDemo" />
+        <item itemvalue="Application.ThreadPoolDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +229,10 @@
       <workItem from="1587086791863" duration="19824000" />
       <workItem from="1587190174843" duration="91968000" />
       <workItem from="1587432650135" duration="101994000" />
-      <workItem from="1587691373318" duration="16466000" />
+      <workItem from="1587691373318" duration="24781000" />
+      <workItem from="1587864824888" duration="1076000" />
+      <workItem from="1587865938840" duration="21743000" />
+      <workItem from="1587950361635" duration="22492000" />
     </task>
     <servers />
   </component>
@@ -301,10 +323,23 @@
           <line>25</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Interview/Basic/CusClassLoader/CusClassLoader.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Interview/TX/Q4/Main.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/learnJava$Main__2_.ic" NAME="Main (2) Coverage Results" MODIFIED="1587910149519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Algorithm.Interview.TX.Q4.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/learnJava$RandomAccessFileCode.ic" NAME="RandomAccessFileCode Coverage Results" MODIFIED="1586092233656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>IOStream.*</FILTER>
     </SUITE>
