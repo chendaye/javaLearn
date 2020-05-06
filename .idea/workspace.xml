@@ -2,54 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resource/JVM/JVM数据区.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/JVM/hashmap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/JVM/heap分代机制.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/JVM/堆分代模型2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/JVM/数据共享逻辑图.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/JVM/虚拟机栈.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Class/Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Class/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Collection/SafeHashMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/CusClassLoader/CusClassLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/CusClassLoader/TestLoad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/JVM/GC/Finalization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/JVM/Model/JanStack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/JVM/Model/JanStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Reflect/LoadDiff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Reflect/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Reflect/Reflect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/CoarseSync.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/MyRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/MyThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/ReturnValue/CurrentThreadDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/ReturnValue/CycleWait.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/ReturnValue/FutureTaskDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/ReturnValue/MyCallable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/ReturnValue/ThreadPoolDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/SyncBlockAndMethod.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/SyncBlockAndMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/ThreadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/WaitSleepDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Thread/YieldDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Basic/Throwable/ErrorAndException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q1/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/TX/Q1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/TX/Q1/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/TX/Q4/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/TX/Q4/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q2/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q3/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q4/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q5/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q5/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Graph/WeightedGraph/ShortestPath/Dijkstra.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Graph/WeightedGraph/ShortestPath/Dijkstra.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Interview/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Interview/Main2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/Interview/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/ClassGrammar/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/Interview/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/Huawei/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/Interview/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/Huawei/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/Interview/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/Huawei/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClassGrammar/ClassCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassGrammar/ClassCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Collection/SafeHashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Collection/SafeHashMap.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Algorithm/DataStructure/Graph/WeightedGraph/ShortestPath" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Interview/Bytedance/Q5" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -98,11 +60,11 @@
       <recent name="Algorithm.Interview" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\learnJava\src\Interview\Bytedance\Q5" />
+      <recent name="E:\learnJava\src\Interview\Bytedance\Q4" />
       <recent name="E:\learnJava\src\Algorithm\DataStructure\Graph\WeightedGraph\ShortestPath" />
       <recent name="E:\learnJava\src\Algorithm\DataStructure\Graph\WeightedGraph\Utils" />
       <recent name="E:\learnJava\src\Algorithm\DataStructure\Graph\WeightedGraph\SpanTree" />
-      <recent name="E:\learnJava\src\Algorithm\DataStructure\WeightedGraph" />
-      <recent name="E:\learnJava\src\Algorithm\DataStructure\Graph\WeightedGraph\Definition" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Algorithm.ActualCombat.DynamicProgramming" />
@@ -127,7 +89,46 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SafeHashMap">
+  <component name="RunManager" selected="Application.Main (2)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interview.Bytedance.Q3.Main" />
+      <module name="learnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Interview.Bytedance.Q3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interview.Bytedance.Q4.Main" />
+      <module name="learnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Interview.Bytedance.Q4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interview.Bytedance.Q2.Main" />
+      <module name="learnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Interview.Bytedance.Q2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SafeHashMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Interview.Basic.Collection.SafeHashMap" />
       <module name="learnJava" />
@@ -154,52 +155,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadPoolDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interview.Basic.Thread.ReturnValue.ThreadPoolDemo" />
-      <module name="learnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Interview.Basic.Thread.ReturnValue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WaitSleepDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interview.Basic.Thread.WaitSleepDemo" />
-      <module name="learnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Interview.Basic.Thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="YieldDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interview.Basic.Thread.YieldDemo" />
-      <module name="learnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Interview.Basic.Thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.SafeHashMap" />
         <item itemvalue="Application.SyncBlockAndMethod" />
-        <item itemvalue="Application.YieldDemo" />
-        <item itemvalue="Application.WaitSleepDemo" />
-        <item itemvalue="Application.ThreadPoolDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +194,11 @@
       <workItem from="1587691373318" duration="24781000" />
       <workItem from="1587864824888" duration="1076000" />
       <workItem from="1587865938840" duration="21743000" />
-      <workItem from="1587950361635" duration="22492000" />
+      <workItem from="1587950361635" duration="23222000" />
+      <workItem from="1588082888279" duration="31394000" />
+      <workItem from="1588208112717" duration="578000" />
+      <workItem from="1588660010278" duration="585000" />
+      <workItem from="1588766802800" duration="4701000" />
     </task>
     <servers />
   </component>
@@ -332,6 +298,11 @@
           <url>file://$PROJECT_DIR$/src/Interview/TX/Q4/Main.java</url>
           <line>40</line>
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Interview/Bytedance/Q2/Main.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
