@@ -32,7 +32,8 @@ import Utils.Dump;
  *
  * todo:类似 130 417
  */
-public class NumIslands {
+public class
+NumIslands {
     static int islands = 0;
     public static void main(String[] args) {
         char[][] grid = {{'1','1','0','0','0'},{'1','1','0','0','0'},{'0','0','1','0','0'},{'0','0','0','1','1'}};

@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q2/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q3/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q4/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q4/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q5/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q5/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Collection/SafeHashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Collection/SafeHashMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/RecursiveBacktrack/NumIslands.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/RecursiveBacktrack/NumIslands.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q4/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/LongestCommonSub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/LongestCommonSub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/NumIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/NumIslands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q5/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q5/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q5/test.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main (3)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Interview.Bytedance.Q3.Main" />
       <module name="learnJava" />
@@ -109,6 +106,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Interview.Bytedance.Q4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interview.Bytedance.Q5.Main" />
+      <module name="learnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Interview.Bytedance.Q5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,26 +152,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SyncBlockAndMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interview.Basic.Thread.SyncBlockAndMethod" />
-      <module name="learnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Interview.Basic.Thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.SafeHashMap" />
-        <item itemvalue="Application.SyncBlockAndMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +195,8 @@
       <workItem from="1588082888279" duration="31394000" />
       <workItem from="1588208112717" duration="578000" />
       <workItem from="1588660010278" duration="585000" />
-      <workItem from="1588766802800" duration="4701000" />
+      <workItem from="1588766802800" duration="14397000" />
+      <workItem from="1588814297883" duration="9207000" />
     </task>
     <servers />
   </component>

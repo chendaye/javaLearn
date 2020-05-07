@@ -71,7 +71,7 @@ public class LongestCommonSub {
      * todo: [0, m) [0, n) 区间内最长公共子串
      * todo: 状态方程: F(m, n) =
      *          - s1[m] == s2[n]  : 1 + F(m-1, n-1)
-     *          - s1[m] != s2[n] : max{F(m, n-1), F(m1, n)}
+     *          - s1[m] != s2[n] : max{F(m, n-1), F(m-1, n)}
      *
      * @param s1
      * @param s2
