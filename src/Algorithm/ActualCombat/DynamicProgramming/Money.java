@@ -13,7 +13,7 @@ package Algorithm.ActualCombat.DynamicProgramming;
  */
 public class Money {
     public static void main(String[] args) {
-
+        System.out.println(Math.round(-1.5));
     }
 
     /**

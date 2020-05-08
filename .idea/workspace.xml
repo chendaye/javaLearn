@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q6/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q6/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/AsListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/RecursiveBacktrack/NumIslands.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/RecursiveBacktrack/NumIslands.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q4/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/LongestCommonSub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/LongestCommonSub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/NumIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/NumIslands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q5/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q5/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q5/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/DynamicProgramming/Money.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/DynamicProgramming/Money.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q5/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q5/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/Money.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Interview/Bytedance/Q5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Interview/Bytedance/Q7" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -53,25 +56,25 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="Algorithm.Interview" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\learnJava\src\Interview\Bytedance\Q5" />
-      <recent name="E:\learnJava\src\Interview\Bytedance\Q4" />
-      <recent name="E:\learnJava\src\Algorithm\DataStructure\Graph\WeightedGraph\ShortestPath" />
-      <recent name="E:\learnJava\src\Algorithm\DataStructure\Graph\WeightedGraph\Utils" />
-      <recent name="E:\learnJava\src\Algorithm\DataStructure\Graph\WeightedGraph\SpanTree" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Algorithm.ActualCombat.DynamicProgramming" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\learnJava\src\Interview\Basic\JVMModel\Model" />
       <recent name="E:\learnJava\src\Algorithm\Interview\Basic\Class" />
       <recent name="E:\learnJava\src\Algorithm\Interview\Basic" />
       <recent name="E:\learnJava\src\Algorithm\Interview\Huawei" />
       <recent name="E:\learnJava\src\Algorithm\ActualCombat\DoublePoints" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Algorithm.Interview" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Algorithm.ActualCombat.DynamicProgramming" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\learnJava\src\Interview\Bytedance\Q7" />
+      <recent name="E:\learnJava\src\Interview\Bytedance\Q6" />
+      <recent name="E:\learnJava\src\Interview\Bytedance\Q5" />
+      <recent name="E:\learnJava\src\Interview\Bytedance\Q4" />
+      <recent name="E:\learnJava\src\Algorithm\DataStructure\Graph\WeightedGraph\ShortestPath" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -86,20 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interview.Bytedance.Q3.Main" />
-      <module name="learnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Interview.Bytedance.Q3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Interview.Bytedance.Q4.Main" />
       <module name="learnJava" />
@@ -127,11 +117,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interview.Bytedance.Q2.Main" />
+      <option name="MAIN_CLASS_NAME" value="Interview.Bytedance.Q6.Main" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Interview.Bytedance.Q2.*" />
+          <option name="PATTERN" value="Interview.Bytedance.Q6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,12 +129,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SafeHashMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interview.Basic.Collection.SafeHashMap" />
+    <configuration name="Money" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.DynamicProgramming.Money" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Interview.Basic.Collection.*" />
+          <option name="PATTERN" value="Algorithm.ActualCombat.DynamicProgramming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.Test" />
+      <module name="learnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Money" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.SafeHashMap" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +199,8 @@
       <workItem from="1588208112717" duration="578000" />
       <workItem from="1588660010278" duration="585000" />
       <workItem from="1588766802800" duration="14397000" />
-      <workItem from="1588814297883" duration="9207000" />
+      <workItem from="1588814297883" duration="12456000" />
+      <workItem from="1588920867765" duration="9556000" />
     </task>
     <servers />
   </component>
