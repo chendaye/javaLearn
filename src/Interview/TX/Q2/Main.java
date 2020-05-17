@@ -29,22 +29,22 @@ public class Main {
         String line = sc.nextLine();
         char[] split = line.toCharArray(); //todo:转化为字符数组
         StringBuilder sb = new StringBuilder();
-        main.decode(split, 0, sb);
+        main.decode(split,  sb);
         System.out.println(sb.toString());
     }
 
     /**
      * todo: 解码 [3|B[2|CA]]
      */
-    private void decode(char[] split, int start,  StringBuilder sb){
-        if (start == split.length) return;
+    private void decode(char[] split,   StringBuilder sb){
         int i=0;
-        while (start < split.length){
+        while (i < split.length){
             if (split[i] >= 'A' && split[i] <= 'Z')
                 sb.append(split[i++]);
             if(split[i] == '['){
                 int tmp = i;
                 int cnt=1;
+                StringBuilder st = new StringBuilder();
                 while (cnt>0){
                     i++;
                     if (split[i] == '[')
@@ -52,7 +52,8 @@ public class Main {
                     if (split[i] == ']')
                         cnt--;
                 }
-                decode(split, i+1, sb);
+
+                decode(Arrays.copyOfRange(split, tmp, i+1),  st);
                 i++;
             }
         }

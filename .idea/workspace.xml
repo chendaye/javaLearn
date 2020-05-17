@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/Read.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/TestCountDownLatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/TestCyclicBarrier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/TestReadWriteLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/TestSemaphore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/test2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/TX/Q2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/TX/Q2/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Greed/AssignCookies.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Greed/AssignCookies.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/RecursiveBacktrack/WordSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/RecursiveBacktrack/WordSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/BubbleSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/InsertionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/MergeSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/QuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/QuickSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/SelectionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Greed/AssignCookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Greed/AssignCookies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/WordSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/TX/Q2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/TX/Q2/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -226,7 +202,7 @@
       <workItem from="1589418291244" duration="12638000" />
       <workItem from="1589709774385" duration="3417000" />
       <workItem from="1589729489136" duration="1162000" />
-      <workItem from="1589730683040" duration="1620000" />
+      <workItem from="1589730683040" duration="3168000" />
     </task>
     <servers />
   </component>
