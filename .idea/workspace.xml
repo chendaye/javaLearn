@@ -2,16 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q6/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q6/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/AsListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/Read.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/TestCountDownLatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/TestCyclicBarrier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/TestReadWriteLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClassGrammar/TestSemaphore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/test2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/TX/Q2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/TX/Q2/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/DynamicProgramming/Money.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/DynamicProgramming/Money.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q5/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q5/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/DynamicProgramming/Money.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Greed/AssignCookies.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/Greed/AssignCookies.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/RecursiveBacktrack/WordSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/ActualCombat/RecursiveBacktrack/WordSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/BubbleSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/InsertionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/MergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/QuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/QuickSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/learnJava/Algorithm/DataStructure/Sort/SelectionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Greed/AssignCookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/Greed/AssignCookies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/WordSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/DataStructure/Sort/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/test.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +62,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Interview/Bytedance/Q7" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Interview/TX/Q2" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -56,25 +71,25 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Algorithm.Interview" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\learnJava\src\Interview\TX\Q2" />
+      <recent name="E:\learnJava\src\Interview\Bytedance\Q7" />
+      <recent name="E:\learnJava\src\Interview\Bytedance\Q6" />
+      <recent name="E:\learnJava\src\Interview\Bytedance\Q5" />
+      <recent name="E:\learnJava\src\Interview\Bytedance\Q4" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Algorithm.ActualCombat.DynamicProgramming" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\learnJava\src\Interview\Basic\JVMModel\Model" />
       <recent name="E:\learnJava\src\Algorithm\Interview\Basic\Class" />
       <recent name="E:\learnJava\src\Algorithm\Interview\Basic" />
       <recent name="E:\learnJava\src\Algorithm\Interview\Huawei" />
       <recent name="E:\learnJava\src\Algorithm\ActualCombat\DoublePoints" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="Algorithm.Interview" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Algorithm.ActualCombat.DynamicProgramming" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\learnJava\src\Interview\Bytedance\Q7" />
-      <recent name="E:\learnJava\src\Interview\Bytedance\Q6" />
-      <recent name="E:\learnJava\src\Interview\Bytedance\Q5" />
-      <recent name="E:\learnJava\src\Interview\Bytedance\Q4" />
-      <recent name="E:\learnJava\src\Algorithm\DataStructure\Graph\WeightedGraph\ShortestPath" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -90,25 +105,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interview.Bytedance.Q4.Main" />
+    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Sort.InsertionSort" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Interview.Bytedance.Q4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interview.Bytedance.Q5.Main" />
-      <module name="learnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Interview.Bytedance.Q5.*" />
+          <option name="PATTERN" value="Algorithm.DataStructure.Sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,11 +119,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interview.Bytedance.Q6.Main" />
+      <option name="MAIN_CLASS_NAME" value="Interview.TX.Q2.Main" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Interview.Bytedance.Q6.*" />
+          <option name="PATTERN" value="Interview.TX.Q2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Money" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.ActualCombat.DynamicProgramming.Money" />
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Sort.MergeSort" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.ActualCombat.DynamicProgramming.*" />
+          <option name="PATTERN" value="Algorithm.DataStructure.Sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,12 +144,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test.Test" />
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Sort.QuickSort" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Test.*" />
+          <option name="PATTERN" value="Algorithm.DataStructure.Sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Sort.SelectionSort" />
+      <module name="learnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Algorithm.DataStructure.Sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,10 +173,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Money" />
-        <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Application.QuickSort" />
+        <item itemvalue="Application.SelectionSort" />
+        <item itemvalue="Application.InsertionSort" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +215,18 @@
       <workItem from="1588660010278" duration="585000" />
       <workItem from="1588766802800" duration="14397000" />
       <workItem from="1588814297883" duration="12456000" />
-      <workItem from="1588920867765" duration="9556000" />
+      <workItem from="1588920867765" duration="10786000" />
+      <workItem from="1589039012443" duration="1088000" />
+      <workItem from="1589072313712" duration="4466000" />
+      <workItem from="1589125937877" duration="1464000" />
+      <workItem from="1589161098116" duration="13180000" />
+      <workItem from="1589250971148" duration="16523000" />
+      <workItem from="1589379425872" duration="8503000" />
+      <workItem from="1589391283114" duration="300000" />
+      <workItem from="1589418291244" duration="12638000" />
+      <workItem from="1589709774385" duration="3417000" />
+      <workItem from="1589729489136" duration="1162000" />
+      <workItem from="1589730683040" duration="1620000" />
     </task>
     <servers />
   </component>
@@ -253,7 +279,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/ActualCombat/RecursiveBacktrack/WordSearch.java</url>
-          <line>93</line>
+          <line>96</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

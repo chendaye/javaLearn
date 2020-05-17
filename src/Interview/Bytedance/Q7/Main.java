@@ -1,8 +1,13 @@
 package Interview.Bytedance.Q7;
 
+import LanguageElement.Array;
+import Utils.Dump;
+import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
+import java.util.Map;
 import java.util.Scanner;
 
 /**
@@ -44,15 +49,32 @@ import java.util.Scanner;
  *
  * 输出例子3:
  * 3
+ *
+ * 91593
+ *
+ * todo: 由题干可以得出  E(n) = E(n-1) + [E(n-1) - H(n)] = 2E(n-1) - H(n)
+ *        E(n-1) = [E(n)+H(n)]/2
+ *      由能量守恒： 从 0->n-1  E(n-1) = H(n-1)
+ *
+ * todo: 数学表达  逆向递推
  */
 public class Main {
-    private int min = Integer.MAX_VALUE; //todo：最少硬币数
     public static void main(String[] args) throws FileNotFoundException {
-        System.setIn(new FileInputStream("E:\\learnJava\\src\\Interview\\Bytedance\\Q6\\test.txt"));
+        System.setIn(new FileInputStream("E:\\learnJava\\src\\Interview\\Bytedance\\Q7\\test.txt"));
         Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt(); // N 个建筑
+        sc.nextLine();
+        String[] s = sc.nextLine().split(" ");
+        int[] build = Arrays.stream(s).mapToInt(Integer::parseInt).toArray();
+        double E=0;
 
+        Main main = new Main();
+
+        for (int i=N-1; i>=0; i--){
+            E = Math.ceil((E+build[i])/2);
+        }
+        System.out.println((int)E);
     }
-
 
 
 }

@@ -76,6 +76,9 @@ public class WordSearch {
      * @param start_x
      * @param start_y
      * @return
+     *
+     *
+     * todo: 判断从 start_x start_y 出发能不能找到单词
      */
     public static boolean searchWord(char[][] board, String word,  int[][] dire, int m, int n, int[][] visit, int index, int start_x, int start_y){
         //todo:如果是最后一个字符

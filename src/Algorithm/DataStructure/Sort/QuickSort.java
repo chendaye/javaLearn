@@ -19,16 +19,6 @@ import javax.swing.event.ListDataEvent;
  *           - 最后 交换 a[l] a[j]; a[i] 就到了中间位置
  */
 public class QuickSort {
-    public static void main(String[] args) {
-        Integer[] arr = Generate.generateRandomArray(6, 1, 8);
-//        Integer[] arr = {5, 7, 3, 2, 7, 5};
-
-        Dump.array(arr);
-//        partition(arr, 0,5);
-//        quickSort2Way(arr);
-        quickSort3Way(arr);
-        Dump.array(arr);
-    }
 
 
     /**
@@ -119,7 +109,7 @@ public class QuickSort {
         Comparable v = arr[l];
         /**
          * todo： arr[l+1...j] < v ; arr[j+1...i) > v
-         *      - l [l+1,j] [j+1,i)
+         *      - l [l+1,j] [j+1,i-1] i
          *      - 初始  j=l  i=j+1=l+1  ===> 2个区间都不存在，i指向要 处理的 位置
          */
         int j = l;
@@ -160,33 +150,32 @@ public class QuickSort {
 //    }
 
     /**
-     * todo:二路快排
+     * todo:二路快排: 从两头找
      *
      * todo: 在有大量重复元素的情况下； 采用上面的 partition 方式快排也会退化为 O(n^2)
-     *      - [l+1, i) < v  (j...r] > v
+     *      - [l+1, j) < v  (i...r] > v
+     *      - i 是最终的位置
      * @param arr
      * @param l
      * @param r
      * @return
      */
     private static int partition3(Comparable[] arr, int l, int r) {
-        // todo: 标定值
-        swap(arr, l, (int) (Math.random() * (r - l + 1)) + l);
+        swap(arr, l, (int)(Math.random()*(r-l+1)+l)); //随机选定标定点
         Comparable v = arr[l];
-        //todo: [l+1, j) < v  (i...r] > v
+        //todo l [l+1, j) (i, r]
         int j = l+1;
         int i = r;
         while (true){
-            //todo: 从两端都找到 大小不匹配的位置，再交换； 不考虑 =
+            //todo: 从两头各自找到最近的 返常点 进行交换  如： 2 1 3  1和3交换 2 再和3交换
             while (j<=r && arr[j].compareTo(v) < 0)
                 j++;
-            while (i>= l+1 && arr[i].compareTo(v) > 0)
+            while (i>=l+1 && arr[i].compareTo(v)>0)
                 i--;
             if (j>i) break;
-            swap(arr,i--,j++);
+            swap(arr, j++, i--); //todo: 交换之后改变区间的长度
         }
-        //todo:最后循环退出时 j>i, j指向了最后一个 < v 的位置
-        swap(arr, l, i);
+        swap(arr, l, i); //todo: i 是最终 了的位置
         return i;
     }
 
@@ -222,4 +211,97 @@ public class QuickSort {
         }
     }
 
+
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(10, 1, 20);
+
+        Dump.array(arr);
+//        quick2way_train(arr);
+        quick3way_train(arr);
+        Dump.array(arr);
+    }
+
+    /*******************************************train**********************************************************/
+
+    private static void quick2way_train(Comparable[] arr){
+        quick2_train(arr, 0, arr.length-1);
+    }
+
+    private static void quick2_train(Comparable[] arr, int l, int r){
+        if (l > r) return;  //todo: 递归终止条件
+        int p = partition_train2(arr, l, r);
+        quick2_train(arr, l, p-1);
+        quick2_train(arr, p+1, r);
+    }
+
+    //todo: 从两边找  [l+1, j) (i, r] j=l+1 i=r
+    private static int partition_train(Comparable[] arr, int l, int r){
+        swap(arr, l, (int)(Math.random()*(r-l+1)+l)); //随机选定标定点
+        Comparable v = arr[l];
+        //todo l [l+1, j) (i, r]
+        int j = l+1;
+        int i = r;
+        while (true){
+            //todo: 从两头各自找到最近的 返常点 进行交换  如： 2 1 3  1和3交换 2 再和3交换
+            while (j<=r && arr[j].compareTo(v) < 0)
+                j++;
+            while (i>=l+1 && arr[i].compareTo(v)>0)
+                i--;
+            if (j>i) break;
+            swap(arr, j++, i--); //todo: 交换之后改变区间的长度
+        }
+        swap(arr, l, i); //todo: i 是最终 了的位置
+        return i;
+    }
+
+    //todo: l [l+1, j] [j+1, i-1] i; i 是要处理的值;  j=l i=l+1
+    private static int partition_train2(Comparable[] arr, int l, int r){
+        swap(arr, l, (int)(Math.random()*(r-l+1) + l));
+        Comparable v = arr[l];
+        int j = l;
+        for (int i=l+1; i<=r; i++){
+            if (arr[i].compareTo(v) < 0){
+                swap(arr, i, j);
+                j++;
+            }
+        }
+        swap(arr, l, j);
+        return j;
+    }
+
+
+    //todo: 3路快排
+    private static void quick3way_train(Comparable[] arr){
+        quick3way_train(arr, 0, arr.length-1);
+    }
+
+    private static void quick3way_train(Comparable[] arr, int l, int r){
+        if (l>r) return;
+        //todo: l [l+1, lt] [lt+1, i) (gt, r]
+        //todo: 始终保持区间的定义； 保证初始时 区间无效
+        swap(arr, l, (int)(Math.random()*(r-l+1) +l));
+        Comparable v=arr[l];
+        int lt = l;
+        int i= lt+1;
+        int gt= r;
+        while (i<=r){
+            if (arr[i].compareTo(v) == 0){
+                i++;
+            }else if(arr[i].compareTo(v) < 0){
+                swap(arr, i, lt+1);
+                i++;
+                lt++;
+            }else {
+                swap(arr,i, gt);
+                gt--;
+            }
+        }
+        swap(arr, lt, l); //todo: 最终位置是lt
+
+        quick3way_train(arr, l, lt-1);
+        quick3way_train(arr, lt+1, r);
+
+    }
 }
+
+
