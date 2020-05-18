@@ -1,7 +1,6 @@
 package Interview.Bytedance.Q7;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -47,10 +46,14 @@ import java.util.Scanner;
  */
 public class Main {
     private int min = Integer.MAX_VALUE; //todo：最少硬币数
-    public static void main(String[] args) throws FileNotFoundException {
-        System.setIn(new FileInputStream("E:\\learnJava\\src\\Interview\\Bytedance\\Q6\\test.txt"));
+    public static void main(String[] args) throws IOException {
+        System.setIn(new FileInputStream("src/Interview/Bytedance/Q7/test.txt"));
         Scanner sc = new Scanner(System.in);
+        System.out.println(sc.nextInt());
 
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        String s = in.readLine();
+        System.out.println(s);
     }
 
 
