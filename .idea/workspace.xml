@@ -2,9 +2,109 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4dac65-5722-4c75-a86d-0afdcf10b94c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Interview/TX/Q2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/TX/Q2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/Interview/TX/Q3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/Interview/TX/Q4/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java.net.SocketOutputStream@1b6d3586" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Class/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Collection/SafeHashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/CusClassLoader/CusClassLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/CusClassLoader/TestLoad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/JVM/GC/Finalization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/JVM/Model/JanStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Reflect/LoadDiff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Reflect/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Reflect/Reflect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/CoarseSync.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/MyRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/ReturnValue/CurrentThreadDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/ReturnValue/CycleWait.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/ReturnValue/FutureTaskDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/ReturnValue/MyCallable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/ReturnValue/ThreadPoolDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/SyncBlockAndMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/ThreadTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/ThreadTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/WaitSleepDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/WaitSleepDemo$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/WaitSleepDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/YieldDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Thread/YieldDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Basic/Throwable/ErrorAndException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q1/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q2/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q3/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q3/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q4/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q4/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q5/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q5/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q6/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q6/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q7/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Bytedance/Q7/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Huawei/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Huawei/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/Huawei/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/TX/Q1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/TX/Q1/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/TX/Q4/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/learnJava/Interview/TX/Q4/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Class/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Class/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Class/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Class/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Collection/SafeHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Collection/SafeHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/CusClassLoader/CusClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/CusClassLoader/CusClassLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/CusClassLoader/TestLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/CusClassLoader/TestLoad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/JVM/GC/Finalization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/JVM/GC/Finalization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/JVM/Model/JanStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/JVM/Model/JanStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/JVM/Model/JanStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/JVM/Model/JanStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Reflect/LoadDiff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Reflect/LoadDiff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Reflect/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Reflect/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Reflect/Reflect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Reflect/Reflect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Thread/CoarseSync.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Thread/CoarseSync.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Thread/MyRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Thread/MyRunnable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Thread/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Thread/MyThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Thread/ReturnValue/CurrentThreadDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Thread/ReturnValue/CurrentThreadDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Thread/ReturnValue/CycleWait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Thread/ReturnValue/CycleWait.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Thread/ReturnValue/FutureTaskDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Thread/ReturnValue/FutureTaskDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Thread/ReturnValue/MyCallable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Thread/ReturnValue/MyCallable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Thread/ReturnValue/ThreadPoolDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Thread/ReturnValue/ThreadPoolDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Thread/SyncBlockAndMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Thread/SyncBlockAndMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Thread/SyncBlockAndMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Thread/SyncBlockAndMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Thread/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Thread/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Thread/ThreadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Thread/ThreadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Thread/WaitSleepDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Thread/WaitSleepDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Thread/YieldDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Thread/YieldDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Basic/Throwable/ErrorAndException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Basic/Throwable/ErrorAndException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q1/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q1/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q2/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q2/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q3/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q3/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q4/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q4/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q5/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q5/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q5/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q6/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q6/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q6/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q6/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q7/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q7/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Bytedance/Q7/test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q7/test2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Huawei/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Huawei/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Huawei/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Huawei/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/Huawei/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/Huawei/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/TX/Q1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/TX/Q1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/TX/Q1/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/TX/Q1/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/TX/Q2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/TX/Q2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/TX/Q2/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/TX/Q2/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/TX/Q4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/TX/Q4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/TX/Q4/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Interview/TX/Q3/test.txt" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +138,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Interview/TX/Q2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Algorithm/Interview/TX/Q3" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -47,19 +147,6 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="Algorithm.Interview" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\learnJava\src\Interview\TX\Q2" />
-      <recent name="E:\learnJava\src\Interview\Bytedance\Q7" />
-      <recent name="E:\learnJava\src\Interview\Bytedance\Q6" />
-      <recent name="E:\learnJava\src\Interview\Bytedance\Q5" />
-      <recent name="E:\learnJava\src\Interview\Bytedance\Q4" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Algorithm.ActualCombat.DynamicProgramming" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\learnJava\src\Interview\Basic\JVMModel\Model" />
       <recent name="E:\learnJava\src\Algorithm\Interview\Basic\Class" />
@@ -67,26 +154,27 @@
       <recent name="E:\learnJava\src\Algorithm\Interview\Huawei" />
       <recent name="E:\learnJava\src\Algorithm\ActualCombat\DoublePoints" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Algorithm.Interview" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Algorithm.ActualCombat.DynamicProgramming" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Coding\javaLearn\src\Algorithm\Interview\TX\Q3" />
+      <recent name="E:\learnJava\src\Interview\TX\Q2" />
+      <recent name="E:\learnJava\src\Interview\Bytedance\Q7" />
+      <recent name="E:\learnJava\src\Interview\Bytedance\Q6" />
+      <recent name="E:\learnJava\src\Interview\Bytedance\Q5" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Algorithm.DataStructure.Sort.InsertionSort" />
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm.Interview.TX.Q3.Main" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Algorithm.DataStructure.Sort.*" />
+          <option name="PATTERN" value="Algorithm.Interview.TX.Q3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,11 +183,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interview.TX.Q2.Main" />
+      <option name="MAIN_CLASS_NAME" value="Algorithm.Interview.TX.Q2.Main" />
       <module name="learnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Interview.TX.Q2.*" />
+          <option name="PATTERN" value="Algorithm.Interview.TX.Q2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,13 +236,25 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MergeSort" />
         <item itemvalue="Application.QuickSort" />
         <item itemvalue="Application.SelectionSort" />
-        <item itemvalue="Application.InsertionSort" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -225,6 +325,52 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="605" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589761890561">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="605" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589761890561" />
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1589785565799">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589785565799" />
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589771627287" />
+    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1589785565799">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589785565799" />
+    <state width="1877" height="269" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589771627286" />
+    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1589785565798">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589785565798" />
+    <state width="1877" height="269" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589771627286" />
+    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1589785565799">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589785565799" />
+    <state width="1877" height="269" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589771627287" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1589783861225">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589783861225" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1589783861224">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589783861224" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1589783861224">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589783861224" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1589783861224">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589783861224" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589768641725">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589768641725" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -294,17 +440,17 @@
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Interview/Basic/CusClassLoader/CusClassLoader.java</url>
+          <url>file://$PROJECT_DIR$/src/Algorithm/Interview/Basic/CusClassLoader/CusClassLoader.java</url>
           <line>35</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Interview/TX/Q4/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/Algorithm/Interview/TX/Q4/Main.java</url>
           <line>40</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Interview/Bytedance/Q2/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/Algorithm/Interview/Bytedance/Q2/Main.java</url>
           <line>30</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
@@ -312,11 +458,11 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/learnJava$Main__2_.ic" NAME="Main (2) Coverage Results" MODIFIED="1587910149519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Algorithm.Interview.TX.Q4.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/learnJava$RandomAccessFileCode.ic" NAME="RandomAccessFileCode Coverage Results" MODIFIED="1586092233656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>IOStream.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/learnJava$Main__2_.ic" NAME="Main (2) Coverage Results" MODIFIED="1587910149519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Algorithm.Interview.TX.Q4.*</FILTER>
     </SUITE>
   </component>
 </project>
