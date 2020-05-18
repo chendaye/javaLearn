@@ -9,20 +9,6 @@ import java.util.Arrays;
  * 归并排序
  */
 public class MergeSort {
-    public static void main(String[] args) {
-        Integer[] arr = Generate.generateRandomArray(20, 1, 30);
-        Dump.array(arr);
-        Generate.testSort("Algorithm.DataStructure.Sort.MergeSort", arr);
-        Dump.array(arr);
-
-        Dump.dump("+++++++++++++++++++++++++++++++");
-        Integer[] test = Generate.generateRandomArray(10, 1, 30);
-        Dump.array(test);
-        sortInsert(test, 5, 9);
-        Dump.array(test);
-    }
-
-
     /**
      * todo: 插入排序
      * @param arr
@@ -103,7 +89,7 @@ public class MergeSort {
     private static void merge(Comparable[] arr, int l, int mid, int r){
         //todo: 复制原数组 [l.....r] 位置的元素， 用来排序
         Comparable[] tmp = Arrays.copyOfRange(arr, l, r+1);
-        int i=l,j=mid+1;
+        int i=l,j=mid+1; //:todo: [l, mid] [mid+1, r]
         for (int k=l; k<=r; k++){
             if (i>mid){
                 /**
@@ -130,4 +116,62 @@ public class MergeSort {
             }
         }
     }
+
+
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(20, 1, 30);
+        Dump.array(arr);
+//        Generate.testSort("Algorithm.DataStructure.Sort.MergeSort", arr);
+        merge_tran(arr);
+        Dump.array(arr);
+
+//        Dump.dump("+++++++++++++++++++++++++++++++");
+//        Integer[] test = Generate.generateRandomArray(10, 1, 30);
+//        Dump.array(test);
+//        sortInsert(test, 5, 9);
+//        Dump.array(test);
+    }
+
+    /****************************************train*************************************************************/
+
+    private static void merge_tran(Comparable[] arr){
+        mergeSort_tran(arr, 0, arr.length-1);
+    }
+
+    private static void mergeSort_tran(Comparable[] arr, int l, int r){
+        if (l>=r) return; //todo: 循环终止 l>=r
+
+        int mid = (l+r)/2;
+        //todo: 堆两段排序
+        mergeSort_tran(arr, l, mid);
+        mergeSort_tran(arr, mid+1, r);
+        //todo: 优化：只有前一段 > 后一段 才需要比较
+        if (arr[mid].compareTo(arr[mid+1]) > 0)
+            merge_train(arr, l, mid, r);
+    }
+
+    private static void merge_train(Comparable[] arr, int l, int mid, int r){
+        Comparable[] tmp = Arrays.copyOfRange(arr, l, r + 1);//todo: 复制 [l,r]范围内的值
+        int i=l; //todo: [l, mid]
+        int j=mid+1; //todo: [mid+1, r]
+        for (int k=l; k<=r; k++){
+            if (i>mid){ //todo: [l, mid] 归并干净了
+                arr[k] = tmp[j-l]; //todo: -l 是偏移量
+                j++;
+            }else if(j>r){ //todo: [mid+1, r] 归并干净了
+                arr[k] = tmp[i-l];
+                i++;
+            }else{
+                if (tmp[i-l].compareTo(tmp[j-l]) < 0){ //todo: 注意是比较 tmp[] 的值
+                    arr[k] = tmp[i-l];
+                    i++;
+                }else{
+                    arr[k] = tmp[j-l];
+                    j++;
+                }
+            }
+        }
+    }
 }
+
+

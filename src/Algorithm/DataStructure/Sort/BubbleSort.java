@@ -3,8 +3,17 @@ package Algorithm.DataStructure.Sort;
 import Utils.Dump;
 import Utils.Generate;
 
-import java.util.Arrays;
 
+/**
+ * todo: 冒泡排序 要点
+ *      - [m-1, n) 有序区
+ *      - 外层 do{}while() 里层 for
+ *      - i=1 比较交换 swap(arr[i-1], arr[i])
+ *      - [0,m] 是无序的， for 一趟 m--
+ *
+ * todo: 优化
+ *      - 设置一个标志位 flag=true 表示for 一趟 有发生过交换， flag=false 时 表示没有交换过，排序完成
+ */
 public class BubbleSort {
 
     // 我们的算法类不允许产生任何实例
@@ -20,10 +29,10 @@ public class BubbleSort {
         boolean swapped = false;
         do{
             swapped = false;
-            for( int i = 1 ; i < n ; i ++ )
+            for( int i = 1 ; i < n ; i ++ ) // todo: 把 i-1 冒泡到正确的位置
                 if( arr[i-1].compareTo(arr[i]) > 0 ){
                     swap( arr , i-1 , i );
-                    swapped = true;
+                    swapped = true; //todo: 没有发生交换说明已经 排序完成了
                 }
             n --;
         }while(swapped);
@@ -79,7 +88,22 @@ public class BubbleSort {
     public static void main(String[] args) {
         Integer[] integers = Generate.generateRandomArray(10, 1, 20);
         Dump.array(integers);
-        Generate.testSort("Algorithm.DataStructure.Sort.BubbleSort", integers);
+//        Generate.testSort("Algorithm.DataStructure.Sort.BubbleSort", integers);
+        train(integers);
         Dump.array(integers);
+    }
+
+    /************************************************train**************************************************/
+
+    private static void train(Integer[] arr){
+        int n = arr.length-1;
+        do{
+            for (int i=1; i<n; i++){
+                if (arr[i-1] > arr[i]){
+                    swap(arr, i-1, i);
+                }
+            }
+            n--;
+        }while (n >=0);
     }
 }
