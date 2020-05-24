@@ -19,6 +19,9 @@ import java.util.Scanner;
  *
  * 6
  * 5 3 8 3 2 5
+ *
+ * 输出
+ * 3 3 5 4 4 4
  */
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
@@ -31,6 +34,7 @@ public class Main {
         while (sc.hasNext())
             build[i++] = sc.nextInt();
 
+        N=build.length;
         int[] recordR = new int[N];
         int[] recordL = new int[N];
         //todo: 解决超时
@@ -39,19 +43,39 @@ public class Main {
 
     //todo: 往右看 递增的个数 ； 往左看递增的个数
     private void solution2(int[] build, int N, int[] recordR, int[] recordL){
-        int R = 1;
-        int L = 1;
-        int rv = build[0];
-        int lv = build[N-1];
         //todo： i 往右递减；j 往左递增
-        for (int i=1, j= N-2; i<N; i++,j--){
-            int cur = build[i];
-            //todo:往右看
-            if (cur <= rv){
-                R++;
-
+        for (int i=0, j=N-1; i<N && j>=0; i++, j--){
+            int L = 1;
+            recordL[0] = 1;
+            int lh=0; //todo:记录最高的楼
+            for (int m=i; m>=1; m--){
+                lh = Math.max(lh, build[m]); //当前递增序列的最大值
+                if (build[m-1] >= lh){
+                    L += recordL[m-1];
+                    break;
+                }
             }
+            recordL[i] = L;
 
+            int R = 1;
+            recordR[N-1] = 1;
+            int rh=0;
+            for (int n=j; n<N-1; n++){
+                rh = Math.max(rh, build[n]);
+                if (build[n+1] >= rh){
+                    R += recordR[n+1];
+                    break;
+                }
+            }
+            recordR[j] = R;
+        }
+//        Dump.array(recordL);
+//        Dump.array(recordR);
+        for (int i=0; i<N; i++){
+            int tem=1;
+            if (i-1 >= 0) tem += recordL[i-1];
+            if (i+1 < N) tem += recordR[i+1];
+            System.out.print(tem+" ");
         }
 
     }
