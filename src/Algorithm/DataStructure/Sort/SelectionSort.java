@@ -42,11 +42,28 @@ public class SelectionSort {
 
         Dump.array(arr);
 
-//        Generate.testSort("Algorithm.DataStructure.Sort.SelectionSort",arr);
+        Generate.testSort("Algorithm.DataStructure.Sort.SelectionSort",arr);
+        Dump.array(arr);
+    }
+
+}
+
+/**
+ * todo: train 1
+ */
+class train_select_1{
+    private static void swap(Object[] arr, int i, int j) {
+        Object t = arr[i];
+        arr[i] = arr[j];
+        arr[j] = t;
+    }
+
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(20, 1, 100);
+        Dump.array(arr);
         train(arr);
         Dump.array(arr);
     }
-/***********************************************train************************************************************/
     private static void train(Comparable[] arr){
         //todo: [0, i) [i, n-1] 选一个最小值 与 i交换
         for (int i=0; i<arr.length; i++){

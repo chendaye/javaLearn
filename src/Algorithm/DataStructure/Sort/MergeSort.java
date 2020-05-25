@@ -122,7 +122,6 @@ public class MergeSort {
         Integer[] arr = Generate.generateRandomArray(20, 1, 30);
         Dump.array(arr);
 //        Generate.testSort("Algorithm.DataStructure.Sort.MergeSort", arr);
-        merge_tran(arr);
         Dump.array(arr);
 
 //        Dump.dump("+++++++++++++++++++++++++++++++");
@@ -132,7 +131,20 @@ public class MergeSort {
 //        Dump.array(test);
     }
 
-    /****************************************train*************************************************************/
+}
+
+/**
+ * todo: train 1
+ */
+class train_merge_1{
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(20, 1, 30);
+        Dump.array(arr);
+        merge_tran(arr);
+        Dump.array(arr);
+
+    }
+
 
     private static void merge_tran(Comparable[] arr){
         mergeSort_tran(arr, 0, arr.length-1);
@@ -173,5 +185,4 @@ public class MergeSort {
         }
     }
 }
-
 

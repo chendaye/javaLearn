@@ -70,12 +70,30 @@ public class InsertionSort{
     public static void main(String[] args) {
         Integer[] arr = Generate.generateRandomArray(10, 5, 15);
         Dump.array(arr);
-//        Generate.testSort("Algorithm.DataStructure.Sort.InsertionSort", arr);
+        Generate.testSort("Algorithm.DataStructure.Sort.InsertionSort", arr);
+        Dump.array(arr);
+    }
+
+}
+
+/**
+ * todo: train 1
+ */
+class train_insert_1{
+    private static void swap(Object[] arr, int i, int j) {
+        Object t = arr[i];
+        arr[i] = arr[j];
+        arr[j] = t;
+    }
+
+    // 测试InsertionSort
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(10, 5, 15);
+        Dump.array(arr);
         train(arr);
         Dump.array(arr);
     }
 
-    /***********************************************train**********************************************************/
     private static void train(Comparable[] arr){
         int n = arr.length;
         //todo: [0, i-1] 是有序区间 [0,i)

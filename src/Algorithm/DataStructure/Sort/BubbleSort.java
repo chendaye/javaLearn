@@ -88,15 +88,33 @@ public class BubbleSort {
     public static void main(String[] args) {
         Integer[] integers = Generate.generateRandomArray(10, 1, 20);
         Dump.array(integers);
-//        Generate.testSort("Algorithm.DataStructure.Sort.BubbleSort", integers);
+        Generate.testSort("Algorithm.DataStructure.Sort.BubbleSort", integers);
+        Dump.array(integers);
+    }
+
+}
+
+
+/**
+ * todo: train 1
+ */
+class train_bubble_1{
+    private static void swap(Object[] arr, int i, int j) {
+        Object t = arr[i];
+        arr[i] = arr[j];
+        arr[j] = t;
+    }
+
+    public static void main(String[] args) {
+        Integer[] integers = Generate.generateRandomArray(10, 1, 20);
+        Dump.array(integers);
         train(integers);
         Dump.array(integers);
     }
 
-    /************************************************train**************************************************/
 
     private static void train(Integer[] arr){
-        int n = arr.length-1;
+        int n = arr.length;
         do{
             for (int i=1; i<n; i++){
                 if (arr[i-1] > arr[i]){
