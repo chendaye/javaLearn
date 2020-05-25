@@ -49,9 +49,9 @@ public class BackPack {
      * todo: 状态方程  F(i,c) = max{F(i-1,c), v(i)+F(i-1, c-w(i))}
      *      时间复杂度： O(n*c)
      *      空间复杂度： O(n*c)
-     * @param v
-     * @param w
-     * @param c
+     * @param v 物品体积
+     * @param w 物品重量
+     * @param c 背包容量
      * @return
      */
     public int dp(int[] v, int[] w, int c){
@@ -78,6 +78,7 @@ public class BackPack {
                     dp[i][j] = Math.max(dp[i][j], v[i] + dp[i-1][j-w[i]]);
             }
         }
+        //todo: 考虑 [0, n-1] 范围内的物品， 容量 c 的状态
         return dp[n-1][c];
     }
 

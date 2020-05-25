@@ -32,10 +32,57 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        System.setIn(new FileInputStream("E:\\learnJava\\src\\Algorithm\\Algorithm.Interview\\TX\\Q5\\test.txt"));
+        System.setIn(new FileInputStream("src/Algorithm/Interview/TX/Q5/test.txt"));
         Scanner sc = new Scanner(System.in);
+        //todo:放假天数
         int N = sc.nextInt();
+        sc.nextLine();
+        //todo: 公司开门情况
+        String[] line1 = sc.nextLine().split(" ");
+        int[] works = Arrays.stream(line1).mapToInt(Integer::parseInt).toArray();
+        //todo: 健身房开门情况
+        String[] line2 = sc.nextLine().split(" ");
+        int[] fits = Arrays.stream(line2).mapToInt(Integer::parseInt).toArray();
 
+        Main main = new Main();
+        main.dp(N, works, fits);
+    }
+
+    /**
+     * 在放假期间 必须要休息的最小天数
+     * @param N  放假天数
+     * @param works 放假期间公司开门情况
+     * @param fits 放假期间健身房开门情况
+     *
+     * todo:变量 （不会连续2天 工作/锻炼）
+     *             - [0, i]
+     *             - 第 i 天 0:休息  1：健身  2：上班
+     *
+     * todo:状态   [0, day] 内, day 这一条选择 status 最少要休息的天数
+     *             d[day][status]  = min{d[day][0], d[day][1], d[day][2]} ; d[day][1] 可能取不到
+     */
+    private void dp(int N, int[] works, int[] fits){
+        //状态数组
+        int[][] dp = new int[N][3];
+        for (int i=0; i<N; i++)
+            for (int j=0; j<3; j++)
+                dp[i][j] = N+1; //最小休息天数为无穷大
+        dp[0][0] = 1;
+        if (fits[0] == 1) dp[0][1] = 0;
+        if (works[0] == 1) dp[0][2] = 0;
+
+        for (int i=1; i<N; i++){
+            // 第 i 天选择休息
+            dp[i][0] = Math.min(dp[i - 1][0], Math.min(dp[i - 1][1], dp[i - 1][2])) + 1;
+            // 第 i 天选择健身
+            if (fits[i] == 1)
+                dp[i][1] = Math.min(dp[i - 1][0], dp[i - 1][2]);
+            // 第 i 天选择上班
+            if(works[i] == 1)
+                dp[i][2] = Math.min(dp[i - 1][0], dp[i - 1][1]);
+        }
+
+        System.out.print(Math.min(dp[N - 1][0], Math.min(dp[N - 1][1], dp[N - 1][2])));
     }
 
 }
