@@ -3,6 +3,8 @@ package Algorithm.Interview.TX.Q6;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 /**
@@ -37,49 +39,45 @@ public class Main {
 
         System.setIn(new FileInputStream("src/Algorithm/Interview/TX/Q6/test.txt"));
         Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt(); //眼的个数
+        int n = sc.nextInt(); //眼的个数
         int L = sc.nextInt(); //河道长度
-        int[][] dist = new int[N][2];
+        int[][] temp = new int[n][2];
         int i=0;
         while (sc.hasNextInt()){
-            dist[i][0] = sc.nextInt();
-            dist[i][1] = sc.nextInt();
+            temp[i][0] = sc.nextInt();
+            temp[i][1] = sc.nextInt();
             i++;
         }
 
-        Main main = new Main();
-        main.min = N + 1;
-        int[] current = new int[2];
-        main.back(L, N, dist, 0, current, 0);
+        //todo : 获得了数组，进行排序
+        Arrays.sort(temp,new Comparator<int[]>() {
+            public int compare(int[] o1, int[] o2) {
+                return o1[0]==o2[0]?o1[1]-o2[1]:o1[0]-o2[0];
+            }
+        });
 
-        System.out.println(main.min);
-    }
-
-    /**
-     * todo： 组合问题 回溯
-     * @param L  河道长度 [0, L]
-     * @param N 眼的个数
-     * @param dist dist 眼的范围
-     * @param index 当前考虑的眼数
-     * @param current 当前 眼 覆盖的范围
-     * @param length 当前使用的 眼的 个数
-     */
-    private void back(int L, int N, int[][] dist, int index, int[] current, int length){
-        if (current[0] == 0 && current[1] >= L) {
-            if(min > length) min = length;
-            return;
-        }
-        if (index == N) return;
-        int[] point = dist[index]; // 当前考虑的点
-        if (point[0] < current[0] || point[1] > current[1]){
-            back(L, N, dist, index+1, current, length);
-
-            current[0] = Math.min(current[0], point[0]);
-            current[1] = Math.max(current[1], point[1]);
-            length++;
-            back(L, N, dist, index+1, current, length);
-        }else{
-            back(L, N, dist, index+1, current, length);
+        int index=0;
+        int count=0;
+        int pre=0;   //右边界
+        while(pre<L) {
+            if(temp[index][0]>pre) {
+                System.out.println(-1);
+            }
+            int max=0;
+            while(index<n&&temp[index][0]<=pre) {
+                max=Math.max(max, temp[index][1]);
+                index++;
+            }
+            count++;
+            pre=max;
+            if(pre>=L) {
+                System.out.println(count);
+                return;
+            }
+            if(index>=n) {
+                System.out.println(-1);
+                return;
+            }
         }
     }
 }
