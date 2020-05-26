@@ -2,6 +2,7 @@ package Algorithm.Interview.TX.Q6;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -31,12 +32,13 @@ import java.util.Scanner;
  * 3
  */
 public class Main {
+    private int min;
     public static void main(String[] args) throws FileNotFoundException {
+
         System.setIn(new FileInputStream("src/Algorithm/Interview/TX/Q6/test.txt"));
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt(); //眼的个数
         int L = sc.nextInt(); //河道长度
-
         int[][] dist = new int[N][2];
         int i=0;
         while (sc.hasNextInt()){
@@ -46,16 +48,38 @@ public class Main {
         }
 
         Main main = new Main();
-        main.dp(L, N, dist);
+        main.min = N + 1;
+        int[] current = new int[2];
+        main.back(L, N, dist, 0, current, 0);
+
+        System.out.println(main.min);
     }
 
     /**
-     * todo： 背包问题
-     * @param L 河道长度
+     * todo： 组合问题 回溯
+     * @param L  河道长度 [0, L]
      * @param N 眼的个数
-     * @param dist 眼的范围
+     * @param dist dist 眼的范围
+     * @param index 当前考虑的眼数
+     * @param current 当前 眼 覆盖的范围
+     * @param length 当前使用的 眼的 个数
      */
-    private void dp(int L, int N, int[][] dist){
+    private void back(int L, int N, int[][] dist, int index, int[] current, int length){
+        if (current[0] == 0 && current[1] >= L) {
+            if(min > length) min = length;
+            return;
+        }
+        if (index == N) return;
+        int[] point = dist[index]; // 当前考虑的点
+        if (point[0] < current[0] || point[1] > current[1]){
+            back(L, N, dist, index+1, current, length);
 
+            current[0] = Math.min(current[0], point[0]);
+            current[1] = Math.max(current[1], point[1]);
+            length++;
+            back(L, N, dist, index+1, current, length);
+        }else{
+            back(L, N, dist, index+1, current, length);
+        }
     }
 }

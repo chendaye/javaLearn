@@ -73,6 +73,7 @@ public class Permutations {
      * @param result 全局结果Collection
      * @param temp  一个正在生成的排列
      * @param nums 排列数字
+     * @param visit 访问数组
      */
     public static void fillNums(List<List<Integer>> result,List<Integer> temp,int[] nums,HashMap<Integer, Boolean> visit)
     {
@@ -82,8 +83,11 @@ public class Permutations {
             result.add(temp);
             return;
         }
+        //todo: 组合 start 向后移动 到最后一个数字
+        //todo: 排列每次都要扫描全部数字， 结合访问数组
         for(int j=0;j<nums.length;j++) {
             //todo: 以当前排列为基础，初始化一个新的排列
+            //todo: temp 要重复使用
             List<Integer> tempPro = new ArrayList<Integer>();
             tempPro.addAll(temp);
             //todo: contains 一一比较，时间复杂度O(n)
@@ -92,7 +96,7 @@ public class Permutations {
             {
                 tempPro.add(nums[j]);
                 visit.put(nums[j],true); // 一个元素已经用过
-                fillNums(result,tempPro,nums,visit);
+                fillNums(result,tempPro,nums,visit); //todo: 已经得到了一个子结果，回溯
                 visit.put(nums[j],false); // 一个排列生成 visit恢复
             }
         }
