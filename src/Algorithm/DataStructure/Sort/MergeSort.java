@@ -137,15 +137,6 @@ public class MergeSort {
  * todo: train 1
  */
 class train_merge_1{
-    public static void main(String[] args) {
-        Integer[] arr = Generate.generateRandomArray(20, 1, 30);
-        Dump.array(arr);
-        merge_tran(arr);
-        Dump.array(arr);
-
-    }
-
-
     private static void merge_tran(Comparable[] arr){
         mergeSort_tran(arr, 0, arr.length-1);
     }
@@ -184,5 +175,54 @@ class train_merge_1{
             }
         }
     }
+
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(20, 1, 30);
+        Dump.array(arr);
+        merge_tran(arr);
+        Dump.array(arr);
+    }
 }
 
+class train_merge_2{
+    private static void mergeSort(Comparable[] arr, int l, int r){
+        if (l >=r ) return; //todo: 只有一个元素的时候不需要 merge
+        int mid = (l + r) / 2;
+        mergeSort(arr, l, mid); //todo: 归并左边
+        mergeSort(arr, mid+1, r); //todo: 归并右边
+        if (arr[mid].compareTo(arr[mid+1]) > 0)
+            merge(arr, l, mid, r);  //todo: 合并左右
+    }
+
+    private static void merge(Comparable[] arr, int l, int mid, int r){
+        Comparable[] tmp = Arrays.copyOfRange(arr, l, r + 1);
+
+        int i = l; // [l, mid]
+        int j = mid + 1; // [mid+1, r]
+        //todo: 遍历数组 arr [l, r]
+        for (int k = l; k <= r; k++){
+            if (i > mid){
+                arr[k] = tmp[j - l];
+                j++;
+            }else if(j > r){
+                arr[k] = tmp[i - l];
+                i++;
+            } else {
+               if (tmp[i - l].compareTo(tmp[j - l]) < 0){ // todo: 最容易错的地方
+                   arr[k] = tmp[i - l];
+                   i++;
+               }else {
+                   arr[k] = tmp[j - l];
+                   j++;
+               }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(20, 1, 30);
+        Dump.array(arr);
+        mergeSort(arr, 0, arr.length - 1);
+        Dump.array(arr);
+    }
+}

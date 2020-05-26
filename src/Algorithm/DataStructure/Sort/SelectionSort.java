@@ -77,3 +77,30 @@ class train_select_1{
     }
 
 }
+
+class train_select_2{
+    private static void swap(Object[] arr, int i, int j) {
+        Object t = arr[i];
+        arr[i] = arr[j];
+        arr[j] = t;
+    }
+
+    //todo: 有序区 [0, i)
+    private static void selectSort(Comparable[] arr){
+        for (int i = 0; i < arr.length; i++){
+            int ind = i;
+            for (int j = i; j < arr.length; j++){
+                if (arr[ind].compareTo(arr[j]) > 0)
+                    ind = j;
+            }
+            swap(arr, i, ind);
+        }
+    }
+
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(20, 1, 100);
+        Dump.array(arr);
+        selectSort(arr);
+        Dump.array(arr);
+    }
+}

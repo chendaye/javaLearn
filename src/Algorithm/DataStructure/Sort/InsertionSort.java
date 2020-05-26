@@ -110,3 +110,32 @@ class train_insert_1{
         }
     }
 }
+
+class train_insert_2{
+    private static void swap(Object[] arr, int i, int j) {
+        Object t = arr[i];
+        arr[i] = arr[j];
+        arr[j] = t;
+    }
+
+    //todo: [0, i) 有序
+    private static void insertSort(Comparable[] arr){
+        for (int i = 0; i < arr.length; i++){
+           for (int j = i; j >= 1; j--){ //todo: [0, j) 逆序交换
+               if (arr[j].compareTo(arr[j - 1]) < 0){
+                   swap(arr, j - 1, j);
+               }else {
+                   break;
+               }
+           }
+        }
+    }
+
+    // 测试InsertionSort
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(10, 5, 15);
+        Dump.array(arr);
+        insertSort(arr);
+        Dump.array(arr);
+    }
+}

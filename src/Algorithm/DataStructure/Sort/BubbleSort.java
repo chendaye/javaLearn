@@ -105,14 +105,6 @@ class train_bubble_1{
         arr[j] = t;
     }
 
-    public static void main(String[] args) {
-        Integer[] integers = Generate.generateRandomArray(10, 1, 20);
-        Dump.array(integers);
-        train(integers);
-        Dump.array(integers);
-    }
-
-
     private static void train(Integer[] arr){
         int n = arr.length;
         do{
@@ -123,5 +115,38 @@ class train_bubble_1{
             }
             n--;
         }while (n >=0);
+    }
+
+    public static void main(String[] args) {
+        Integer[] integers = Generate.generateRandomArray(10, 1, 20);
+        Dump.array(integers);
+        train(integers);
+        Dump.array(integers);
+    }
+}
+
+class train_bubble_2{
+    private static void swap(Object[] arr, int l, int r){
+        Object tmp = arr[l];
+        arr[l] = arr[r];
+        arr[r] = tmp;
+    }
+
+    private static void bubbleSort(Comparable[] arr){
+        int n = arr.length - 1;
+        do{
+            for (int i = 0; i < n; i++){
+                if (arr[i].compareTo(arr[i+1]) > 0)
+                    swap(arr, i, i+1);
+            }
+            n--;
+        }while (n >= 0);
+    }
+
+    public static void main(String[] args) {
+        Integer[] integers = Generate.generateRandomArray(10, 1, 20);
+        Dump.array(integers);
+        bubbleSort(integers);
+        Dump.array(integers);
     }
 }
