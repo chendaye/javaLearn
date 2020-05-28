@@ -49,32 +49,34 @@ public class Main {
             i++;
         }
 
-        //todo : 获得了数组，进行排序
+        //todo : 获得了数组，进行排序 按从小到大排序
         Arrays.sort(temp,new Comparator<int[]>() {
             public int compare(int[] o1, int[] o2) {
-                return o1[0]==o2[0]?o1[1]-o2[1]:o1[0]-o2[0];
+                return o1[0] == o2[0] ? o1[1] - o2[1] : o1[0] - o2[0];
             }
         });
 
-        int index=0;
-        int count=0;
-        int pre=0;   //右边界
-        while(pre<L) {
-            if(temp[index][0]>pre) {
+        int index = 0;
+        int count = 0;
+        int pre = 0;   //todo：当前选择的眼的范围的右边界
+        while(pre < L) {
+            //比右边界大，有间隔
+            if(temp[index][0] > pre) {
                 System.out.println(-1);
             }
-            int max=0;
-            while(index<n&&temp[index][0]<=pre) {
-                max=Math.max(max, temp[index][1]);
+            //todo：贪心： 找到所有眼中覆盖范围最右的，但是要与先前覆盖范围有交集
+            int max = 0;
+            while(index < n && temp[index][0] <= pre) {
+                max = Math.max(max, temp[index][1]);
                 index++;
             }
             count++;
-            pre=max;
-            if(pre>=L) {
+            pre = max;
+            if(pre >= L) {
                 System.out.println(count);
                 return;
             }
-            if(index>=n) {
+            if(index >= n) {
                 System.out.println(-1);
                 return;
             }

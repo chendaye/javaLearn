@@ -226,3 +226,47 @@ class train_merge_2{
         Dump.array(arr);
     }
 }
+
+class train_merge_3{
+
+    private static void mergeSort(Comparable[] arr, int left, int right){
+        if (left >= right) return;
+        int mid = (left + right) / 2;
+        mergeSort(arr, 0, mid);
+        mergeSort(arr, mid + 1, right);
+
+        if (arr[mid].compareTo(arr[mid + 1]) > 0)
+            merge(arr, left, mid, right);
+    }
+
+    private static void merge(Comparable[] arr, int left, int mid, int right){
+        int i = left;
+        int j = mid + 1;
+        Comparable[] tmp = Arrays.copyOfRange(arr, left, right + 1);
+        for (int n = left; n <= right; n++){
+            if (i > mid){
+                arr[n] = tmp[j - left];
+                j++;
+            }else if(j > right){
+                arr[n] = tmp[i - left];
+                i++;
+            }else {
+                if (tmp[i - left].compareTo(arr[j - left]) <= 0){
+                    arr[n] = tmp[i - left];
+                    i++;
+                }else{
+                    arr[n] = tmp[j - left];
+                    j++;
+                }
+            }
+        }
+
+    }
+
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(20, 1, 30);
+        Dump.array(arr);
+        mergeSort(arr, 0, arr.length - 1);
+        Dump.array(arr);
+    }
+}

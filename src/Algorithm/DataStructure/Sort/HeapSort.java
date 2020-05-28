@@ -90,7 +90,7 @@ class train_heap_1{
 
 //            if (arr[start].compareTo(arr[i]) < 0)
 //                swap(arr, start, i);
-            //下一个节点
+            //todo:下一个节点
             start = i;
         }
     }
@@ -105,6 +105,86 @@ class train_heap_1{
         while (index >= 0){
             swap(arr, 0, index--);
             shiftDown(arr, 0, index);
+        }
+    }
+
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(10, 1, 20);
+        Dump.array(arr);
+        heapSort(arr);
+        Dump.array(arr);
+    }
+}
+
+class train_heap_2{
+    private static void swap(Comparable[] arr, int i, int j){
+        Comparable t = arr[i];
+        arr[i] = arr[j];
+        arr[j] = t;
+
+    }
+
+    private static void shiftDown(Comparable[] arr, int start, int end){
+        if (start == end) return;
+        while ((2 * start + 1) <= end){
+            int i = 2 * start + 1;
+            if (i + 1 <= end && arr[i].compareTo(arr[i + 1]) < 0)
+                i++;
+            if (arr[start].compareTo(arr[i]) >= 0) return;
+            swap(arr, start, i);
+            start = i;
+        }
+    }
+
+
+    private static void heapSort(Comparable[] arr){
+        int n = arr.length - 1;
+        for (int i = (n - 1) / 2; i >= 0; i--)
+            shiftDown(arr, i, n);
+
+        while (n >= 0){
+            swap(arr, 0, n--);
+            shiftDown(arr, 0, n);
+        }
+    }
+
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(10, 1, 20);
+        Dump.array(arr);
+        heapSort(arr);
+        Dump.array(arr);
+    }
+}
+
+class train_heap_3{
+    private static void swap(Comparable[] arr, int i, int j){
+        Comparable t = arr[i];
+        arr[i] = arr[j];
+        arr[j] = t;
+
+    }
+
+
+    private static void shiftDown(Comparable[] arr, int start, int end){
+        if (start == end) return;
+        while ((2 * start + 1) <= end){
+            int i = 2 * start + 1;
+            if (i + 1 <= end && arr[i].compareTo(arr[i + 1]) < 0)
+                i++;
+            if (arr[start].compareTo(arr[i]) >= 0) return;
+            swap(arr, start, i);
+            start = i;
+        }
+    }
+
+
+    private static void heapSort(Comparable[] arr){
+        int n = arr.length - 1;
+        for (int i = (n - 1) / 2; i >= 0; i--)
+            shiftDown(arr, i, n);
+        while (n >= 0){
+            swap(arr, 0, n--);
+            shiftDown(arr, 0, n);
         }
     }
 
