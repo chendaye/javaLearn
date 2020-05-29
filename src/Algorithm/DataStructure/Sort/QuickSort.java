@@ -420,6 +420,87 @@ class train_quick_2{
         quickSort3(arr, 0, arr.length-1);
         Dump.array(arr);
     }
+}
+
+class train_quick_3{
+    private static void swap(Object[] arr, int i, int j){
+        Object tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+    }
+
+    //todo: l [l+1, j] [j+1, i) 最终是 l 与 j 交换， 左边<l 右边>l
+    private static void quickSort1(Comparable[] arr, int l, int r){
+        if (l > r) return; //todo: 递归终止
+        swap(arr, l, (int)(Math.random() * (r - l +1)  + l));
+        Comparable v = arr[l];
+        int j = l;
+        int i = j + 1;
+        for (; i <= r; i++){
+            if (arr[i].compareTo(v) < 0){
+                swap(arr, j + 1, i);
+                j++; //todo: i  不用++ ； for循环里面 有++
+            }
+        }
+        swap(arr, l, j); // 2 1 5 4
+        quickSort1(arr, l, j - 1);
+        quickSort1(arr, j + 1, r);
+    }
 
 
+    //todo: l [l+1, i) (j, r]
+    private static void quickSort2(Comparable[] arr, int l, int r){
+        if (l > r) return;
+        swap(arr, l, (int)(Math.random()*(r-l+1)) + l);
+        Comparable v = arr[l];
+        int i = l + 1;
+        int j = r;
+        while(true){
+            while (i <= r && arr[i].compareTo(v) <= 0)
+                i++;
+            while (j >= l && arr[j].compareTo(v) > 0)
+                j--;
+            if (i>j) break;
+            swap(arr, i++, j--);
+        }
+        swap(arr, l, j); // 4 5 3 8  4 3 5 8
+
+        quickSort2(arr, l, j-1);
+        quickSort2(arr, j+1, r);
+
+    }
+
+
+
+    //todo: l [l+1, lt] [lt+1, i) [gt, r]
+    private static void quickSort3(Comparable[] arr, int l, int r){
+        if (l > r) return;
+        swap(arr, l, (int)(Math.random() * (r - l +1)  + 1));
+        Comparable v = arr[l];
+        int gt = l;
+        int i = gt + 1;
+        int lt = r + 1;
+        while (i < lt){
+            if (arr[i].compareTo(v) == 0){
+                i++;
+            }else if (arr[i].compareTo(v) < 0){
+                swap(arr, i, gt + 1);
+                gt++;
+                i++;
+            }else{
+                swap(arr, i , --lt);
+            }
+        }
+
+        swap(arr, l, gt);
+        quickSort3(arr, l, gt - 1);
+        quickSort3(arr, lt, r);
+    }
+
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(10, 1, 20);
+        Dump.array(arr);
+        quickSort2(arr, 0, arr.length-1);
+        Dump.array(arr);
+    }
 }
