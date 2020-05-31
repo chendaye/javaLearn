@@ -1,5 +1,11 @@
 package LanguageElement;
 
+/**
+ * todo: 10进制转2进制  Integer.toBinaryString(n);
+ * todo: 10进制转8进制  Integer.toOctalString(n);
+ * todo: 10进制转16进制  Integer.toHexString(n);
+ * todo: 10进制转 r 进制	  	Integer.toString(100, 16);
+ */
 public class ByteOp {
     /**
      * 不用第三个变量交换 m n值

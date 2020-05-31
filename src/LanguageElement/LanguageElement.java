@@ -23,6 +23,12 @@ public class LanguageElement {
         // TODO：异或实现变量交换
         ByteOp byteOp = new ByteOp();
         byteOp.switchNum();
+
+
+        System.out.println((int)'a');
+        System.out.println((int)'A');
+        System.out.println((char) 97);
+        System.out.println((char) 65);
     }
 
 
