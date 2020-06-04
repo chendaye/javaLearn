@@ -55,7 +55,6 @@ public class ShortestPath {
                     from[next] = current;
                     ord[next] = ord[current]+1;
                 }
-
             }
         }
     }

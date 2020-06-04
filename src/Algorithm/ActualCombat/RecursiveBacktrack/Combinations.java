@@ -1,6 +1,9 @@
 package Algorithm.ActualCombat.RecursiveBacktrack;
 
+import Utils.Dump;
+
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -31,6 +34,13 @@ import java.util.List;
 public class Combinations {
     public static void main(String[] args) {
         List<List<Integer>> combine = combine(4, 2);
+
+        Iterator<List<Integer>> iterator = combine.iterator();
+
+        while (iterator.hasNext()){
+            Dump.iterator(iterator.next());
+            System.out.println("++++++++++++++++++++++++++++");
+        }
     }
 
     /**
@@ -54,27 +64,26 @@ public class Combinations {
      * @param cur 正在生成的一个组合
      * @param res 保存结果
      * @param start start之前的数字都已经组合过了
+     *
+     *todo: 组合比排列多了一个 游标 start， 每次循环从游标开始（树 一层一层找）
+     *
+     *  todo: cur 是已经选择 进组合的数字
+     *        接下来就是要 从剩余的部分（start开始） 选择下一个组合数
+     *        用一个循环，遍历剩下的数字
+     *        每一次循环都新建一个容器 curPro 并且 初始化为 cur（一个新的组合）
+     *
      */
     public static void Find(int n, int k, ArrayList<Integer> cur,List<List<Integer>> res, int start){
         if (cur.size() == k){
             res.add(cur);
             return;
-        }else {
-            for (int i=start;i<=n;i++){
-                /**
-                 * todo: cur 是已经选择 进组合的数字
-                 *      接下来就是要 从剩余的部分（start开始） 选择下一个组合数
-                 *      用一个循环，遍历剩下的数字
-                 *      每一次循环都新建一个容器 curPro 并且 初始化为 cur（一个新的组合）
-                 *
-                 */
-                ArrayList<Integer> curPro = new ArrayList<Integer>();  //todo:以当前组合为基础 初始化一个新的组合
-                curPro.addAll(cur);
-                curPro.add(i);  // 组合新增一个值
-                Find(n, k, curPro, res,i+1);
-            }
         }
-        return;
+        for (int i=start;i<=n;i++){
+            ArrayList<Integer> curPro = new ArrayList<Integer>();  //todo:以当前组合为基础 初始化一个新的组合
+            curPro.addAll(cur);
+            curPro.add(i);  // 组合新增一个值
+            Find(n, k, curPro, res,i+1);
+        }
     }
 
 
@@ -85,25 +94,23 @@ public class Combinations {
      * @param cur
      * @param res
      * @param start
+     *
+     * todo: 还有 k-cur.size() 个位置需要填补
+     *  也就是 [i....n] 中至少要有 k-cur.size() 个元素
+     *  n-i+1 >= k-cur.size()
+     *  i <= n+1-k+cur.size()
      */
     public static void Find2(int n, int k, ArrayList<Integer> cur,List<List<Integer>> res, int start){
         if (cur.size() == k){
             res.add(cur);
             return;
-        }else {
-            /**
-             * todo: 还有 k-cur.size() 个位置需要填补
-             *         也就是 [i....n] 中至少要有 k-cur.size() 个元素
-             *         n-i+1 >= k-cur.size()
-             *         i <= n+1-k+cur.size()
-             */
-            for (int i=start;i<=n+1-k+cur.size();i++){
-                ArrayList<Integer> curPro = new ArrayList<Integer>();  //todo:以当前组合为基础 初始化一个新的组合
-                curPro.addAll(cur);
-                curPro.add(i);  // 组合新增一个值
-                Find(n, k, curPro, res,i+1);
-            }
         }
-        return;
+
+        for (int i=start;i<=n+1-k+cur.size();i++){
+            ArrayList<Integer> curPro = new ArrayList<Integer>();  //todo:以当前组合为基础 初始化一个新的组合
+            curPro.addAll(cur);
+            curPro.add(i);  // 组合新增一个值
+            Find(n, k, curPro, res,i+1);
+        }
     }
 }
