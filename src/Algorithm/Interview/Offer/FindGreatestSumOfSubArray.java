@@ -17,11 +17,7 @@ public class FindGreatestSumOfSubArray {
             int current_sum = 0;
             for (int j = i; j < array.length; j++){
                 int tmp = current_sum;
-                tmp += array[j];
-                if (current_sum > tmp)
-                    break;
-                else
-                    current_sum = tmp;
+                current_sum += array[j];
                 current_sum = Math.max(tmp, current_sum);
             }
             max = Math.max(max, current_sum);
