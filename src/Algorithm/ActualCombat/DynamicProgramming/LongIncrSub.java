@@ -55,12 +55,14 @@ public class LongIncrSub {
         if (index > nums.length-1) return 0;
         if (index == nums.length-1) return 1;
 
-        if (record[index] > 0) return record[index];
+        if (record[index] > 0) return record[index]; // 记忆数组中有值，直接返回
         int len = 0;
         for (int i=index+1; i<nums.length; i++){
+            // 找到一个 比 index 大的元素 i， 看从 i开始 最长递增子序列
+            // 从 index 之后的 所有递增子序列中找一个最大的
             if (nums[i]>nums[index]) len = Math.max(len, find(nums, i, record));
         }
-        record[index] = len+1;
+        record[index] = len+1;  // 设置 record[index]
         return len+1;
     }
 
