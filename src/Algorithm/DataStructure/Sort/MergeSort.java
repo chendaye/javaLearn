@@ -263,6 +263,56 @@ class train_merge_3{
 
     }
 
+
+
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(20, 1, 30);
+        Dump.array(arr);
+        mergeSort(arr, 0, arr.length - 1);
+        Dump.array(arr);
+    }
+}
+
+
+class train_merge_4{
+
+    private static void mergeSort(Comparable[] arr, int left, int right){
+        if (left >= right) return;
+        int mid = (left + right) / 2;
+        mergeSort(arr, 0, mid);
+        mergeSort(arr, mid + 1, right);
+
+        if (arr[mid].compareTo(arr[mid + 1]) > 0)
+            merge(arr, left, mid, right);
+    }
+
+    private static void merge(Comparable[] arr, int left, int mid, int right){
+        int i = left;
+        int j = mid + 1;
+        Comparable[] tmp = Arrays.copyOfRange(arr, left, right + 1);
+        int inx = left;
+        while (i <= mid && j <= right){
+            if (tmp[i - left].compareTo(tmp[j - left]) < 0){
+                arr[inx++] = tmp[i - left];
+                i++;
+            }else {
+                arr[inx++] = tmp[j - left];
+                j++;
+            }
+        }
+        while (i <= mid){
+            arr[inx++] = tmp[i - left];
+            i++;
+        }
+        while (j <= right){
+            arr[inx++] = tmp[j - left];
+            j++;
+        }
+
+    }
+
+
+
     public static void main(String[] args) {
         Integer[] arr = Generate.generateRandomArray(20, 1, 30);
         Dump.array(arr);
