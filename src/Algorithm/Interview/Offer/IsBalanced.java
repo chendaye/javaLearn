@@ -18,6 +18,11 @@ public class IsBalanced {
 
     }
     public boolean IsBalanced_Solution(TreeNode root) {
+        return true;
+    }
+
+    //todo: 计算树的高度
+    public int level(TreeNode root){
 
     }
 }
