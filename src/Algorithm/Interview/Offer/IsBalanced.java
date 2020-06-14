@@ -23,6 +23,6 @@ public class IsBalanced {
 
     //todo: 计算树的高度
     public int level(TreeNode root){
-
+        return 0;
     }
 }
