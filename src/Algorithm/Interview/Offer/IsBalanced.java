@@ -8,8 +8,8 @@ package Algorithm.Interview.Offer;
 public class IsBalanced {
     public class TreeNode {
         int val = 0;
-        TreeDepth.TreeNode left = null;
-        TreeDepth.TreeNode right = null;
+        TreeNode left = null;
+        TreeNode right = null;
 
         public TreeNode(int val) {
             this.val = val;
@@ -17,12 +17,20 @@ public class IsBalanced {
         }
 
     }
+
+    /**
+     * todo: 平衡二叉树定义： 它是一 棵空树或它的左右两个子树的高度差的绝对值不超过1，并且左右两个子树都是一棵平衡二叉树
+     * @param root
+     * @return
+     */
     public boolean IsBalanced_Solution(TreeNode root) {
-        return true;
+        if (root == null) return true;
+        return Math.abs(level(root.left) - level(root.right)) <= 1 && IsBalanced_Solution(root.left) && IsBalanced_Solution(root.right);
     }
 
     //todo: 计算树的高度
     public int level(TreeNode root){
-
+        if (root == null) return 0;
+        return Math.max(level(root.left) + 1, level(root.right) + 1);
     }
 }
