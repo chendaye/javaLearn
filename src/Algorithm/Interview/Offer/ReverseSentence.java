@@ -8,6 +8,24 @@ package Algorithm.Interview.Offer;
  */
 public class ReverseSentence {
     public String ReverseSentence(String str) {
+        if (str.length() == 0) return str;
+        char[] chars = str.toCharArray();
+        int i = 0, j = chars.length - 1;
+        while(i <= j){
+            char c = chars[i];
+            chars[i] = chars[j];
+            chars[j] = c;
+            i++;
+            j--;
+        }
+        StringBuilder res = new StringBuilder();
+        for (char c : chars)
+            res.append(c);
+        return res.toString();
+    }
 
+    public static void main(String[] args) {
+        String s = "I am a student";
+        System.out.println(new ReverseSentence().ReverseSentence(s));
     }
 }
