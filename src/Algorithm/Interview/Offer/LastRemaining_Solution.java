@@ -12,6 +12,68 @@ package Algorithm.Interview.Offer;
  */
 public class LastRemaining_Solution {
     public int LastRemaining(int n, int m) {
+        if (n == 0) return -1;
+        int[] record = new int[n];
+        int out = 0; // 出列人数
+        int k = 0; // 游戏从0开始
+        while (out < n - 1){ // out = n-1 结束
+            int cnt = 0; // 本轮报数的人数
+            while (cnt < m){ // 一轮报数
+                if (record[k] != -1){
+                    cnt++; // 报数一次
+                    if (cnt == m) record[k] = -1; // -1 代表出列
+                }
+                k = (k + 1) % n; //todo: 下一个
+            }
+            out++; // 0 ~ m-1 报完出列
+        }
+        for (int i = 0; i < n; i++)
+           if (record[i] == 0) return i;
+        return -1;
+    }
 
+
+    /**
+     * todo:用环形链表来模拟
+     */
+    class ListNode {
+
+        int val;
+        ListNode next = null;
+
+        ListNode(int val) {
+            this.val = val;
+        }
+    }
+
+    public int LastRemaining2(int n, int m) {
+
+        if (n <= 0 || m <= 0) {
+            return -1;
+        }
+
+        ListNode head = new ListNode(0);
+        ListNode node = head;
+        for (int i = 1; i < n; i++) {
+            node.next = new ListNode(i);
+            node = node.next;
+        }
+        node.next = head;
+
+        int k = 0;
+        while (node.next != node) { //todo:环形链表
+            if (++k == m) {
+                node.next = node.next.next; // 出队
+                k = 0;
+            } else {
+                node = node.next;
+            }
+        }
+
+        return node.val;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new LastRemaining_Solution().LastRemaining(5, 3));
     }
 }
