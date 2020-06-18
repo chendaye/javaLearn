@@ -1,5 +1,7 @@
 package Algorithm.Interview.Offer;
 
+import java.util.regex.Pattern;
+
 /**
  * 将一个字符串转换成一个整数，要求不能使用字符串转换整数的库函数。 数值为0或者字符串不是一个合法的数值则返回0
  * 输入描述:
@@ -19,11 +21,29 @@ package Algorithm.Interview.Offer;
  */
 public class StrToInt {
     public int StrToInt(String str) {
-        return 0;
+        if (str.length() == 0) return 0;
+        String pattern = "^[+,-]?[0-9]{1,}$";
+        boolean matches = Pattern.matches(pattern, str);
+        if (!matches) return 0;
+        boolean negative = false;
+        int sum = 0;
+        int m = 1;
+        int left = 0, right = str.length() - 1;
+        if (str.startsWith("+")) left = 1;
+        if (str.startsWith("-")) {
+            left = 1;
+            negative = true;
+        };
+        while (right >= left){
+            sum += Character.getNumericValue(str.charAt(right)) * m;
+            m *= 10;
+            right--;
+        }
+        return negative ? -1 * sum : sum;
     }
 
     public static void main(String[] args) {
-        System.out.println('9');
-        System.out.println(Integer.parseInt("9"));
+        String str = "-0010jh0";
+        System.out.println(new StrToInt().StrToInt(str));
     }
 }
