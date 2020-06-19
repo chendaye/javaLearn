@@ -62,8 +62,65 @@ public class match {
      * @return
      */
     public boolean dp(char[] str, char[] pattern){
-        boolean[][] dp = new boolean[str.length][pattern.length];
+        int s = str.length, p = pattern.length;
+        boolean[][] dp = new boolean[str.length + 1][pattern.length + 1];
+        //base case
+        dp[0][0] = true; // str 和 pattern 都为空
+        for (int i = 1; i < s; i++)  // str 非空， pattern为空
+            dp[i][0] = false;
+        for (int i = 0; i < s; i++){
+            for (int j = 1; j < p; j++){
+                if (pattern[j - 1] != '*'){
+                    if (i >= 1 && (str[i - 1] == pattern[j - 1] || pattern[j - 1] == '.'))
+                        dp[i][j] = dp[i - 1][j - 1];
+                }else {
+                    // 重复 0 次
+                    if (j >= 2) {
+                        dp[i][j] |= dp[i][j-2];
+                    }
+                    // 重复 1 次或者多次
+                    // 这里要用 | 连接， 不然重复 0 次的会直接覆盖
+                    if (i >= 1 && j>=2 && (str[i-1] == pattern[j-2] || pattern[j-2] == '.')) {
+                        dp[i][j] = dp[i][j] | dp[i-1][j];
+                    }
+                }
+            }
+        }
+        return dp[s][p];
+    }
 
+
+
+    //todo: 通过
+    public boolean matchStr(char[] str, int i, char[] pattern, int j) {
+
+        // 边界
+        if (i == str.length && j == pattern.length) { // 字符串和模式串都为空
+            return true;
+        } else if (j == pattern.length) { // 模式串为空
+            return false;
+        }
+
+        boolean next = (j + 1 < pattern.length && pattern[j + 1] == '*'); // 模式串下一个字符是'*'
+        if (next) {
+            if (i < str.length && (pattern[j] == '.' || str[i] == pattern[j])) { // 要保证i<str.length，否则越界
+                return matchStr(str, i, pattern, j + 2) || matchStr(str, i + 1, pattern, j);
+            } else {
+                return matchStr(str, i, pattern, j + 2);
+            }
+        } else {
+            if (i < str.length && (pattern[j] == '.' || str[i] == pattern[j])) {
+                return matchStr(str, i + 1, pattern, j + 1);
+            } else {
+                return false;
+            }
+        }
+    }
+
+
+
+    public boolean match3(char[] str, char[] pattern) {
+        return matchStr(str, 0, pattern, 0);
     }
 
     public static void main(String[] args) {
