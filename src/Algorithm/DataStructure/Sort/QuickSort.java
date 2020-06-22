@@ -4,6 +4,7 @@ import Utils.Dump;
 import Utils.Generate;
 
 import javax.swing.event.ListDataEvent;
+import java.util.Random;
 
 /**
  * todo: 快速排序
@@ -496,6 +497,45 @@ class train_quick_3{
         quickSort3(arr, l, gt - 1);
         quickSort3(arr, lt, r);
     }
+
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(10, 1, 20);
+        Dump.array(arr);
+        quickSort2(arr, 0, arr.length-1);
+        Dump.array(arr);
+    }
+}
+
+
+class train_quick_4{
+
+    private static void Swap(Comparable[] arr, int i, int j){
+        Comparable tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+    }
+
+    //todo: l [l+1, i) (j, r]
+    private static void quickSort2(Comparable[] arr, int l, int r){
+        if (l > r) return;
+        Swap(arr, l, (int)(Math.random() * (r - l + 1) + 1));
+        Comparable v = arr[l];
+        int i = l + 1;
+        int j = r;
+        while (true){
+            while (arr[i].compareTo(v) < 0)
+                i++;
+            while (arr[j].compareTo(v) > 0)
+                j--;
+            if (i >= j)break;
+            Swap(arr, i++, j--);
+        }
+        Swap(arr, l, j);
+        quickSort2(arr, l, j - 1);
+        quickSort2(arr, j + 1, r);
+    }
+
+
 
     public static void main(String[] args) {
         Integer[] arr = Generate.generateRandomArray(10, 1, 20);
