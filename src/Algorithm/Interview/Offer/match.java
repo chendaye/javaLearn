@@ -124,10 +124,25 @@ public class match {
     }
 
     public static void main(String[] args) {
-        char[] str = {'"','"'};
-        char[] pattern = {'"','"'};;
+//        char[] str = {'"','"'};
+//        char[] pattern = {'"','"'};;
+//
+//
+//        System.out.println(new match().match2(str, pattern));
 
+        System.out.println('6' - '0');
+        System.out.println((int)'c');
+        System.out.println((int)'0');
+        System.out.println(6 - (int)'6');
+        System.out.println('a' - 'b');
+        System.out.println('a');
 
-        System.out.println(new match().match2(str, pattern));
+        String s = "458";
+        int n = 0;
+        for (int i = 0; i < s.length(); i++){
+            char cur = s.charAt(i);
+            n = n * 10 + (cur - '0'); // todo: '6' != 6  '6' - '0' = 6
+        }
+        System.out.println(n);
     }
 }
