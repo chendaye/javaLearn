@@ -30,6 +30,10 @@ import java.util.List;
  *
  *
  * todo: 从集合中选择 子集 ====》 回溯法
+ *
+ * todo: 排列与组合的区别在于
+ *          - 排列问题每次通过 contains ⽅法来排除在 track 中已经选择过的数字
+ *          - 组合问题通过传⼊⼀个 start 参数，来排除 start 索引之前的数字。
  */
 public class Combinations {
     public static void main(String[] args) {
@@ -83,6 +87,7 @@ public class Combinations {
             curPro.addAll(cur);
             curPro.add(i);  // 组合新增一个值
             Find(n, k, curPro, res,i+1);
+            curPro.remove(curPro.size() - 1);
         }
     }
 
@@ -111,6 +116,7 @@ public class Combinations {
             curPro.addAll(cur);
             curPro.add(i);  // 组合新增一个值
             Find(n, k, curPro, res,i+1);
+            curPro.remove(curPro.size() - 1);
         }
     }
 }
