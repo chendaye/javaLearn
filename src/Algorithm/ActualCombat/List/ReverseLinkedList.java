@@ -47,4 +47,16 @@ public class ReverseLinkedList {
         }
         return p.next;
     }
+
+    public static ListNode method(ListNode a){
+        ListNode pre,cur,nxt;
+        pre = null; cur = a;
+        while (cur != null){
+            nxt = cur.next; //todo: 保存cur后面的节点，防止断开
+            cur.next = pre; //todo: cur 拿到最前面
+            pre = cur; //todo: 更新头节点
+            cur = nxt; //todo: 下一个节点
+        }
+        return pre;
+    }
 }
