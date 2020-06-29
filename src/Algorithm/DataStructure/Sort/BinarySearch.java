@@ -43,9 +43,11 @@ public class BinarySearch {
             }
         }
         //todo: 检查left越界情况
-        if (left >= arr.length || arr[left] != target)
+//        if (arr[left] != target)
+//            return -1;
+        if (left >= arr.length)
             return -1;
-        return arr[left];
+        return arr[left]; //todo: 没有找到target 就返回 左边最接近 target的值
     }
 
     /**
@@ -68,16 +70,18 @@ public class BinarySearch {
             }
         }
         //todo: 检查right越界情况
-        if (right < 0 || arr[right] != target)
+//        if (arr[right] != target)
+//            return -1;
+        if (right < 0)
             return -1;
-        return arr[right];
+        return arr[right]; //todo: 没有找到target 就返回 右边最接近 target的值
     }
 
 
     public static void main(String[] args) {
         int[] arr = {1, 3, 6, 11, 17, 19, 22, 25};
         System.out.println(new BinarySearch().binary(arr, 18));
-        System.out.println(new BinarySearch().leftBound(arr, 18));
-        System.out.println(new BinarySearch().rightBound(arr, 19));
+        System.out.println(new BinarySearch().leftBound(arr, 26));
+        System.out.println(new BinarySearch().rightBound(arr, 18));
     }
 }
