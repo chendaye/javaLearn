@@ -36,7 +36,7 @@ public class Path {
 
     // 图的深度优先遍历
     private void dfs( int v ){
-        visited[v] = true;
+        visited[v] = true; //根先访问
         for( int i : G.adj(v) )
             if( !visited[i] ){
                 from[i] = v; //todo:表示DFS路径中 i的上一个节点是 v
