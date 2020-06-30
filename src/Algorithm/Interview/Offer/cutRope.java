@@ -53,16 +53,33 @@ public class cutRope {
 
     /**
      * todo: 动态规划
+     *   - 状态：d[i]   表示长度为i的绳子的乘积最大值。
+     *   - 选择： d[i] = Max{ d[j] * d[i-j] | 0<j<i} , 长度为 i 的绳子，有 i 个 切点，无论怎么切，最后都分为 2部分，在所有情况中选最大
+     *   - base case: d[0] = 0 d[1] = 1
+     *
+     * n>1 m>1，m<=n len=[1, n]
      * @param target
      * @return
      */
     public int dp(int target) {
-        return target;
+        int[] dp = new int[target + 1];
+        dp[0] = 0;
+        dp[1] = 1;
+
+        for (int i = 2; i <= target; i++){ //绳长
+            dp[i] = i; // 至少可以切这么长
+            for (int j = 0; j < i; j++){
+                dp[i] = Math.max(dp[i], dp[j] * dp[i - j]); //todo: 把原问题转化为重叠子问题
+            }
+        }
+        return dp[target];
     }
 
     public static void main(String[] args) {
         cutRope cutRope = new cutRope();
-        cutRope.cutRope(8);
+        cutRope.cutRope(25);
+
         System.out.println(cutRope.max);
+        System.out.println(cutRope.dp(25));
     }
 }
