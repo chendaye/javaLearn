@@ -16,10 +16,23 @@ public class isSymmetrical {
         }
 
     }
-    boolean isSymmetrical(TreeNode pRoot)
-    {
-        if (pRoot == null) return true;
 
-        return true;
+
+    public boolean isSymmetrical(TreeNode pRoot) {
+        return pRoot==null || jude(pRoot.left, pRoot.right);
+    }
+
+    /**
+     * todo: 判断左右 两个子树是不是对称
+     * @param node1
+     * @param node2
+     * @return
+     */
+    public boolean jude(TreeNode node1, TreeNode node2) {
+        if (node1 == null && node2 == null) return true;
+
+        if (node1 == null || node2 == null || node1.val != node2.val) return false;
+
+        return jude(node1.left, node2.right) && jude(node1.right, node2.left);
     }
 }
