@@ -24,65 +24,69 @@ public class hasPath {
      * @param str
      * @return
      *
-     * todo: 每一行的起始元素 索引： 0 + (rows - 1) * cols
-     *      - 回溯 ： 路径 + 选择列表
-     *      - dfs
+     * todo: 要点
+     *      - [x, y] -> index = x + y * cols
+     *      - dfs -> 先根遍历
+     *      - 在选择列表外 回溯
      */
     int[][] dict = {{0,1}, {1,0}, {0,-1}, {-1,0}}; //todo: 上 右 下 左
     public boolean hasPath(char[] matrix, int rows, int cols, char[] str)
     {
         int[] visit = new int[matrix.length];
-        ArrayList<Character> path = new ArrayList<>();
         //todo: 从每一个点出发
-        for (int i = 0; i < matrix.length; i++){
-            Arrays.fill(visit, 0);
-            path.clear();
-            if (DFS(matrix, rows, cols, str, visit, path, i))
-                return true;
+        for (int i = 0; i < rows; i++){
+            for (int j = 0; j < cols; j++){
+                Arrays.fill(visit, 0);
+                if (DFS(matrix, rows, cols, str, visit, 0, j, i))
+                    return true;
+            }
         }
         return false;
     }
 
     /**
-     *todo: index -> [x, y]
-     *      - x = index % rows
-     *      - y = index / rows
      *
      * todo: [x, y] -> index
      *      - index = x + y * cols
+     *
+     *
+     * todo: 回溯- 每一步对应一个子问题，如果当前子问题匹配，继续下一步； 否则回溯；
+     *          - 回溯是渐进式的
      */
-    public boolean DFS(char[] matrix, int rows, int cols, char[] str, int[] visit, ArrayList<Character> path, int index){
-        int len = path.size();
-        if (len > 0){
-            if (path.get(len - 1) != str[len -1]) return false;
-            if (len == str.length) return true;
-        }
-        visit[index] = 1;
-        path.add(matrix[index]);
-        int x = index % rows;
-        int y = index / rows;
-        boolean flag = true;
+    public boolean DFS(char[] matrix, int rows, int cols, char[] str, int[] visit, int len, int x, int y){
+        //todo: 当前位置是否满足继续回溯条件
+        int index = x + y * cols;
+        if(matrix[index] != str[len]) return false; //todo: 子问题要成功
+        if(len == str.length-1) return true;
+        visit[index] = 1; //todo: 还是先根遍历
+
+        //todo: 当前位置满足，尝试选择列表（不同方向），如果选择列表中有匹配的选择，就返回 不要回溯节点；
+        //todo: 选择列表中没有匹配的，就回溯一步
         for (int i = 0; i < 4; i++){
             int cur_x = x + dict[i][0];
             int cur_y = y + dict[i][1];
             if (cur_x >= cols || cur_x < 0 || cur_y >= rows || cur_y < 0) continue;
             int inx = cur_x + cur_y * cols;
             if (visit[inx] == 0)
-                flag = DFS(matrix, rows, cols, str, visit, path, inx);
+                if (DFS(matrix, rows, cols, str, visit, len + 1, cur_x, cur_y)) return  true;
         }
-        visit[index] = 0;
-        return flag;
+
+        //todo: 回溯判断的当前步骤，而非整个问题的解
+        visit[index] = 0; //todo: 回溯节点
+        return false;
     }
 
     public static void main(String[] args) {
-        ArrayList<Integer> integers = new ArrayList<>();
-        int n = 0;
-        test(integers, n);
-        test(integers, n);
+//        ArrayList<Integer> integers = new ArrayList<>();
+//        int n = 0;
+//        test(integers, n);
+//        test(integers, n);
+//
+//        Dump.iterator(integers);
+//        System.out.println("--------"+n);
 
-        Dump.iterator(integers);
-        System.out.println("--------"+n);
-
+        hasPath hasPath = new hasPath();
+        System.out.println(hasPath.hasPath("ABCESFCSADEE".toCharArray(),3,4,"ABCCED".toCharArray()));
 
     }
 
