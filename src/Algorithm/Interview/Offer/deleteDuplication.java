@@ -63,7 +63,7 @@ public class deleteDuplication {
             p1 = p1.next;
         }
 
-        ListNode h = deleteDuplication2(head);
+        ListNode h = deleteDuplication(head);
 
         System.out.println("++++++++++++++++++++++++");
         while (h != null){
