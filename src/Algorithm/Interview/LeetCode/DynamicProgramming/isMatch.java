@@ -52,9 +52,55 @@ public class isMatch {
      * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
      * @param s
      * @param p
-     * @return
+     * @return boolean
+     *
+     * todo: 终于tmd 做出来了 一题 dp
+     *      - 状态
+     *      - 选择
+     *      - base case
+     *      - 关注当前： 当前dp 只与 上下左右的状态有关
+     *
+     * todo: 独立完成
      */
-    public boolean isMatch(String s, String p) {
-        return false;
+    public boolean dp(String s, String p) {
+        if (s == null || p == null)return false;
+        if(p.length() == 0) return s.length() == 0;
+        boolean[][] dp = new boolean[s.length() + 1][p.length() +1];
+        // s 为 空； p 非空 dp[0][i];     相反: dp[i][0] = false  dp[i][0] 默认值就是0 不需要初始化
+        dp[0][0] = true;
+        dp[0][1] = p.charAt(0) == '*';
+        for (int i = 2; i <= p.length(); i++)
+            dp[0][i] = p.charAt(i - 1) == '*' && dp[0][i - 1];
+
+        for (int i = 1; i <= s.length(); i++){
+            for (int j = 1; j <= p.length(); j++){
+                //todo: p[j] = a~z
+                if (p.charAt(j - 1) == s.charAt(i - 1)){
+                    dp[i][j] = dp[i - 1][j - 1];
+                }
+                //todo: p[j] = '?'
+                if(p.charAt(j - 1) == '?'){
+                    dp[i][j] = dp[i - 1][j - 1];
+                }
+                //todo: p[j] = '*'
+                if(p.charAt(j - 1) == '*'){
+                    //todo： * 匹配0个 匹配1个 匹配n个
+                    dp[i][j] = dp[i][j - 1] || dp[i - 1][j - 1] || dp[i - 1][j]; //todo: 三个方向可以得到
+                    /**
+                     * dp[i][j - 1] : s[0 ~ i] = p[0 ~ j -1] 的情况下； 如果 p[j] = '*' dp[i][j] = true
+                     * dp[i - 1][j - 1] : s[0 ~ i - 1] = p[0 ~ j -1] 的情况下； 如果 p[j] = '*' dp[i][j] = true
+                     * dp[i - 1][j] : s[0 ~ i - 1] = p[0 ~ j] 的情况下； 如果 p[j] = '*' dp[i][j] = true
+                     */
+                }
+            }
+        }
+        return dp[s.length()][p.length()];
+    }
+
+    public static void main(String[] args) {
+        String s = "acdcb";
+        String p = "a*c?b";
+        boolean isMatch = new isMatch().dp(s, p);
+        System.out.println(isMatch);
     }
 }
