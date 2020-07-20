@@ -365,3 +365,45 @@ class train_merge_5{
         Dump.array(arr);
     }
 }
+
+
+class train_merge_6{
+
+      public static void mergeSort(Comparable[] arr, int l, int r){
+          if (l >= r) return;
+          int mid = (l + r) / 2;
+          mergeSort(arr, l, mid);
+          mergeSort(arr, mid+1, r);
+          merge(arr,l, mid, r);
+      }
+      public static void merge(Comparable[] arr, int l, int mid, int r){
+          Comparable[] temp = Arrays.copyOfRange(arr, l, r + 1);
+          int inx = l;
+          int i = l, j=mid+1;
+          while (i <= mid && j <= r){
+              if (temp[i -l].compareTo(temp[j - l]) <= 0){
+                  arr[inx] = temp[i-l];
+                  inx++;i++;
+              }else {
+                  arr[inx] = temp[j-l];
+                  inx++;j++;
+              }
+          }
+          while (i <= mid){
+              arr[inx] = temp[i - l];
+              inx++;i++;
+          }
+          while (j <= r){
+              arr[inx] = temp[j - l];
+              inx++;j++;
+          }
+      }
+
+
+    public static void main(String[] args) {
+        Integer[] arr = Generate.generateRandomArray(20, 1, 30);
+        Dump.array(arr);
+        mergeSort(arr, 0, arr.length - 1);
+        Dump.array(arr);
+    }
+}

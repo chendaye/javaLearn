@@ -473,7 +473,7 @@ class train_quick_3{
 
 
 
-    //todo: l [l+1, lt] [lt+1, i) [gt, r]
+    //todo: l [l+1, gt] [gt+1, i) [lt, r]
     private static void quickSort3(Comparable[] arr, int l, int r){
         if (l > r) return;
         swap(arr, l, (int)(Math.random() * (r - l +1)  + 1));
@@ -507,40 +507,85 @@ class train_quick_3{
 }
 
 
-class train_quick_4{
 
-    private static void Swap(Comparable[] arr, int i, int j){
+class train_quick_5{
+    public static void swap(Comparable[] arr, int i, int j){
         Comparable tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;
     }
 
-    //todo: l [l+1, i) (j, r]
-    private static void quickSort2(Comparable[] arr, int l, int r){
+    /**
+     * Math 类的 random() 方法没有参数，它默认会返回大于等于 0.0、小于 1.0 的 double 类型随机数，即 0<=随机数<1.0
+     * Math.random() = [0, 1)
+     * m+(int)(Math.random()*n) 语句可以获取 m~m+n 的随机数
+     *
+     * (int)(Math.random()*(r-l+1)+l)  [l, r+1) [l, r]
+     * @param arr
+     * @param l
+     * @param r
+     */
+    public static void sort(Comparable[] arr, int l, int r){
         if (l > r) return;
-        Swap(arr, l, (int)(Math.random() * (r - l + 1) + 1));
-        Comparable v = arr[l];
-        int i = l + 1;
-        int j = r;
+        swap(arr, l, (int)(Math.random() * (r - l + 1)) + l); //
+        Comparable pivo = arr[l];
+        //todo:  l [l+1, i) (j, r] i = l, j = r
+        int i = l+1, j = r;
         while (true){
-            while (arr[i].compareTo(v) < 0)
+            while (i < r && arr[i].compareTo(pivo) <= 0)
                 i++;
-            while (arr[j].compareTo(v) > 0)
+            while (j > l && arr[j].compareTo(pivo) >= 0)
                 j--;
-            if (i >= j)break;
-            Swap(arr, i++, j--);
+            if (i >= j)break;;
+            swap(arr, i++, j--);
         }
-        Swap(arr, l, j);
-        quickSort2(arr, l, j - 1);
-        quickSort2(arr, j + 1, r);
+        // 3 4 5 2 6   3 2 5 4 6 l->3  j->2 i->5
+        swap(arr, j, l);
+        sort(arr, l, j-1);
+        sort(arr, j+1, r);
+    }
+    //todo: l [l+1, i] [i+1, j)
+    public static void sort2(Comparable[] arr, int l, int r){
+        if (l > r) return;
+        swap(arr, l, (int)(Math.random() * (r - l + 1) + l));
+        Comparable poiv = arr[l];
+        int i = l, j = l + 1;
+        for (; j <= r; j++){
+            if (arr[j].compareTo(poiv) < 0){
+                swap(arr, i + 1, j);
+                i++;
+            }
+        }
+        swap(arr, l, i);
+        sort2(arr, l, i-1);
+        sort2(arr, i + 1, r);
     }
 
-
+    //todo: 三路快排  l [l+1, i] [i+1, j) [k, r]
+    public static void sort3(Comparable[] arr, int l, int r){
+        if (l > r) return;
+        swap(arr, l, (int)(Math.random() * (r - l + 1) + l));
+        Comparable poiv = arr[l];
+        int i = l, j = i + 1, k = r + 1;
+        while (j < k){
+            if (arr[j].compareTo(poiv) < 0){
+                swap(arr, i+1, j);
+                i++;j++;
+            }else if(arr[j].compareTo(poiv) > 0){
+                swap(arr, j, --k);
+            }else {
+                j++;
+            }
+        }
+        swap(arr, l, i);
+        sort3(arr,l,i-1);
+        sort3(arr, k, r);
+    }
 
     public static void main(String[] args) {
         Integer[] arr = Generate.generateRandomArray(10, 1, 20);
         Dump.array(arr);
-        quickSort2(arr, 0, arr.length-1);
+        sort3(arr, 0, arr.length-1);
         Dump.array(arr);
     }
 }
