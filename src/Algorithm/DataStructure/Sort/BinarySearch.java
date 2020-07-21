@@ -40,7 +40,8 @@ public class BinarySearch {
             }else {
                 //todo: 不返回 锁定左边界
                 //todo: 想象 mid=target， 令right = mid - 1，接下来的循环中都是 left在移动
-                //TODO:直到 left==right， 然后 left 再左移动一位 ==> left 在 right 右边(>= target)；right 指向 所有小于 target的值中的最大值
+                //TODO:直到 left==right， 然后 left 再左移动一位 ==> left 在 right 右边(>= target)；
+                // right 指向 所有小于 target的值中的最大值
                 right = mid - 1;
             }
         }
@@ -83,11 +84,11 @@ public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = {1, 3, 6, 11, 17, 19, 22, 25};
 //        System.out.println(new BinarySearch().binary(arr, 18));
-//        System.out.println(new BinarySearch().rightBound(arr, 12));
+        System.out.println(new BinarySearch().rightBound(arr, 12));
 //        System.out.println(new BinarySearch().leftBound(arr, 18));
 
 
-        System.out.println(new BinarySearch().test(arr, 11));
+//        System.out.println(new BinarySearch().test(arr, 11));
     }
 
     //返回左边界

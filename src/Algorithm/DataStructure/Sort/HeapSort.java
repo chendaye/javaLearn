@@ -248,7 +248,6 @@ class train_heap_5 {
         arr[j] = t;
 
     }
-
     private static void shiftDown(Comparable[] arr, int start, int end){
         if (start >= end) return;
         while (2*start + 1 <= end){
