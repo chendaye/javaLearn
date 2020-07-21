@@ -34,7 +34,16 @@ package Algorithm.Interview.LeetCode.DynamicProgramming;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class minDistance {
+    /**
+     * todo:
+     *      - 状态 dp[i][j] = word1[0~i] 到 Word2[0~j] 的最短距离
+     *      - 选择 : 插入 删除 替换
+     *             - if: word1[i] == word2[j]   dp[i][j] = dp[i-1][j-1]
+     *             - if: word1[i] != word2[j]
+     *      - base case
+     */
     public int dp(String word1, String word2) {
+
         return 1;
     }
 }
