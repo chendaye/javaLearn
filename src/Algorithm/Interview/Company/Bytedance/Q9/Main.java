@@ -51,10 +51,47 @@ import java.util.Scanner;
  *
  * 输出例子1:
  * 36
+ *
+ * todo: 没有思路就想穷举
+ *      - 奇淫巧技 也是穷举
  */
 public class Main {
-    //区间最小数*区间所有数的和
+    //todo: 区间最小数*区间所有数的和  穷举
     public static void main(String[] args) throws IOException {
+        System.setIn(new FileInputStream("src/Algorithm/Interview/Company/Bytedance/Q9/test.txt"));
+        Scanner sc = new Scanner(System.in);
+        int length = sc.nextInt();
+        int[] record = new int[length];
+        for (int i = 0; i < length; i++)
+            record[i] = sc.nextInt();
+        int max = 0;
+        //找每一个点的区间
+        for (int i = 0; i < length; i++){
+            int cur = record[i];
+            int sum = cur;
+            int l = i - 1;
+            while (l >= 0){
+                if (record[l] >= cur)
+                    sum += record[l];
+                else
+                    break;
+                l--;
+            }
+            int r = i + 1;
+            while (r < length){
+                if (record[r] >= cur)
+                    sum += record[r];
+                else
+                    break;
+                r++;
+            }
+            max = Math.max(max, cur * sum);
+//            System.out.println(max+"---"+sum+"--"+cur+"--"+i+"--"+l+"--"+r);
+        }
+        System.out.println(max);
+    }
+
+    public static void wrong() throws Exception{
         System.setIn(new FileInputStream("src/Algorithm/Interview/Company/Bytedance/Q9/test.txt"));
         Scanner sc = new Scanner(System.in);
         int length = sc.nextInt();
@@ -68,26 +105,35 @@ public class Main {
         while (r < length){
             window.add(record[r++]); // 进入窗口
             //计算当前窗口和
-            Iterator<Integer> iterator = window.iterator();
-            int cur_sum = 0; // 当前窗口和
-            int cur_min = Integer.MIN_VALUE; // 当前窗口最小值
-            while (iterator.hasNext()){
-                Integer next = iterator.next();
-                cur_min = Math.min(cur_min, next);
-                cur_sum += next;
-            }
+            int[] helper1 = helper(window);
             // 更新 最大和
-            int cur = cur_min * cur_sum;
+            int cur = helper1[2];
             int tmp = max;
             max = Math.max(max, cur);
             if (tmp == max){
                 while (l < r){
-
+                    l++;
+                    int[] helper2 = helper(window);
+                    int tmp2 = max;
+                    max = Math.max(max, helper2[2]);
+                    if (tmp2 < max)  break;
                 }
             }
         }
+        System.out.println(max);
     }
-
+    public static int[] helper( ArrayList<Integer> list){
+        Iterator<Integer> iterator = list.iterator();
+        int min = Integer.MAX_VALUE;
+        int total = 0;
+        while (iterator.hasNext()){
+            Integer next = iterator.next();
+            min = Math.min(min, next);
+            total += next;
+        }
+        int[] res = {min, total, min * total};
+        return res;
+    }
     //判断 当前区间和 是否更大
     public static boolean judge(int sum, ArrayList<Integer> list){
         Iterator<Integer> iterator = list.iterator();
