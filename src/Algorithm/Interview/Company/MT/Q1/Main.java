@@ -46,22 +46,21 @@ import java.util.Scanner;
  * 订单1被派给司机2，订单2被派给司机1，订单3被派给司机3。使得A12+ A21+ A33= 1.25 + 1.5 + 2.5 = 5.25在所有的组合中最大。
  */
 public class Main {
-    public static ArrayList<Integer> r = null;
-    public static float m = 0;
+    public static ArrayList<Integer> r = new ArrayList<Integer>();
+    public static float m = -1; //todo: 一定要保证是最小的
     public static void main(String[] args) throws Exception {
+        System.setIn(new FileInputStream("src/Algorithm/Interview/Company/MT/Q1/test.txt"));
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt(); // 单数、人数
         float[][] record = new float[n][n];
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++){
             for (int j = 0; j < n; j++)
                 record[i][j] = sc.nextFloat();
-//        solution(n, record,  new ArrayList<Integer>());
-        System.out.println(m);
-        Dump.iterator(r);
-
-//        System.out.println(String.format("%.2f", m));
-//        for (int i = 0; i < r.size(); i++)
-//            System.out.println((i + 1)+" "+(r.get(i) + 1));
+        }
+        solution(n, record,  new ArrayList<Integer>());
+        System.out.println(String.format("%.2f", m));
+        for (int i = 0; i < r.size(); i++)
+            System.out.println((i + 1)+" "+(r.get(i) + 1));
 
     }
 
@@ -69,28 +68,25 @@ public class Main {
      * todo: 注意 回溯操作的 使用时同一个 path引用
      *      - 如果把 path 引用 保存到 结果中； 在后续回溯的过程中 结果中保存的path 引用也会改变
      *      - 所以 满足要求时，结果中保存的应该是 path的副本
-     * @param n
-     * @param res
-     * @param path
      */
     public static void solution(int n, float[][] record,  ArrayList<Integer> path){
         if (path.size() == n){
-            System.out.println(path.size());
-//            ArrayList<Integer> temp = new ArrayList<>(path);
-//            float current_sum = helper(temp, record);
-//            if (m < current_sum) {
-//                r = temp;
-//                m = current_sum;
-//            }
-//            if (m == current_sum){
-//                int n1 = 0;
-//                int n2 = 0;
+            ArrayList<Integer> temp = new ArrayList<>(path);
+            float current_sum = helper(temp, record);
+            if (m < current_sum) {
+                r = temp;
+                m = current_sum;
+            }
+            if (m == current_sum){
+                int n1 = 0;
+                int n2 = 0;
 //                for (int k = 0; k < temp.size(); k++){
 //                    n1 += Math.abs(r.get(k) - k);
 //                    n2 += Math.abs(temp.get(k) - k);
 //                }
-//                if (n2 < n1) r = temp;
-//            }
+                if (r.get(0) > temp.get(0)) r = temp;
+                m = current_sum;
+            }
             return;
         }
         for (int i = 0; i < n; i++){
