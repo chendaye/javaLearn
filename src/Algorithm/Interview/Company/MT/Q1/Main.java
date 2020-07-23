@@ -1,5 +1,8 @@
 
 
+import LanguageElement.Array;
+import Utils.Dump;
+
 import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -43,6 +46,8 @@ import java.util.Scanner;
  * 订单1被派给司机2，订单2被派给司机1，订单3被派给司机3。使得A12+ A21+ A33= 1.25 + 1.5 + 2.5 = 5.25在所有的组合中最大。
  */
 public class Main {
+    public static ArrayList<Integer> r = null;
+    public static float m = 0;
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt(); // 单数、人数
@@ -50,38 +55,13 @@ public class Main {
         for (int i = 0; i < n; i++)
             for (int j = 0; j < n; j++)
                 record[i][j] = sc.nextFloat();
-        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
-        solution(n, res, new ArrayList<Integer>());
-        float max = 0;
-        ArrayList<Integer> r = new ArrayList<>();
-        Iterator<ArrayList<Integer>> iterator = res.iterator();
-        while (iterator.hasNext()){
-            ArrayList<Integer> next = iterator.next();
-            float cur_record = 0;
-            for (int i = 0; i < next.size(); i++){
-                Integer current = next.get(i);
-                cur_record += record[i][current];
-            }
-            if (max < cur_record){
-                max = cur_record;
-                r = next;
-            }
-            if (max == cur_record){
-                int n1 = 0;
-                int n2 = 0;
-                for (int k = 0; k < next.size(); k++){
-                    n1 += Math.abs(r.get(k) - k);
-                    n2 += Math.abs(next.get(k) - k);
-                }
+//        solution(n, record,  new ArrayList<Integer>());
+        System.out.println(m);
+        Dump.iterator(r);
 
-                if (n2 < n1) r = next;
-            }
-
-        }
-        System.out.println(String.format("%.2f", max));
-        for (int i = 0; i < r.size(); i++){
-            System.out.println((i + 1)+" "+(r.get(i) + 1));
-        }
+//        System.out.println(String.format("%.2f", m));
+//        for (int i = 0; i < r.size(); i++)
+//            System.out.println((i + 1)+" "+(r.get(i) + 1));
 
     }
 
@@ -93,18 +73,41 @@ public class Main {
      * @param res
      * @param path
      */
-    public static void solution(int n,  ArrayList<ArrayList<Integer>> res, ArrayList<Integer> path){
+    public static void solution(int n, float[][] record,  ArrayList<Integer> path){
         if (path.size() == n){
-            res.add(new ArrayList<>(path));
+            System.out.println(path.size());
+//            ArrayList<Integer> temp = new ArrayList<>(path);
+//            float current_sum = helper(temp, record);
+//            if (m < current_sum) {
+//                r = temp;
+//                m = current_sum;
+//            }
+//            if (m == current_sum){
+//                int n1 = 0;
+//                int n2 = 0;
+//                for (int k = 0; k < temp.size(); k++){
+//                    n1 += Math.abs(r.get(k) - k);
+//                    n2 += Math.abs(temp.get(k) - k);
+//                }
+//                if (n2 < n1) r = temp;
+//            }
             return;
         }
         for (int i = 0; i < n; i++){
-            if (path.contains(i))
+            if (path.contains(i)) // 当前列 没有占用
                 continue;
             path.add(i);
-            solution(n, res, path);
+            solution(n,record,  path);
             path.remove(path.size() - 1);
         }
 
+    }
+
+    public static float helper(ArrayList<Integer> list, float[][] record){
+        float sum = 0;
+        for (int i = 0; i < list.size(); i++){
+            sum += record[i][list.get(i)];
+        }
+        return sum;
     }
 }
