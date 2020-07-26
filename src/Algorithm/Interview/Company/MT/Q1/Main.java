@@ -1,4 +1,4 @@
-
+package Algorithm.Interview.Company.MT.Q1;
 
 import LanguageElement.Array;
 import Utils.Dump;
