@@ -17,9 +17,11 @@ public  class Dump {
      */
     public static <T extends Collection> void iterator(T object){
         Iterator iterator = object.iterator();
+        StringBuilder stringBuilder = new StringBuilder();
         while (iterator.hasNext()){
-            dump(iterator.next());
+            stringBuilder.append(iterator.next()+ " ");
         }
+        dump(stringBuilder.toString());
     }
 
     /**

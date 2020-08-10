@@ -43,7 +43,6 @@ public class Combinations {
 
         while (iterator.hasNext()){
             Dump.iterator(iterator.next());
-            System.out.println("++++++++++++++++++++++++++++");
         }
     }
 
@@ -74,49 +73,29 @@ public class Combinations {
      *  todo: cur 是已经选择 进组合的数字
      *        接下来就是要 从剩余的部分（start开始） 选择下一个组合数
      *        用一个循环，遍历剩下的数字
-     *        每一次循环都新建一个容器 curPro 并且 初始化为 cur（一个新的组合）
+     *        每一次循环都新建一个容器 curPro 并且 初始化为 cur（一个新的组合）\
      *
-     */
-    public static void Find(int n, int k, ArrayList<Integer> cur,List<List<Integer>> res, int start){
-        if (cur.size() == k){
-            res.add(cur);
-            return;
-        }
-        for (int i=start;i<=n;i++){
-            ArrayList<Integer> curPro = new ArrayList<Integer>();  //todo:以当前组合为基础 初始化一个新的组合
-            curPro.addAll(cur);
-            curPro.add(i);  // 组合新增一个值
-            Find(n, k, curPro, res,i+1);
-            curPro.remove(curPro.size() - 1);
-        }
-    }
-
-
-    /**
+     *
      * todo: 优化--回溯法剪枝，去掉不必要的循环
-     * @param n
-     * @param k
-     * @param cur
-     * @param res
-     * @param start
-     *
      * todo: 还有 k-cur.size() 个位置需要填补
      *  也就是 [i....n] 中至少要有 k-cur.size() 个元素
      *  n-i+1 >= k-cur.size()
      *  i <= n+1-k+cur.size()
      */
-    public static void Find2(int n, int k, ArrayList<Integer> cur,List<List<Integer>> res, int start){
+    public static void Find(int n, int k, ArrayList<Integer> cur,List<List<Integer>> res, int start){
         if (cur.size() == k){
-            res.add(cur);
-            return;
-        }
-
-        for (int i=start;i<=n+1-k+cur.size();i++){
+            //todo: 加入结果集，要新建一个集合；因为 path在后续的回溯会变化
             ArrayList<Integer> curPro = new ArrayList<Integer>();  //todo:以当前组合为基础 初始化一个新的组合
             curPro.addAll(cur);
-            curPro.add(i);  // 组合新增一个值
-            Find(n, k, curPro, res,i+1);
-            curPro.remove(curPro.size() - 1);
+            res.add(curPro);
+            return;
+        }
+        //todo: 回溯部分 用 start 来保证不会重复访问 组合事回溯 是不需要回头的
+        for (int i=start;i<=n;i++){
+//      for (int i=start;i<=n+1-k+cur.size();i++){
+            cur.add(i);  // 组合新增一个值
+            Find(n, k, cur, res,i+1);
+            cur.remove(cur.size() - 1);
         }
     }
 }
