@@ -87,3 +87,54 @@ public static void fillNums(List<List<Integer>> result,List<Integer> path,int[] 
             }
         }
 ```
+
+# visited[] 型
+
+> 对于二维表格
+> 每一个方格都要进行一次回溯。 用回溯来找是否有匹配的路径
+> 或者是多叉树的遍历
+> 使用访问数组进行回溯；回溯的点事 在当前方格 遍历分叉 的前后位置；遍历分叉就是把当前点的所有
+> 方向都尝试一遍；也就是 考察经过当前点的路径是否符合；自然，也就对当前点进行回溯
+
+```python
+public static boolean exist(char[][] board, String word) {
+        //todo: 左 上 右 下 二维平面中的的偏移量数组，是一个技巧
+        int[][] dire = {{-1,0}, {0,1}, {1,0}, {0,-1}};
+        int m = board.length; // m 行 y
+        int n = board[0].length; // n 列 x
+        //todo:记录点是否被访问过
+        int[][] visit = new int[m][n];
+
+        for (int y=0; y<board.length; y++){
+            for (int x=0; x<board[y].length; x++){
+                if (searchWord(board, word,  dire, m, n, visit, 0, x, y))
+                    return true;
+            }
+        }
+        return false;
+    }
+
+public static boolean searchWord(char[][] board, String word,  int[][] dire, int m, int n, int[][] visit, int index, int start_x, int start_y){
+        //todo:如果是最后一个字符
+        if (index == word.length() -1)
+            return board[start_y][start_x] == word.charAt(index);
+        //todo:当前节点是否匹配
+        if (board[start_y][start_x] == word.charAt(index)){
+            visit[start_y][start_x] = 1; //todo: 标记访问
+            //todo:搜索上下左右
+            for (int i=0;i<3;i++){
+                //todo: 下一个要判断的新的坐标
+                int new_x = start_x + dire[i][0];
+                int new_y = start_y + dire[i][1];
+                //todo: 判断xy是否越界 并且没有被访问过
+                if (new_x>=0 && new_x<n && new_y>=0 && new_y<m && visit[new_y][new_x] == 0){
+                    if (searchWord(board, word, dire,  m, n, visit, index+1, new_x, new_y))
+                        return true;
+                }
+            }
+            visit[start_y][start_x] = 0; //todo: 回溯到上一步
+        }
+        return false;
+    }
+
+```

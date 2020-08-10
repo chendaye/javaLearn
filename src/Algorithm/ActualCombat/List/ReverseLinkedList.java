@@ -48,6 +48,12 @@ public class ReverseLinkedList {
         return p.next;
     }
 
+    /**
+     *todo: 维护好 pre cur nxt 的初始定义
+     *      - pre 新链表的头
+     *      - cur 当前要处理的节点
+     *      - next 当前处理节点的洗衣柜节点，防止断链
+     */
     public static ListNode method(ListNode a){
         ListNode pre,cur,nxt;
         pre = null; cur = a;
@@ -59,6 +65,59 @@ public class ReverseLinkedList {
         }
         return pre;
     }
+
+    /**
+     * 递归翻转整个链表
+     *
+     * todo: reverse 函数定义是这样的：输入一个节点 head，将「以 head 为起点」的链表反转，并返回反转之后的头结点
+     * @param head
+     * @return
+     */
+    ListNode reverse(ListNode head) {
+        if (head.next == null) return head; // 只有一个节点直接返回
+        ListNode last = reverse(head.next); // 反转 head 之后的所有节点，返回反转链表的起始节点
+        head.next.next = head; // 剩下 head 节点还没有反转，把 head 放到最后 然后置空
+        head.next = null;
+        return last;
+    }
+
+    /**
+     * todo: 反转以 head 为起点的 n 个节点，返回新的头结点
+     */
+    ListNode successor = null; // 后驱节点
+    ListNode reverseN(ListNode head, int n) {
+        if (n == 1) {
+            // 记录第 n + 1 个节点
+            successor = head.next;
+            return head;
+        }
+        // 以 head.next 为起点，需要反转前 n - 1 个节点
+        ListNode last = reverseN(head.next, n - 1);
+
+        head.next.next = head;
+        // 让反转之后的 head 节点和后面的节点连起来
+        head.next = successor;
+        return last;
+    }
+
+    /**
+     * todo: 反转任意区间
+     * @param head
+     * @param m
+     * @param n
+     * @return
+     */
+    ListNode reverseBetween(ListNode head, int m, int n) {
+        // base case ：递归栈的最外层的一个节点
+        if (m == 1) return reverseN(head, n);
+        // 前进到反转的起点触发 base case
+        head.next = reverseBetween(head.next, m - 1, n - 1);
+        return head;
+    }
+
+
+
+
 
     /**
      * todo: 倒序输出链表
