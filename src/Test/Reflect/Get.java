@@ -16,6 +16,6 @@ public class Get {
         Class<Student> aClass2 = Student.class;
         System.out.println(aClass2.getName());
 
-//        Thread.currentThread().sleep(10);
+//        Grammar.Thread.currentThread().sleep(10);
     }
 }

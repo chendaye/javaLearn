@@ -1,4 +1,0 @@
-package Synchronized;
-
-class InterruptTest {
-}

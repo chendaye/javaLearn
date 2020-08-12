@@ -1,4 +1,4 @@
-package IOStream;
+package Grammar.IOStream;
 
 import Utils.Dump;
 
