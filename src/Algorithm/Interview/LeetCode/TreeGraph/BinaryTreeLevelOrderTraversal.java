@@ -57,7 +57,7 @@ public class BinaryTreeLevelOrderTraversal {
             // number of elements in the current level
             int level_length = queue.size(); //todo:每一层的个数就是当前队列的长度
             //todo:每一次进循环，队列中只包含一层的元素；前提是循环内，要把当前层的元素出队完毕
-            for(int i = 0; i < level_length; ++i) {
+            for(int i = 0; i < level_length; ++i) { // 相当于图的邻居节点
                 TreeNode node = queue.remove(); // todo:循环结束，当前层也出队完成
 
                 // fulfill the current level
