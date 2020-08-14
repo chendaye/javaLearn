@@ -111,7 +111,7 @@ public class UnionFindTestHelper {
     // 测试第五版本的并查集, 测试元素个数为n, 测试逻辑和之前是完全一样的
     public static void testUF5( int n ){
 
-        UnionFind5 uf = new UnionFind5(n);
+        UnionFind uf = new UnionFind(n);
 
         long startTime = System.currentTimeMillis();
 

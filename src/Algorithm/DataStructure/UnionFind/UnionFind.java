@@ -4,7 +4,7 @@ package Algorithm.DataStructure.UnionFind;
  * todo: 并查集的时间复杂度 近乎是 O(1)
  * 路径压缩 path-compress
  */
-public class UnionFind5 {
+public class UnionFind {
 
     // rank[i]表示以i为根的集合所表示的树的层数
     // 在后续的代码中, 我们并不会维护rank的语意, 也就是rank的值在路径压缩的过程中, 有可能不在是树的层数值
@@ -15,7 +15,7 @@ public class UnionFind5 {
     private int count;    // 数据个数
 
     // 构造函数
-    public UnionFind5(int count){
+    public UnionFind(int count){
         rank = new int[count];
         parent = new int[count];
         this.count = count;
@@ -38,7 +38,7 @@ public class UnionFind5 {
              *      - 如果当前的节点不是根， 就把 它 指向它 父亲的父亲
              *      - 这样最后找到了 根节点，同时把路径的深度减少了
              */
-            parent[p] = parent[parent[p]];
+            parent[p] = parent[parent[p]]; //todo: p的爸爸 指向 p的爷爷
             p = parent[p];
         }
         return p;
@@ -78,7 +78,7 @@ public class UnionFind5 {
         }
         else{ // rank[pRoot] == rank[qRoot]
             parent[pRoot] = qRoot;
-            rank[qRoot] += 1;   // 此时, 我维护rank的值
+            rank[qRoot] += 1;   // 此时, 我维护rank的值,不是严格意义的层数
         }
     }
 }
