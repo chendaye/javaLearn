@@ -1,0 +1,7 @@
+6
+beijing nanjing
+nanjing guangzhou
+guangzhou shanghai
+shanghai beijing
+fuzhou beijing
+beijing fuzhou

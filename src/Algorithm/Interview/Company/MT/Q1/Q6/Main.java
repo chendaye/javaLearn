@@ -1,4 +1,4 @@
-package Algorithm.Interview.Company.TX.Q6;
+package Algorithm.Interview.Company.MT.Q1.Q6;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
