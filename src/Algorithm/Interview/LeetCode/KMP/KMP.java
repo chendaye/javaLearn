@@ -38,7 +38,7 @@ public class KMP {
             // 计算pat下一个状态
             status = dp[status][txt.charAt(i)];
             // 达到最终状态，返回结果
-            if (status == M) return i - M + 1;
+            if (status == M) return i - M + 1; //todo: 当前txt中的字符，能否把 pat的 状态数组推进到最后一个状态
         }
         // 没有达到最终状态，匹配失败
         return -1;
