@@ -44,7 +44,8 @@ public class findLHS {
         }
     }
     public boolean harmmany(ArrayList<Integer> list){
-        if (list.size() == 5 && list.get(0) == 3 && list.get(1) == 2)Dump.iterator(list);
+//        if (list.size() == 5 && list.get(0) == 3 && list.get(1) == 2)Dump.iterator(list);
+        Dump.iterator(list);
 
         int min = list.get(0);
         int max = list.get(0);
