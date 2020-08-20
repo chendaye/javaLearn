@@ -52,14 +52,14 @@ public static void Find2(int n, int k, ArrayList<Integer> path, List<List<Intege
             res.add(cur);
             return;
         }
-        // 无特定返回条件
-        if(start == path.size()){
+        // 无特定返回条件 组合结果一定以 n-1结尾
+        if(start == n){
             // 获取一个结果
             // .....
             return;
         }
 
-        for (int i=start;i< path.size();i++){
+        for (int i=start;i< n;i++){
             path.add(i);  // 组合新增一个值
             Find(n, k, path, res,i+1);
             path.remove(path.size() - 1);
