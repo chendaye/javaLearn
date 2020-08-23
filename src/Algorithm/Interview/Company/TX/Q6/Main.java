@@ -14,7 +14,7 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        System.setIn(new FileInputStream("src/Algorithm/Interview/TX/Q6/test.txt"));
+        System.setIn(new FileInputStream("src/Algorithm/Interview/Company/TX/Q6/test.txt"));
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
