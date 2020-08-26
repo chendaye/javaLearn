@@ -35,7 +35,7 @@ public class Reflect {
         sex.set(person, "make love");
         run.invoke(person, "反射");
 
-        // F:\java\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+        // F:\java\jre\lib\ext;C:\Windows\Sun\Java.Java\lib\ext
         System.out.println(System.getProperty("java.ext.dirs"));  // ExtClassLoader
         System.out.println(System.getProperty("java.class.path")); // AppClassLoader
     }
