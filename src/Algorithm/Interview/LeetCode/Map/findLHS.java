@@ -23,6 +23,7 @@ public class findLHS {
     /**
      * todo: 用 HashMap 记录 每个数字出现的个数
      *      -   求序列 就求 max{x-1 x x+1}
+     *      -  涉及到求个数的有序表
      * @param nums
      * @return
      */
