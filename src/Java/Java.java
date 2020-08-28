@@ -29,6 +29,10 @@ interface Car{
 
 class Car1 implements Car{
     public void run(){
+        int[] a = new int[2];
+        int b = a.length;
+        String s = "aaa";
+        s.length();
         System.out.println("Car1");
         /*ArrayList*/
         ArrayList<Integer> list = new ArrayList<>();
