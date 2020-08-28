@@ -111,4 +111,100 @@ score
 -- 查询前1名同学的成绩和当前同学成绩的差值
 
 -- 先得到前一名同学的成绩
-select stu_id, score, lag(score, 1) over (order by score) from score
+select stu_id, score, lag(score, 1) over (order by score) as pre from score
+-- 汇总上一步结果
+select score - pre from (select stu_id, score, lag(score, 1) over (order by score) as pre from score) as table
+
+-- 头尾函数：
+-- FIRST_VALUE(expr) : 返回第一个（FIRST_VALUE(expr)）或最后一个（LAST_VALUE(expr)）expr的值
+-- LAST_VALUE(expr)
+
+/**
++--------+-----------+-------+-------------+-------------+------------+
+| stu_id | lesson_id | score | create_time | first_score | last_score |
++--------+-----------+-------+-------------+-------------+------------+
+|      3 | L001      |   100 | 2018-08-07  |         100 |        100 |
+|      1 | L001      |    98 | 2018-08-08  |         100 |         98 |
+|      2 | L001      |    84 | 2018-08-09  |         100 |         99 |
+|      4 | L001      |    99 | 2018-08-09  |         100 |         99 |
+|      3 | L002      |    91 | 2018-08-07  |          91 |         91 |
+|      1 | L002      |    86 | 2018-08-08  |          91 |         86 |
+|      2 | L002      |    90 | 2018-08-09  |          91 |         90 |
+|      4 | L002      |    88 | 2018-08-10  |          91 |         88 |
++--------+-----------+-------+-------------+-------------+------------+
+ */
+
+/*截止到当前成绩，按照日期排序查询第1个和最后1个同学的分数*/
+ SELECT stu_id, lesson_id, score, create_time,
+   FIRST_VALUE(score) OVER w AS first_score,
+    LAST_VALUE(score) OVER w AS last_score
+    FROM t_score
+    WHERE lesson_id IN ('L001','L002')
+    WINDOW w AS (PARTITION BY lesson_id ORDER BY create_time)
+
+
+-- 其它函数：
+-- NTH_VALUE(expr, n)  返回窗口中第n个expr的值。expr可以是表达式，也可以是列名
+-- NTILE(n)
+
+/*
++--------+-----------+-------+--------------+-------------+
+| stu_id | lesson_id | score | second_score | third_score |
++--------+-----------+-------+--------------+-------------+
+|      1 | L003      |    79 |         NULL |        NULL |
+|      1 | L002      |    86 |           86 |        NULL |
+|      1 | L004      |    88 |           86 |          88 |
+|      1 | L001      |    98 |           86 |          88 |
+|      1 | L005      |    98 |           86 |          88 |
+|      2 | L004      |    75 |         NULL |        NULL |
+|      2 | L005      |    77 |           77 |        NULL |
+|      2 | L001      |    84 |           77 |          84 |
+|      2 | L003      |    86 |           77 |          84 |
+|      2 | L002      |    90 |           77 |          84 |
++--------+-----------+-------+--------------+-------------+
+*/
+
+SELECT stu_id, lesson_id, score,
+    NTH_VALUE(score,2) OVER w AS second_score,
+    NTH_VALUE(score,3) OVER w AS third_score
+    FROM t_score
+    WHERE stu_id IN (1,2)
+    WINDOW w AS (PARTITION BY stu_id ORDER BY score)
+
+-- NTILE(n) 将分区中的有序数据分为n个等级，记录等级数
+
+/*将每门课程按照成绩分成3组*/
+
+/*
++------+--------+-----------+-------+
+| nf   | stu_id | lesson_id | score |
++------+--------+-----------+-------+
+|    1 |      2 | L001      |    84 |
+|    1 |      1 | L001      |    98 |
+|    2 |      4 | L001      |    99 |
+|    3 |      3 | L001      |   100 |
+|    1 |      1 | L002      |    86 |
+|    1 |      4 | L002      |    88 |
+|    2 |      2 | L002      |    90 |
+|    3 |      3 | L002      |    91 |
++------+--------+-----------+-------+
+*/
+SELECT
+NTILE(3) OVER w AS nf,stu_id, lesson_id, score
+FROM t_score
+WHERE lesson_id IN ('L001','L002')
+WINDOW w AS (PARTITION BY lesson_id ORDER BY score)
+
+-- 聚合函数作为窗口函数
+
+-- 在窗口中每条记录动态地应用聚合函数（SUM()、AVG()、MAX()、MIN()、COUNT()），可以动态计算在指定的窗口内的各种聚合函数值
+
+/*截止到当前时间，查询stu_id=1的学生的累计分数、分数最高的科目、分数最低的科目*/
+
+SELECT stu_id, lesson_id, score, create_time,
+    SUM(score) OVER w AS score_sum,
+    MAX(score) OVER w AS score_max,
+    MIN(score) OVER w AS score_min
+    FROM t_score
+    WHERE stu_id = 1
+    WINDOW w AS (PARTITION BY stu_id ORDER BY create_time)
