@@ -1,4 +1,4 @@
-package Algorithm.Interview.LeetCode.DynamicProgramming;
+package Algorithm.Interview.LeetCode.DynamicProgramming.BackPack;
 
 import java.util.Arrays;
 

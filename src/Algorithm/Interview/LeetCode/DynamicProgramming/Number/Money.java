@@ -1,4 +1,4 @@
-package Algorithm.Interview.LeetCode.DynamicProgramming;
+package Algorithm.Interview.LeetCode.DynamicProgramming.Number;
 
 /**
  * 凑零钱问题：

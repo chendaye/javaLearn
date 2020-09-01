@@ -51,3 +51,41 @@
 
 > 题干所求不一定是，直接的动态规划结果； 可以考虑把 题干要求转化 为与 i相关 （与 i 相关 == 重叠子问题）
 >然后 在 dp 空间里面求解
+
+
+# 子序列
+
+## 一维dp
+
+> 在子数组array[0..i]中，以array[i]结尾的目标子序列（最长递增子序列）的长度是dp[i]。
+
+```bash
+int n = array.length;
+int[] dp = new int[n];
+
+for (int i = 1; i < n; i++) {
+    for (int j = 0; j < i; j++) {
+        dp[i] = 最值(dp[i], dp[j] + ...)
+    }
+}
+```
+
+## 二维dp
+
+```bash
+int n = arr.length;
+int[][] dp = new dp[n][n];
+
+for (int i = 0; i < n; i++) {
+    for (int j = 1; j < n; j++) {
+        if (arr[i] == arr[j]) 
+            dp[i][j] = dp[i][j] + ...
+        else
+            dp[i][j] = 最值(...)
+    }
+}
+```
+
+> 涉及两个字符串/数组时: 在子数组arr1[0..i]和子数组arr2[0..j]中，我们要求的子序列（最长公共子序列）长度为dp[i][j]。
+
+>  只涉及一个字符串/数组时: 在子数组array[i..j]中，我们要求的子序列（最长回文子序列）的长度为dp[i][j]。

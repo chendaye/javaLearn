@@ -1,7 +1,5 @@
-package Algorithm.Interview.LeetCode.DynamicProgramming;
+package Algorithm.Interview.LeetCode.DynamicProgramming.Other;
 
-import java.util.Deque;
-import java.util.LinkedList;
 import java.util.Stack;
 
 /**
