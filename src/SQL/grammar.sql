@@ -1,3 +1,15 @@
+-- 条件语法
+IF( expr1 , expr2 , expr3 ) -- expr1条件，条件为true，则值是expr2 ，false，值就是expr3
+
+IFNULL( expr1 , expr2) -- 在 expr1 的值不为 NULL的情况下都返回 expr1，否则返回 expr
+
+COALESCE(x,y,z) -- 返回x y z 中第一个非空（NULL）的，若都为空 返回 空
+
+CASE 列名  -- 分支语法
+    WHEN 条件 THEN 结果
+    ELSE 其他结果
+    END 别名
+
 -- 设置变量
 
 -- 方式一
