@@ -1,11 +1,8 @@
-package Algorithm.Interview.Company.BZ.Q1;
+package Algorithm.Interview.Company.ZJ.Q1;
 
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Scanner;
 
 
 public class Main {
