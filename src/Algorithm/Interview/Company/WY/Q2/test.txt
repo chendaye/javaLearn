@@ -1,2 +1,4 @@
-5
-5 15 5 15 9
+SEE
+A B C E
+S F C S
+A D E E

@@ -1,0 +1,10 @@
+10 9
+1 left 2
+1 right 3
+2 left 4
+2 right 5
+3 right 6
+6 left 7
+6 right 8
+7 left 9
+7 right 10
