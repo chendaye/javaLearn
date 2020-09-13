@@ -1,6 +1,8 @@
 package Algorithm;
 
 
+import Utils.Dump;
+
 import java.io.FileNotFoundException;
 import java.util.*;
 import java.util.regex.*;
@@ -49,7 +51,87 @@ public class WhiteboardCode {
         int[] ints = Arrays.copyOf(arr, arr.length);
         Arrays.copyOfRange(arr, 0, 4);
 
+        //todo: ArrayList
+        ArrayList<Integer> list = new ArrayList<>();
+        Collections.sort(list, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o1 - o2;
+            }
+        });
+        list.add(1);
+        list.add(1);
+        list.add(1);
+        list.add(1);
+        list.add(9);
+        list.add(3, 2); // 修改
+        list.get(1);
+        list.contains(10);
+        list.size();
+        ArrayList<Integer> list1 = new ArrayList<>();
+        list1.add(1);
+        list.addAll(list1);
+        list.remove(2);
+        list.clear();
+
+        //todo: Queue http://itmyhome.com/java-api/
+        LinkedList<Integer> queue = new LinkedList<>();
+        queue.add(1); // addFirst  addLast
+        queue.addAll(list);
+        queue.contains(1);
+        queue.get(0); // getLast() getFirst()
+        queue.element(); //获取但不移除此列表的头（第一个元素）
+        queue.peek(); // 获取但不移除此列表的头（第一个元素） peekFirst()  peekLast()
+        queue.poll(); //    获取并移除此列表的头（第一个元素） 	pollFirst() pollLast()
+        queue.remove();//     获取并移除此列表的头（第一个元素）。 remove(int index) remove(Object o) removeFirst() removeLast()
+        System.out.println(queue.getFirst()+"----");
+        PriorityQueue<Integer> queue1 = new PriorityQueue<>(new Comparator<Integer>(){
+            @Override
+            public int compare(Integer a, Integer b){
+                return a - b;
+            }
+        });
+        // add element offer peek poll remove
+        queue1.contains(6);
+        queue1.add(2);
+        queue1.remove(0);
+        queue1.contains(2);
+        queue1.size();
+        queue1.isEmpty();
+        queue1.offer(2);
 
 
+        //todo: 栈
+        Stack<Integer> stack = new Stack<>();
+        stack.empty();
+        stack.isEmpty();
+        stack.peek(); // 查看堆栈顶部的对象，但不从堆栈中移除它。
+        stack.pop(); //  移除堆栈顶部的对象，并作为此函数的值返回该对象。
+        stack.push(2); // 把项压入堆栈顶部。
+
+        //todo: HashMap
+        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        hashMap.clear();
+        hashMap.containsKey(22);
+        hashMap.containsValue(222);
+        Set<Map.Entry<Integer, Integer>> entries = hashMap.entrySet();
+        // 遍历方式
+        for (Map.Entry<Integer, Integer>  entry : hashMap.entrySet()){}
+        for(Integer key : hashMap.keySet()){}
+        for (Integer val : hashMap.values()){}
+        Iterator<Map.Entry<Integer, Integer>> iterator = hashMap.entrySet().iterator();
+        while (iterator.hasNext()){
+            Map.Entry<Integer, Integer> next = iterator.next();
+        }
+        hashMap.get(1);
+        hashMap.isEmpty();
+        Set<Integer> integers = hashMap.keySet();
+        Collection<Integer> values = hashMap.values();
+        hashMap.remove(1); //   从此映射中移除指定键的映射关系（如果存在）。
+        hashMap.size(); // 返回此映射中的键-值映射关系数。
+
+        //todo: LinkedHashMap 有序 HashMao
+        LinkedHashMap<Integer, Integer> map = new LinkedHashMap<>();
+        // clone, containsKey, entrySet, isEmpty, keySet, put, putAll, remove, size, values
     }
 }
