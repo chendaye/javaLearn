@@ -2,25 +2,7 @@ package Java;
 
 import java.util.*;
 
-/**
- * 单例模式（同步）
- */
-class  singleton{
-    private static volatile singleton install = null;
 
-    private singleton(){}
-
-    public static singleton getInstance(){
-        if(install == null){
-           synchronized(singleton.class){
-               if(install == null){
-                   install = new singleton();
-               }
-           }
-        }
-        return install;
-    }
-}
 
 
 interface Car{
