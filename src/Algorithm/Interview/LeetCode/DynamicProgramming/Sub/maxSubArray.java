@@ -15,7 +15,7 @@ package Algorithm.Interview.LeetCode.DynamicProgramming.Sub;
  */
 public class maxSubArray {
     /**
-     * todo:
+     * todo: 典型的 在 dp table 上找到最大值， 而不是取 dp[n-1]
      *      - 状态：dp[i]  以 nums[i] 结尾的 最大子数组
      *      - 选择：dp[i]  = Max{dp[i - 1] + nums[i],   nums[i]}
      *      - base case  dp[0] = nums[0]

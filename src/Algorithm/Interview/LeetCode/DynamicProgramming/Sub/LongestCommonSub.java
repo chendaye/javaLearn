@@ -96,6 +96,11 @@ public class LongestCommonSub {
      * todo:二维动态规划
      *      - 初始化第一行 也要遵循规则
      *      - 可以同时初始化第一行第一列
+     *
+     * todo: dp[i][j] : [0, i] [0, j] 范围内的公共子序列
+     *       dp[i][j] = s[i] == s[j] ?
+     *                  1 + (j-1 < 0 ? 0 : +dp[i-1][j-1]) :
+     *                  Math.max(dp[i-1][j], j-1 < 0 ? 0 : dp[i][j-1])
      * @param text1
      * @param text2
      * @return

@@ -4,19 +4,18 @@ import Utils.Dump;
 
 /**
  *
- 给定一个无序的整数数组，找到其中最长上升子序列的长度。
-
- 示例:
-
- 输入: [10,9,2,5,3,7,101,18]
- 输出: 4
- 解释: 最长的上升子序列是 [2,3,7,101]，它的长度是 4。
- 说明:
-
- 可能会有多种最长上升子序列的组合，你只需要输出对应的长度即可。
- 你算法的时间复杂度应该为 O(n2) 。
-
- todo:类似 376
+ * todo: 给定一个无序的整数数组，找到其中最长上升子序列的长度。
+ * 示例:
+ *
+ *  输入: [10,9,2,5,3,7,101,18]
+ *  输出: 4
+ *  解释: 最长的上升子序列是 [2,3,7,101]，它的长度是 4。
+ *  说明:
+ *
+ *  可能会有多种最长上升子序列的组合，你只需要输出对应的长度即可。
+ *  你算法的时间复杂度应该为 O(n2) 。
+ *
+ * todo:类似 376
  */
 public class LongIncrSub {
     public static void main(String[] args) {
@@ -67,29 +66,13 @@ public class LongIncrSub {
     }
 
     /**
-     * todo: 状态转移方程： F(i) = 1 + max{ F(x) | i<x<n-1, nums[x] > nums[i] }
+     * todo: 状态 ： dp[i]： [0, i] 范围内最长递增子序列
+     *       base case： dp[0] = 1
+     *       转移： dp[i] = Max{dp[x], 0<=x<i nums[x] < nums[i]}
      * @param nums
      * @return
      */
-    public static int dp(int[] nums){
-        int n = nums.length;
-        if (n == 0) return 0;
-        int[] dp = new int[n];
-        dp[n-1] = 1;
-        int ret=1;
-        //todo: 起始位置 是 n-2 因为 n-1 已知
-        for (int  i=n-2; i>=0; i--){
-            int len = 0;
-            for (int j=i+1; j<n; j++)
-                if (nums[i] < nums[j])
-                    len = Math.max(len, dp[j]);
-            dp[i] = len+1;
-            ret = Math.max(ret, dp[i]);
-        }
-        return ret;
-    }
-
-    public int lengthOfLIS2(int[] nums) {
+    public static int dp(int[] nums) {
         if (nums.length == 0) {
             return 0;
         }

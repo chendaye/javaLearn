@@ -20,8 +20,13 @@ import java.util.Arrays;
  * 链接：https://leetcode-cn.com/problems/number-of-longest-increasing-subsequence
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-class findnumberOfLIS {
-    public static int findnumberOfLIS(int[] nums) {
+class findNumberOfLIS {
+    /**
+     * todo:  dp[i] : [0, i] 范围内最长递归子序列
+     * @param nums
+     * @return
+     */
+    public static int dp(int[] nums) {
         int n = nums.length;
         if (n <= 1) return n;
         int[] dp = new int[n]; //dp[i] = length of longest ending in nums[i]
@@ -56,6 +61,6 @@ class findnumberOfLIS {
     public static void main(String[] args) {
 //        int[] arr = {1,3,5,4,7};
         int[] arr = {2,2,2,2,2};
-        System.out.println(findnumberOfLIS(arr));
+        System.out.println(dp(arr));
     }
 }
