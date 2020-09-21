@@ -95,7 +95,10 @@ for (int i = 0; i < n; i++) {
 
 ## 一维
 
-> 情形一： 范围
+> 情形一： 连续递推：dp[i] = F{dp[i-1]} 的值只取决于 dp[i-1], 逐次递推。 最终结果在 dp[n-1]
+
+> 情形二：dp[i] = F{dp[i]....dp[n-1]} dp[i] 的值不能直接有 dp[i-1] 推出，而是在范围上找最值。
+> 递推不是连续的，需要范围查找，确定 dp[i]
 
 dp[i] : 以 i 结尾的某最值
 最终结果： dp[n-1]
@@ -127,7 +130,7 @@ dp[i] : 以 i 结尾的某最值
     }
 ```
 
-> 清醒二： 定左侧
+> 情形二： 定左侧
 
 dp[i] : [0, i] 范围内最**
 最终结果： 在 dp table 上找最值
@@ -157,6 +160,21 @@ dp[i] : [0, i] 范围内最**
             max = Math.max(max, dp[i]);
         }
         return max;
+    }
+```
+
+```bash
+public static int dp(int[] nums){
+        int len = nums.length;
+        if (len == 0) return 0;
+        int[] dp = new int[len];
+        //todo: 考虑最后一个房子，也就是区间 [len-1.......len-1]
+        dp[len-1] = nums[len-1];
+        for (int i=len-2; i>-1; i--){
+            for (int j=i; j<len; j++)
+                dp[i] = Math.max(dp[i], nums[j]+ (j+2 < len ? dp[j+2] : 0));
+        }
+        return dp[0];
     }
 ```
 

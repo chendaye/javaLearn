@@ -3,7 +3,8 @@ package Algorithm.Interview.LeetCode.DynamicProgramming.BackPack;
 import java.util.Arrays;
 
 /**
- * 你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
+ * 你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，
+ * 如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
  *
  * 给定一个代表每个房屋存放金额的非负整数数组，计算你在不触动警报装置的情况下，能够偷窃到的最高金额。
  *
@@ -32,6 +33,33 @@ public class HouseRobber {
 
     }
 
+    /**
+     * todo: 动态规划======》 递归函数/状态 要清晰
+     *      - 状态的定义 就是 递归函数的定义
+     *      - 要搞清楚，递归函数是在干嘛。 它可以是一个中间状态
+     *  todo: 这里递归函数的定义  也就是状态：  考虑 [x......len) 范围内可以偷到的最大值
+     *          状态也可以改成  考虑 [0..............x) 范围内可以获取的最大值
+     *
+     *  todo: 动态规划
+     *      - 状态： dp[i] : [i, n-1] 范围内偷到的最大值
+     *      - base case ： dp[n - 1] = nums[n-1]
+     *      - 状态转移： dp[i] = max{num[x] + dp[x+2] | i <= x <= n-1}
+     * @param nums
+     * @return
+     */
+    public static int dp(int[] nums){
+        int len = nums.length;
+        if (len == 0) return 0;
+        int[] dp = new int[len];
+        //todo: 考虑最后一个房子，也就是区间 [len-1.......len-1]
+        dp[len-1] = nums[len-1];
+        for (int i=len-2; i>-1; i--){
+            for (int j=i; j<len; j++)
+                dp[i] = Math.max(dp[i], nums[j]+ (j+2 < len ? dp[j+2] : 0));
+        }
+        return dp[0];
+    }
+
     public static int rob(int[] nums) {
         //todo: 记忆数组, 考虑某个房子时的最大收益
         int[] record = new int[nums.length];
@@ -58,26 +86,5 @@ public class HouseRobber {
         return money;
     }
 
-    /**
-     * todo: 动态规划======》 递归函数/状态 要清晰
-     *      - 状态的定义 就是 递归函数的定义
-     *      - 要搞清楚，递归函数是在干嘛。 它可以是一个中间状态
-     *
-     *  todo: 这里递归函数的定义  也就是状态：  考虑 [x......len) 范围内可以偷到的最大值
-     *          状态也可以改成  考虑 [0..............x) 范围内可以获取的最大值
-     * @param nums
-     * @return
-     */
-    public static int dp(int[] nums){
-        int len = nums.length;
-        if (len == 0) return 0;
-        int[] dp = new int[len];
-        //todo: 考虑最后一个房子，也就是区间 [len-1.......len-1]
-        dp[len-1] = nums[len-1];
-        for (int i=len-2; i>-1; i--){
-            for (int j=i; j<len; j++)
-                dp[i] = Math.max(dp[i], nums[j]+ (j+2 < len ? dp[j+2] : 0));
-        }
-        return dp[0];
-    }
+
 }
