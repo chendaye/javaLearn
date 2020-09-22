@@ -39,6 +39,34 @@ public class HouseRobber {
         return tryRob(nums,0, record);
     }
 
+
+
+    /**
+     * todo: 动态规划======》 递归函数/状态 要清晰
+     *      - 状态的定义 就是 递归函数的定义
+     *      - 要搞清楚，递归函数是在干嘛。 它可以是一个中间状态
+     *
+     *  todo: 这里递归函数的定义  也就是状态：  考虑 [x......len) 范围内可以偷到的最大值
+     *          状态也可以改成  考虑 [0..............x) 范围内可以获取的最大值
+     *
+     *  todo: 动态规划
+     *      
+     * @param nums
+     * @return
+     */
+    public static int dp(int[] nums){
+        int len = nums.length;
+        if (len == 0) return 0;
+        int[] dp = new int[len];
+        //todo: 考虑最后一个房子，也就是区间 [len-1.......len-1]
+        dp[len-1] = nums[len-1];
+        for (int i=len-2; i>-1; i--){
+            for (int j=i; j<len; j++)
+                dp[i] = Math.max(dp[i], nums[j]+ (j+2 < len ? dp[j+2] : 0));
+        }
+        return dp[0];
+    }
+
     /**
      * todo: 考虑 [index....nums.length) 范围内的房子
      *      所谓状态 就是递归函数的定义
@@ -56,28 +84,5 @@ public class HouseRobber {
         }
         record[index] = money;
         return money;
-    }
-
-    /**
-     * todo: 动态规划======》 递归函数/状态 要清晰
-     *      - 状态的定义 就是 递归函数的定义
-     *      - 要搞清楚，递归函数是在干嘛。 它可以是一个中间状态
-     *
-     *  todo: 这里递归函数的定义  也就是状态：  考虑 [x......len) 范围内可以偷到的最大值
-     *          状态也可以改成  考虑 [0..............x) 范围内可以获取的最大值
-     * @param nums
-     * @return
-     */
-    public static int dp(int[] nums){
-        int len = nums.length;
-        if (len == 0) return 0;
-        int[] dp = new int[len];
-        //todo: 考虑最后一个房子，也就是区间 [len-1.......len-1]
-        dp[len-1] = nums[len-1];
-        for (int i=len-2; i>-1; i--){
-            for (int j=i; j<len; j++)
-                dp[i] = Math.max(dp[i], nums[j]+ (j+2 < len ? dp[j+2] : 0));
-        }
-        return dp[0];
     }
 }

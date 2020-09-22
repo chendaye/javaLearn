@@ -2,6 +2,9 @@ package Algorithm.Interview.LeetCode.DynamicProgramming.Area;
 
 import Utils.Dump;
 
+import java.util.Collections;
+import java.util.Comparator;
+
 /**
  * 给定一个区间的集合，找到需要移除区间的最小数量，使剩余区间互不重叠。
  *
@@ -51,6 +54,11 @@ public class NonOverlappingIntervals {
     /**
      * todo: F(i) = 1 + max{F(x) | 0<=x<i, F(x)<=F(i)}
      *  - F(i): 在 [0,i] 区间内最长的 上升序列
+     *
+     *  todo: 动态规划
+     *       - 状态： dp[i]  在 [0,i] 区间内最长的 上升序列
+     *       - base case: dp[0] = 1;
+     *       - 状态转移： dp[i] = max{dp[x] | dp[x] < dp[i], 0<=x<i}
      * @param intervals
      * @return
      */
@@ -59,6 +67,7 @@ public class NonOverlappingIntervals {
         if (n==0) return 0;
         int[] dp = new int[n];
         dp[0] = 1;
+        int max = 0;
         for (int i=1; i<n;i++){
             int len = 0;
             for (int j=0; j<i; j++){
@@ -67,10 +76,8 @@ public class NonOverlappingIntervals {
                 }
             }
             dp[i] = len+1;
-        }
-        int max = 0;
-        for (int i=0; i<n;i++)
             max=Math.max(max, dp[i]);
+        }
         return n-max;
     }
 

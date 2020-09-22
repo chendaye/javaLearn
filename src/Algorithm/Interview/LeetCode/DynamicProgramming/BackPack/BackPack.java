@@ -9,6 +9,46 @@ public class BackPack {
     }
 
     /**
+     * todo: 状态方程 : dp[i,c]  [0, i] 范围内的物品，在容量为 c的情况下 ，能装的最大值
+     *       base case: i = 0
+     *       状态转移：dp[i,c] = max{dp[i-1,c], v(i)+dp[i-1, c-w(i)]}
+     *      时间复杂度： O(n*c)
+     *      空间复杂度： O(n*c)
+     * @param v 物品体积
+     * @param w 物品重量
+     * @param c 背包容量
+     * @return
+     */
+    public int dp(int[] v, int[] w, int c){
+        int n = v.length;
+        if (n==0) return 0;
+        //todo: 状态数组
+        int[][] dp = new int[n][c+1];
+        //todo: 在背包容量=0~c 时， 把为物品 0 放入背包. 获得的最大值
+        //todo: 状态数组是一维 初始化一个元素； 状态数组是二维，初始化一行
+        for (int i=0; i<c+1; i++){
+            if (w[0] <= c) dp[0][i] = v[0];  //初始化第一行
+        }
+
+        //todo: 状态转移； 从 i=1 的产品开始
+        for (int i=1; i<n; i++){
+            for (int j=0; j<c+1; j++){
+                //todo: 情形1  不把 物品 i 放入背包
+                int s1 = dp[i-1][j];
+                //todo: 情形2  把 物品 i 放入背包
+                int s2 = w[i] <= j ? v[i] + dp[i-1][j-w[i]]: s1;
+                dp[i][j] = Math.max(s1,s2);
+//                dp[i][j] = dp[i-1][j];
+//                if (w[i] <= j)
+//                    dp[i][j] = Math.max(dp[i][j], v[i] + dp[i-1][j-w[i]]);
+            }
+        }
+        //todo: 考虑 [0, n-1] 范围内的物品， 容量 c 的状态
+        return dp[n-1][c];
+    }
+
+
+    /**
      *
      * @param v 0~n-1 个物品各自的体积
      * @param w 0~n-1 个物品各自的价值
@@ -45,42 +85,6 @@ public class BackPack {
         return res;
     }
 
-    /**
-     * todo: 状态方程  F(i,c) = max{F(i-1,c), v(i)+F(i-1, c-w(i))}
-     *      时间复杂度： O(n*c)
-     *      空间复杂度： O(n*c)
-     * @param v 物品体积
-     * @param w 物品重量
-     * @param c 背包容量
-     * @return
-     */
-    public int dp(int[] v, int[] w, int c){
-        int n = v.length;
-        if (n==0) return 0;
-        //todo: 状态数组
-        int[][] dp = new int[n][c+1];
-        //todo: 在背包容量=0~c 时， 把为物品 0 放入背包. 获得的最大值
-        //todo: 状态数组是一维 初始化一个元素； 状态数组是二维，初始化一行
-        for (int i=0; i<c+1; i++){
-            if (w[0] <= c) dp[0][i] = v[0];  //初始化第一行
-        }
-
-        //todo: 状态转移； 从 i=1 的产品开始
-        for (int i=1; i<n; i++){
-            for (int j=0; j<c+1; j++){
-//                //todo: 情形1  不把 物品 i 放入背包
-//                int s1 = dp[i-1][j];
-//                //todo: 情形2  把 物品 i 放入背包
-//                int s2 = w[i] <= j ? v[i] + dp[i-1][j-w[i]]: s1;
-//                dp[i][j] = Math.max(s1,s2);
-                dp[i][j] = dp[i-1][j];
-                if (w[i] <= j)
-                    dp[i][j] = Math.max(dp[i][j], v[i] + dp[i-1][j-w[i]]);
-            }
-        }
-        //todo: 考虑 [0, n-1] 范围内的物品， 容量 c 的状态
-        return dp[n-1][c];
-    }
 
     /**
      * todo: 状态方程  F(i,c) = max{F(i-1,c), v(i)+F(i-1, c-w(i))}
