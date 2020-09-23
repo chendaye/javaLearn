@@ -3,7 +3,7 @@ package Algorithm.Interview.LeetCode.DynamicProgramming.Sub;
 import java.util.Arrays;
 
 /**
- * 给定一个未排序的整数数组，找到最长递增子序列的个数。
+ * todo: 给定一个未排序的整数数组，找到最长递增子序列的个数。
  *
  * 示例 1:
  *
@@ -22,25 +22,28 @@ import java.util.Arrays;
  */
 class findNumberOfLIS {
     /**
-     * todo:  dp[i] : [0, i] 范围内最长递归子序列
+     * todo: 区间dp
+     *      dp状态： dp[i] : [0, i] 范围内最长递归子序列
+     *        base case ： dp[0] = 1;
+     *        状态转移： dp[i] = max{dp[j] + 1,  num[i] > num[j], 0 <= j < i}
      * @param nums
      * @return
      */
     public static int dp(int[] nums) {
         int n = nums.length;
         if (n <= 1) return n;
-        int[] dp = new int[n]; //dp[i] = length of longest ending in nums[i]
-        int[] counts = new int[n]; //count[i] = number of longest ending in nums[i]
+        int[] dp = new int[n]; //dp[i] = 以 nums[i] 结尾的最长递增子序列的长度
+        int[] counts = new int[n]; //count[i] = 以nums[i] 结尾的最长递增子序列的个数
         Arrays.fill(counts, 1);
 
-        for (int j = 0; j < n; ++j) {
-            for (int i = 0; i < j; ++i) {
-                if (nums[i] < nums[j]) {
-                    if (dp[i] >= dp[j]) {
-                        dp[j] = dp[i] + 1;
-                        counts[j] = counts[i];
-                    } else if (dp[i] + 1 == dp[j]) {
-                        counts[j] += counts[i];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                if (nums[j] < nums[i]) {
+                    if (dp[j] >= dp[i]) {
+                        dp[i] = dp[j] + 1;
+                        counts[i] = counts[j];
+                    } else if (dp[j] + 1 == dp[i]) {
+                        counts[i] += counts[j];
                     }
                 }
             }

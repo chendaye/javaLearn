@@ -26,6 +26,32 @@ public class LongIncrSub {
     }
 
     /**
+     *
+     * todo: 区间dp: dp[i] 由 dp[0 ~ i-1] 推出， 不连续
+     *
+     * todo: 状态 ： dp[i]： [0, i] 范围内最长递增子序列
+     *       base case： dp[0] = 1
+     *       转移： dp[i] = Max{dp[x], 0<=x<i nums[x] < nums[i]}
+     * @param nums
+     * @return
+     */
+    public static int dp(int[] nums) {
+        if (nums.length == 0) {
+            return 0;
+        }
+        int[] dp = new int[nums.length];
+        dp[0] = 1;
+        int maxans = 1;
+        for (int i = 1; i < dp.length; i++) {
+            for (int j = 0; j < i; j++)
+                if (nums[i] > nums[j])
+                    dp[i] = Math.max(dp[i], dp[j] + 1);
+            maxans = Math.max(dp[i], dp[i]);
+        }
+        return maxans;
+    }
+
+    /**
      * todo:  递归/动态规划 特点
      *      - 从一个集合中选择最优解（组合）
      *      - 递归可以改写成 记忆搜索
@@ -65,29 +91,6 @@ public class LongIncrSub {
         return len+1;
     }
 
-    /**
-     * todo: 状态 ： dp[i]： [0, i] 范围内最长递增子序列
-     *       base case： dp[0] = 1
-     *       转移： dp[i] = Max{dp[x], 0<=x<i nums[x] < nums[i]}
-     * @param nums
-     * @return
-     */
-    public static int dp(int[] nums) {
-        if (nums.length == 0) {
-            return 0;
-        }
-        int[] dp = new int[nums.length];
-        dp[0] = 1;
-        int maxans = 1;
-        for (int i = 1; i < dp.length; i++) {
-            int maxval = 0;
-            for (int j = 0; j < i; j++)
-                if (nums[i] > nums[j])
-                    maxval = Math.max(maxval, dp[j]);
-            dp[i] = maxval + 1;
-            maxans = Math.max(maxans, dp[i]);
-        }
-        return maxans;
-    }
+
 
 }
