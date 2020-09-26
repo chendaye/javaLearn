@@ -1,6 +1,7 @@
 # 回溯算法的分类
 
 ```python
+# 线性
 result = []
 def backtrack(路径, 选择列表):
     if 满足结束条件:
@@ -11,6 +12,23 @@ def backtrack(路径, 选择列表):
         做选择
         backtrack(路径, 选择列表)
         撤销选择
+
+```
+
+
+```python
+# 矩阵
+def backtrack(路径, 方向列表):
+    todo: 处理当前点
+    if 满足结束条件:
+        todo：...
+        return
+    visited[当前点] = 1；
+    for 选择 in 方向列表:
+        backtrack(路径, 方向列表)
+        todo：...
+    visited[当前点] = 0；
+
 
 ```
 
