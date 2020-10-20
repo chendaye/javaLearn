@@ -64,6 +64,11 @@ public class WhiteboardCode {
                 return o1 - o2;
             }
         });
+
+        Collections.sort(list, (a, b) ->{
+            return a - b;
+        });
+
         list.add(1);
         list.add(1);
         list.add(1);
