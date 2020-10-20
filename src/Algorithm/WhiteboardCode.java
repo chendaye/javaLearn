@@ -44,6 +44,11 @@ public class WhiteboardCode {
         boolean matches1 = str.matches("^aaa$");
         System.out.println(i2);
 
+        //todo: 进制转换
+        Integer.toBinaryString(10); // 2
+        Integer.toOctalString(10); // 8
+        Integer.toHexString(10); // 16
+
         //todo: 数组
         int[] arr = {1,2,3,4,5,6,7,8,9};
         Arrays.sort(arr);
@@ -91,6 +96,10 @@ public class WhiteboardCode {
                 return a - b;
             }
         });
+
+        PriorityQueue<Integer> queue2 = new PriorityQueue<>((a, b)->{
+            return a - b;
+        });
         // add element offer peek poll remove
         queue1.contains(6);
         queue1.add(2);
@@ -116,7 +125,10 @@ public class WhiteboardCode {
         hashMap.containsValue(222);
         Set<Map.Entry<Integer, Integer>> entries = hashMap.entrySet();
         // 遍历方式
-        for (Map.Entry<Integer, Integer>  entry : hashMap.entrySet()){}
+        for (Map.Entry<Integer, Integer> entry : hashMap.entrySet()){
+            entry.getValue();
+            entry.getKey();
+        }
         for(Integer key : hashMap.keySet()){}
         for (Integer val : hashMap.values()){}
         Iterator<Map.Entry<Integer, Integer>> iterator = hashMap.entrySet().iterator();

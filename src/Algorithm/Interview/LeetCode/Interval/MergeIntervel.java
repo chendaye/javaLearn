@@ -33,6 +33,8 @@ public class MergeIntervel {
 
             }
         });
+
+
         ArrayList<int[]> record = new ArrayList<>();
         for(int[] item : intervals){
             // record 为空 或者当前区间超过 当前最大区间
