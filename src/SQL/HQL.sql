@@ -1,3 +1,63 @@
+# 基本语法
+
+-- 建表
+/*
+CREATE [EXTERNAL] TABLE [IF NOT EXISTS] table_name
+  [(col_name data_type [COMMENT col_comment], ...)]
+  [COMMENT table_comment]
+  [PARTITIONED BY (col_name data_type
+    [COMMENT col_comment], ...)]
+  [CLUSTERED BY (col_name, col_name, ...)
+  [SORTED BY (col_name [ASC|DESC], ...)]
+  INTO num_buckets BUCKETS]
+  [ROW FORMAT row_format]
+  [STORED AS file_format]
+  [LOCATION hdfs_path]
+*/
+
+show databases
+use databases
+show alter tablespace
+drop table tab_name
+
+-- [ROW FORMAT DELIMITED]关键字，是用来设置创建的表在加载数据的时候，支持的列分隔符；
+-- [STORED AS file_format]关键字是用来设置加载数据的数据类型。Hive本身支持的文件格式只有：Text File，Sequence File。
+-- 如果文件数据是纯文本，可以使用 [STORED AS TEXTFILE]。如果数据需要压缩，使用 [STORED AS SEQUENCE] 。
+-- 通常情况，只要不需要保存序列化的对象，我们默认采用[STORED AS TEXTFILE]。
+CREATE TABLE test_1(id INT, name STRING, city STRING) SORTED BY TEXTFILE ROW FORMAT DELIMITED ‘\t’
+
+-- 外部表
+CREATE EXTERNAL TABLE test_1(id INT, name STRING, city STRING) SORTED BY TEXTFILE ROW FORMAT DELIMITED ‘\t’ LOCATION ‘hdfs://../../..’
+
+-- 分区表
+CREATE TABLE test_1(id INT, name STRING, city STRING) PARTITIONED BY (pt STRING) SORTED BY TEXTFILE ROW FORMAT DELIMITED ‘\t’
+
+-- 删除分区
+ALTER TABLE table_name drop partition (partcol1[=value1]);
+
+-- 增加分区
+ALTER TABLE table_name ADD
+    partition_spec [ LOCATION 'location1' ]
+    partition_spec [ LOCATION 'location2' ] ...
+/*
+    加载数据
+LOAD DATA [LOCAL] INPATH 'filepath' [OVERWRITE] INTO TABLE tablename [PARTITION (partcol1=val1, partcol2=val2 ...)]
+
+    */
+
+-- 关键字[OVERWRITE]意思是是覆盖原表里的数据，不写则不会覆盖。
+-- 关键字[LOCAL]是指你加载文件的来源为本地文件，不写则为hdfs的文件。
+LOAD DATA LOCAL INPATH '/home/admin/test/test.txt' OVERWRITE INTO TABLE test_1
+
+-- 加载到分区表
+LOAD DATA LOCAL INPATH '/home/admin/test/test.txt' OVERWRITE INTO TABLE test_1 PARTITION（pt=’xxxx）
+
+-- insert+select
+INSERT OVERWRITE TABLE tablename1 [PARTITION (partcol1=val1, partcol2=val2 ...)] select_statement1 FROM from_statement
+
+
+
+
 # SQL_1
 
 ```
