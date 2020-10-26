@@ -102,3 +102,47 @@ select a.uid,a.row1-a.row2, count(a.uid) from (
     row_number() over (partition by uid order by post_time) as row2
     from table_name
 ) a group by a.uid,a.row1-a.row2 having count(a.uid) > 3
+
+
+/*
+
+编写一个 SQL 查询，来查找与之前（昨天的）日期相比温度更高的所有日期的 id 。
+
+返回结果 不要求顺序 。
+
+查询结果格式如下例：
+
+Weather
++----+------------+-------------+
+| id | recordDate | Temperature |
++----+------------+-------------+
+| 1  | 2015-01-01 | 10          |
+| 2  | 2015-01-02 | 25          |
+| 3  | 2015-01-03 | 20          |
+| 4  | 2015-01-04 | 30          |
++----+------------+-------------+
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/rising-temperature
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+*/
+
+-- 和自己前后的记录比较，考虑自连接
+SELECT
+    weather.id AS 'Id'
+FROM
+    weather
+        JOIN
+    weather w ON DATEDIFF(weather.recordDate, w.recordDate) = 1
+        AND weather.Temperature > w.Temperature;
+
+-- 和前后比较，考虑开窗函数
+-- lag(expr, n) 前第n行
+-- lead(expr, n) 后第n行
+select id "Id" from
+    ( select T.id ,T.recorddate,
+        trunc(T.recorddate -  lag(T.recorddate,1) over(order by T.recordDate))as diff_days, -- T.recorddate 前一行
+        T.temperature- lag(T.temperature,1) over(order by T.recordDate) as diff_temperature -- T.recorddate 前一行
+    from weather T
+    )
+where  diff_temperature > 0 and diff_days=1
