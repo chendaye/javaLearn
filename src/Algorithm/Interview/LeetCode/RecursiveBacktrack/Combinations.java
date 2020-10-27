@@ -2,9 +2,7 @@ package Algorithm.Interview.LeetCode.RecursiveBacktrack;
 
 import Utils.Dump;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 /**
  * 给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合。
@@ -97,5 +95,103 @@ public class Combinations {
             Find(n, k, cur, res,i+1);
             cur.remove(cur.size() - 1);
         }
+    }
+
+    /**
+     * 给定一个整数数组  nums 和一个正整数 k，找出是否有可能把这个数组分成 k 个非空子集，其总和都相等。
+     *
+     * 示例 1：
+     *
+     * 输入： nums = [4, 3, 2, 3, 5, 2, 1], k = 4
+     * 输出： True
+     * 说明： 有可能将其分成 4 个子集（5），（1,4），（2,3），（2,3）等于总和。
+     *  
+     *
+     *
+     * 提示：
+     *
+     * 1 <= k <= len(nums) <= 16
+     * 0 < nums[i] < 10000
+     *
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/partition-to-k-equal-sum-subsets
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     */
+    public static class canPartitionKSubsets {
+        public static void main(String[] args) {
+            Integer[] nums = {4, 3, 2, 3, 5, 2, 1};
+            canPartitionKSubsets(nums, 4);
+        }
+
+        /**
+         * todo: 首先是否可以被 k 整除
+         *      -- 假设 sum/k = n
+         *      -- 不能有 > n 的数： 先排序
+         * @param nums
+         * @return
+         */
+        public static boolean canPartitionKSubsets(Integer[] nums, int k){
+            Arrays.sort(nums, new Comparator<Integer>(){
+                @Override
+                public int compare(Integer a, Integer b){
+                    return b - a;
+                }
+            });
+
+    //        Arrays.sort(nums, (a, b) -> {
+    //            return a - b;
+    //        });
+
+            int sum = 0;
+            for (int n : nums){
+                sum += n;
+            }
+            if (sum % k != 0) return false;
+            int segment = sum / k;
+            if (nums[0] > segment) return false;
+
+            boolean[] used = new boolean[nums.length];
+            return helper(nums, k, segment, used, 0, 0);
+
+        }
+
+        /**
+         * todo： 回溯法
+         *      - 功能定义： 把 nums 等分成 k 段
+         *
+         * 注意到这个时候的递归函数backtracking是有返回值的，为什么有的递归函数没有返回值，有的需要返回值呢？
+         * 因为本题只要找到一个结果就行了，需要在找到这个结果的时候就立刻返回，也就是本题的
+         * if (backtracking(nums, k, target, cur+nums[i], i+1, used)) return true;
+         * 如果需要找到所有的结果（所有的划分），那么这个时候的backtracking( )不需要返回值，
+         * 这个时候添加一个参数ans（一个容器），用来装全部的结果
+         *
+         * @param nums
+         * @param k
+         * @param target
+         * @param used
+         * @param start
+         * @param current
+         * @return
+         */
+        public static boolean helper(Integer[] nums, int k, int target, boolean[] used,int start,int current){
+            if (k == 0) return true;
+            if (current == target){
+                // todo: 找到一个集合，拆解剩下的部分； 把 nums(剩余used部分) 拆成 k-1 段
+                return helper(nums, k - 1, target, used, 0, 0);
+            }
+
+            // start 用来确定 每一条路径 不走回头路
+            // used  每一轮消耗掉的元素
+            for (int i = start; i < nums.length; i++){
+                if (!used[i] && nums[i] <= target - current){
+                    used[i] = true;
+                    if(helper(nums, k, target, used, i + 1, current + nums[i])) return true;
+                    used[i] = false;
+                }
+            }
+            return false;
+        }
+
+
     }
 }
