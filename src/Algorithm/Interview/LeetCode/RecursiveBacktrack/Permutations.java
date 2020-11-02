@@ -53,7 +53,9 @@ public class Permutations {
     public static List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> result= new ArrayList<List<Integer>>();
 
-        fillNums(result,new ArrayList<Integer>(),nums);
+        int[] visited = new int[nums.length];
+        fillNums2(result,new ArrayList<Integer>(),nums, visited, 0);
+//        fillNums(result,new ArrayList<Integer>(),nums);
         Iterator<List<Integer>> iterator = result.iterator();
         while (iterator.hasNext()){
             Dump.iterator(iterator.next());
@@ -81,5 +83,27 @@ public class Permutations {
             path.remove(path.size()-1);
         }
     }
+
+    public static void fillNums2(List<List<Integer>> result,List<Integer> path,int[] nums, int[] visited, int start)
+    {
+        if(path.size()==nums.length) {
+            List<Integer> temp = new ArrayList<Integer>();
+            temp.addAll(path);
+            result.add(temp);
+            return;
+        }
+        visited[start] = 1;
+        for(int j=0;j<nums.length;j++) {
+            if(visited[j] == 0){
+                path.add(nums[j]);
+                fillNums2(result,path,nums, visited, j); //todo: 已经得到了一个子结果，回溯
+                path.remove(path.size()-1);
+            }
+
+        }
+        visited[start] = 0;
+    }
+
+
 
 }
