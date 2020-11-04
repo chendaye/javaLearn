@@ -1,7 +1,7 @@
 # 回溯算法的分类
 
 ```python
-# 线性
+# 线性（多叉树的遍历）
 result = []
 def backtrack(路径, 选择列表):
     if 满足结束条件:

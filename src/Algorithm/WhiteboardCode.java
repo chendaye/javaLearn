@@ -1,3 +1,5 @@
+package Algorithm;
+
 import Utils.Dump;
 
 import java.io.FileNotFoundException;
@@ -31,8 +33,8 @@ public class WhiteboardCode {
         //todo: 正则
         str.startsWith("a");
         str.endsWith("a");
-        // ^ 【开始】 $ 【结束】  . 【任意】  + 【>=1】  ? 【>=0】
-        // {n} 【=n】 {n,} 【>=n】 {n,m} 【>= b  <= m】
+        // ^ 【开始】 $ 【结束】  . 【任意】 *【>= 0】  + 【>=1】  ? 【0<= <= 1】
+        // {n} 【=n】 {n,} 【>=n】 {n,m} 【>= n  <= m】
         // 此字符紧随任何其他限定符（*、+、?、{n}、{n,}、{n,m}）之后时，匹配模式是"非贪心的"。"非贪心的"模式匹配搜索到的、尽可能短的字符串，而默认的"贪心的"模式匹配搜索到的、尽可能长的字符串
         // x|y [xy|c] [a-z] [^a-z]
         // \d 等效 [0-9] \D 等效 【^0-9】  \w 等效 [A-Za-z0-9] \W 等效 [A-Za-z0-9]
