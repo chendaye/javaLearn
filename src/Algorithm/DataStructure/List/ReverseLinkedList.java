@@ -66,6 +66,8 @@ public class ReverseLinkedList {
         return pre;
     }
 
+
+
     /**
      * 递归翻转整个链表
      *
@@ -133,6 +135,7 @@ public class ReverseLinkedList {
        //todo: 后序
        System.out.println(head.val);
     }
+
 
     /**
      * todo:通过后序遍历 判断链表是否是回文（双指针）

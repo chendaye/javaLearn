@@ -48,6 +48,12 @@ public class WhiteboardCode {
         Integer.toOctalString(10); // 8
         Integer.toHexString(10); // 16
 
+        //todo: String -> int
+        Integer.parseInt("123");
+        //todo: char -> int
+        Integer.parseInt(String.valueOf('2'));
+        System.out.println('7' - 48);
+
         //todo: 数组
         int[] arr = {1,2,3,4,5,6,7,8,9};
         Arrays.sort(arr);
@@ -101,9 +107,9 @@ public class WhiteboardCode {
             }
         });
 
-        PriorityQueue<Integer> queue2 = new PriorityQueue<>((a, b)->{
-            return a - b;
-        });
+//        PriorityQueue<Integer> queue2 = new PriorityQueue<>((a, b)->{
+//            return a - b;
+//        });
         // add element offer peek poll remove
         queue1.contains(6);
         queue1.add(2);
@@ -112,6 +118,27 @@ public class WhiteboardCode {
         queue1.size();
         queue1.isEmpty();
         queue1.offer(2);
+
+        LinkedList<Character> linkedList = new LinkedList<>();
+        linkedList.add('a');
+        linkedList.add('b');
+        linkedList.addFirst('c');
+        linkedList.addLast('d');
+        linkedList.removeFirst();
+        linkedList.removeLast();
+        linkedList.remove(0);
+        Dump.iterator(linkedList);
+
+        //todo: ArrayList
+        ArrayList<Character> arrayList = new ArrayList<>();
+        arrayList.add('a');
+        arrayList.add('b');
+        arrayList.add('c');
+        arrayList.remove(0);
+        //Dump.iterator(arrayList);
+
+
+
 
 
         //todo: 栈
