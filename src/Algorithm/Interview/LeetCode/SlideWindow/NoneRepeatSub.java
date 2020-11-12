@@ -1,5 +1,8 @@
 package Algorithm.Interview.LeetCode.SlideWindow;
 
+import Grammar.LanguageElement.Array;
+import Utils.Dump;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
@@ -13,7 +16,11 @@ public class NoneRepeatSub {
 
     public static void main(String[] args){
         String s = "aasfs";
-        System.out.println(solution(s));
+//        System.out.println(solution(s));
+
+
+
+        System.out.println('a' - 'A');
     }
 
     public static int solution(String s){

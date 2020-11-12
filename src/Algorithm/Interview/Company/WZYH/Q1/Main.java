@@ -2,7 +2,7 @@ package Algorithm.Interview.Company.WZYH.Q1;
 
 import Grammar.LanguageElement.Array;
 import Utils.Dump;
-import org.omg.PortableInterceptor.INACTIVE;
+
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
