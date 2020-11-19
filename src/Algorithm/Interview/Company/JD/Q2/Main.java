@@ -14,6 +14,7 @@ public class Main {
         if (n <= 0) {
             System.out.println(0.0);
             return;
+
         }
         Double res = 0.0;
         for (int i=1; i<=n; i++){
