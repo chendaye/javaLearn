@@ -1,5 +1,11 @@
 package Algorithm.Interview.LeetCode.Recursion;
 
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * 给定一个化学式formula（作为字符串），返回每种原子的数量。
  *
@@ -47,10 +53,79 @@ package Algorithm.Interview.LeetCode.Recursion;
 public class countOfAtoms {
 
     public static void main(String[] args) {
-
+//        System.out.println(decode("K4(ON(SO3)2)2"));
+       System.out.println(countOfAtoms("K4(ON(SO3)2)2"));
     }
 
-    public String countOfAtoms(String formula) {
-        return "";
+    /**
+     * 先解压字符串，再遍历
+     * @param formula
+     * @return
+     */
+    public static String countOfAtoms(String formula) {
+        String str = decode(formula);
+        System.out.println(str);
+        TreeMap<String, Integer> map = new TreeMap<>();
+
+//        boolean matches = Pattern.matches("$[A-z]+", str);
+        Pattern pattern = Pattern.compile("[A-Z]{1}[a-z]*[0-9]{0,}");
+        Matcher matcher = pattern.matcher(str);
+        while (matcher.find()){
+            String reg = matcher.group(0);
+            String num = reg.replaceAll("[A-Za-z]", "");
+            String key = reg.replaceAll("[0-9]", "");
+            int cnt = num.length() > 0 ? Integer.parseInt(num) : 1;
+
+            if (map.containsKey(key)){
+                map.put(key, map.get(key) + cnt);
+            }else{
+                map.put(key, cnt);
+            }
+        }
+        StringBuilder builder = new StringBuilder();
+        for (Map.Entry<String, Integer> enrty : map.entrySet()){
+            builder.append(enrty.getKey());
+            if (enrty.getValue() > 1) builder.append(enrty.getValue());
+//            System.out.println(enrty.getKey()+"=="+enrty.getValue());
+        }
+        return builder.toString();
+    }
+
+    public static String decode(String str){
+        if (str.length() == 0) return "";
+        int left = -1, right = -1, ni = -1, cnt = 0;
+        for (int i = 0; i < str.length(); i++){
+            if (str.charAt(i) == '('){
+                left = i;
+            }
+            if (str.charAt(i) == ')'){
+                right = i;
+
+                int inx = i + 1;
+                while (inx < str.length() && str.charAt(inx) >= '0' && str.charAt(inx) <= '9'){
+//                    System.out.println(str.charAt(inx));
+                    inx++;
+                }
+//                System.out.println(str.substring(right + 1, inx));
+                cnt = Integer.parseInt(str.substring(right + 1, inx));
+                ni = inx;
+                break;
+            }
+        }
+        if (right != -1){
+            String s1 = str.substring(0, left);
+            String s2 = str.substring(left + 1, right);
+            String s3 = str.substring(ni);
+
+            StringBuilder builder = new StringBuilder(s1);
+            while (cnt > 0){
+                builder.append(s2);
+                cnt--;
+            }
+            if (s3.length() > 0)builder.append(s3);
+            return decode(builder.toString());
+        }else{
+            return str;
+        }
     }
 }
